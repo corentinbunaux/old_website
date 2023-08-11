@@ -494,124 +494,39 @@
             background-color: var(--l_blue);
             border: solid 2px var(--l_black);
 
+
+            .bubbles {
+                background-color: #272424;
+            }
+
             .prez {
                 background-color: var(--l_black);
                 color: var(--l_white);
-                border: solid 5px var(--l_white);
             }
 
-            /* === removing default button style ===*/
             .button {
-                margin: 0;
-                height: auto;
-                background: transparent;
-                padding: 0;
-                border: none;
-                width: fit-content;
-            }
-
-            /* button styling */
-            .button {
-                --border-right: 6px;
                 --text-stroke-color: var(--l_white);
                 --animation-color: var(--l_green);
-                --fs-size: 2em;
-                letter-spacing: 3px;
-                text-decoration: none;
-                font-size: var(--fs-size);
-                font-family: "Arial";
-                position: relative;
-                text-transform: uppercase;
-                color: transparent;
-                -webkit-text-stroke: 1px var(--text-stroke-color);
-            }
-
-            /* this is the text, when you hover on button */
-            .hover-text {
-                position: absolute;
-                box-sizing: border-box;
-                content: attr(data-text);
-                color: var(--animation-color);
-                width: 0%;
-                inset: 0;
-                border-right: var(--border-right) solid var(--animation-color);
-                overflow: hidden;
-                transition: 0.5s;
-                -webkit-text-stroke: 1px var(--animation-color);
-            }
-
-            /* hover */
-            .button:hover .hover-text {
-                width: 100%;
-                filter: drop-shadow(0 0 23px var(--animation-color))
             }
 
             .mse_date {
                 color: var(--l_white);
             }
 
-            .cta {
-                position: relative;
-                margin: auto;
-                padding: 1%;
-                transition: all 0.2s ease;
-                border: none;
-                background: none;
-                width: fit-content;
-            }
-
             .cta:before {
-                content: "";
-                position: absolute;
-                top: 0%;
-                left: 0;
-                display: block;
-                border-radius: 50px;
                 background: var(--l_green);
-                width: 20%;
-                height: 100%;
-                transition: all 0.3s ease;
             }
 
             .cta span {
-                position: relative;
-                font-family: "Ubuntu", sans-serif;
-                font-size: 18px;
-                font-weight: 700;
-                letter-spacing: 0.05em;
                 color: var(--l_white);
             }
 
             .cta svg {
-                position: relative;
-                top: 0;
-                margin-left: 10px;
-                fill: none;
-                stroke-linecap: round;
-                stroke-linejoin: round;
                 stroke: var(--l_white);
-                stroke-width: 2;
-                transform: translateX(-5px);
-                transition: all 0.3s ease;
             }
 
             .cta:hover:before {
-                width: 100%;
                 background: var(--l_green);
-            }
-
-            .cta:hover svg {
-                transform: translateX(0);
-            }
-
-            .cta:active {
-                transform: scale(0.95);
-            }
-
-            .costume {
-                background-image: url(./../costume.jpeg);
-                background-size: cover;
-                background-repeat: no-repeat;
             }
 
             .bande {
@@ -667,27 +582,8 @@
             }
         }
 
-        .relative {
-            position: relative;
-        }
-
-        .absolute {
-            position: absolute;
-        }
-
-        .bac {
-            position: absolute;
-            height: 100%;
-            width: 83%;
-        }
-
         .date {
             &_lycee {
-                position: absolute;
-                top: 25%;
-                left: 10/12%;
-                width: 30%;
-                height: 50%;
                 background-color: var(--l_grey);
                 border: solid 2px var(--l_white);
                 border-radius: 15% 40%;
@@ -695,30 +591,7 @@
             }
 
             &_pcsi {
-                position: absolute;
-                top: 25%;
-                left: 25%;
-                width: 50%;
-                height: 50%;
                 color: var(--l_white);
-
-                .y_2020 {
-                    position: relative;
-                    top: 25%;
-                    left: 0%;
-                }
-
-                .tiret {
-                    position: relative;
-                    top: 42%;
-                    left: 0%;
-                }
-
-                .y_2021 {
-                    position: relative;
-                    top: 40%;
-                    left: 50%;
-                }
             }
         }
 
@@ -752,7 +625,36 @@
         }
     }
 
-    &__aboutme {}
+    &__aboutme {
+        .front {
+            .button {
+                color: var(--l_black);
+                background-color: var(--l_blue);
+            }
+
+            .button:hover:before {
+                background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, transparent 20%, var(--l_blue) 20%, transparent 30%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%);
+            }
+
+            .button:hover::after {
+                background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%);
+            }
+        }
+    }
 
     &__footer {
         background-color: var(--l_blue);
@@ -1033,6 +935,150 @@ body {
     .projects {}
 
     .path {
+        &_content {
+            .button {
+                margin: 0;
+                height: auto;
+                background: transparent;
+                padding: 0;
+                border: none;
+                width: fit-content;
+                --border-right: 6px;
+                --fs-size: 2em;
+                letter-spacing: 3px;
+                text-decoration: none;
+                font-size: var(--fs-size);
+                font-family: "Arial";
+                position: relative;
+                text-transform: uppercase;
+                color: transparent;
+                -webkit-text-stroke: 1px var(--text-stroke-color);
+            }
+
+            /* this is the text, when you hover on button */
+            .hover-text {
+                position: absolute;
+                box-sizing: border-box;
+                content: attr(data-text);
+                color: var(--animation-color);
+                width: 0%;
+                inset: 0;
+                border-right: var(--border-right) solid var(--animation-color);
+                overflow: hidden;
+                transition: 0.5s;
+                -webkit-text-stroke: 1px var(--animation-color);
+            }
+
+            /* hover */
+            .button:hover .hover-text {
+                width: 100%;
+                filter: drop-shadow(0 0 23px var(--animation-color))
+            }
+
+            .cta {
+                position: relative;
+                margin: auto;
+                padding: 1%;
+                transition: all 0.2s ease;
+                border: none;
+                background: none;
+                width: fit-content;
+            }
+
+            .cta:before {
+                content: "";
+                position: absolute;
+                top: 0%;
+                left: 0;
+                display: block;
+                border-radius: 50px;
+                width: 20%;
+                height: 100%;
+                transition: all 0.3s ease;
+            }
+
+            .cta span {
+                position: relative;
+                font-family: "Ubuntu", sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 0.05em;
+            }
+
+            .cta svg {
+                position: relative;
+                top: 0;
+                margin-left: 10px;
+                fill: none;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 2;
+                transform: translateX(-5px);
+                transition: all 0.3s ease;
+            }
+
+            .cta:hover:before {
+                width: 100%;
+            }
+
+            .cta:hover svg {
+                transform: translateX(0);
+            }
+
+            .cta:active {
+                transform: scale(0.95);
+            }
+
+            .costume {
+                background-image: url(./../costume.jpeg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .bac {
+                position: absolute;
+                height: 100%;
+                width: 83%;
+            }
+
+            .date {
+                &_lycee {
+                    position: absolute;
+                    top: 25%;
+                    left: 10/12%;
+                    width: 30%;
+                    height: 50%;
+                    border-radius: 15% 40%;
+                }
+
+                &_pcsi {
+                    position: absolute;
+                    top: 25%;
+                    left: 25%;
+                    width: 50%;
+                    height: 50%;
+
+                    .y_2020 {
+                        position: relative;
+                        top: 25%;
+                        left: 0%;
+                    }
+
+                    .tiret {
+                        position: relative;
+                        top: 42%;
+                        left: 0%;
+                    }
+
+                    .y_2021 {
+                        position: relative;
+                        top: 40%;
+                        left: 50%;
+                    }
+                }
+            }
+        }
+
         .contenu {
             .row {
                 height: 33%;
@@ -1088,9 +1134,7 @@ body {
                 padding: 10px 22px;
                 border-radius: 6px;
                 border: none;
-                color: var(--l_white);
                 cursor: pointer;
-                background-color: var(--l_black);
                 transition: all 0.2s ease;
                 z-index: 4;
                 transform: rotate(30deg);
@@ -1099,173 +1143,157 @@ body {
                     transform: scale(0.86);
                 }
             }
-        }
 
 
-
-        .button:before,
-        .button:after {
-            position: absolute;
-            content: "";
-            width: 100%;
-            left: 50%;
-            height: 100%;
-            transform: translateX(-50%);
-            z-index: -1000;
-            background-repeat: no-repeat;
-        }
-
-        .button:hover:before {
-            top: -70%;
-            background-image: radial-gradient(circle, var(--d_navy) 20%, transparent 20%),
-                radial-gradient(circle, transparent 20%, var(--d_navy) 20%, transparent 30%),
-                radial-gradient(circle, var(--d_navy) 20%, transparent 20%),
-                radial-gradient(circle, var(--d_navy) 20%, transparent 20%),
-                radial-gradient(circle, transparent 10%, var(--d_navy) 15%, transparent 20%),
-                radial-gradient(circle, var(--d_navy) 20%, transparent 20%),
-                radial-gradient(circle, var(--d_navy) 20%, transparent 20%),
-                radial-gradient(circle, var(--d_navy) 20%, transparent 20%),
-                radial-gradient(circle, var(--d_navy) 20%, transparent 20%);
-            background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
-                10% 10%, 18% 18%;
-            background-position: 50% 120%;
-            animation: greentopBubbles 0.6s ease;
-        }
-
-        @keyframes greentopBubbles {
-            0% {
-                background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
-                    40% 90%, 55% 90%, 70% 90%;
+            .button:before,
+            .button:after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                left: 50%;
+                height: 100%;
+                transform: translateX(-50%);
+                z-index: -1000;
+                background-repeat: no-repeat;
             }
 
-            50% {
-                background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
-                    50% 50%, 65% 20%, 90% 30%;
+            .button:hover:before {
+                top: -70%;
+                background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+                    10% 10%, 18% 18%;
+                background-position: 50% 120%;
+                animation: greentopBubbles 0.6s ease;
             }
 
-            100% {
-                background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
-                    50% 40%, 65% 10%, 90% 20%;
-                background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-            }
-        }
+            @keyframes greentopBubbles {
+                0% {
+                    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+                        40% 90%, 55% 90%, 70% 90%;
+                }
 
-        .button:hover::after {
-            bottom: -70%;
-            background-image: radial-gradient(circle, var(--d_navy) 20%, transparent 20%),
-                radial-gradient(circle, var(--d_navy) 20%, transparent 20%),
-                radial-gradient(circle, transparent 10%, var(--d_navy) 15%, transparent 20%),
-                radial-gradient(circle, var(--d_navy) 20%, transparent 20%),
-                radial-gradient(circle, var(--d_navy) 20%, transparent 20%),
-                radial-gradient(circle, var(--d_navy) 20%, transparent 20%),
-                radial-gradient(circle, var(--d_navy) 20%, transparent 20%);
-            background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
-            background-position: 50% 0%;
-            animation: greenbottomBubbles 0.6s ease;
-        }
+                50% {
+                    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+                        50% 50%, 65% 20%, 90% 30%;
+                }
 
-        @keyframes greenbottomBubbles {
-            0% {
-                background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
-                    70% -10%, 70% 0%;
+                100% {
+                    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+                        50% 40%, 65% 10%, 90% 20%;
+                    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+                }
             }
 
-            50% {
-                background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
-                    105% 0%;
+            .button:hover::after {
+                bottom: -70%;
+                background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+                background-position: 50% 0%;
+                animation: greenbottomBubbles 0.6s ease;
             }
 
-            100% {
-                background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
-                    110% 10%;
-                background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+            @keyframes greenbottomBubbles {
+                0% {
+                    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+                        70% -10%, 70% 0%;
+                }
+
+                50% {
+                    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+                        105% 0%;
+                }
+
+                100% {
+                    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+                        110% 10%;
+                    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+                }
             }
         }
 
-        .origin {
-            &_ball {
+        .tennis_ball {
+            .origin {
+                &_ball {
+                    position: relative;
+                    top: 45%;
+                    right: 22%;
+                    z-index: 2;
+                }
+
+                &_shadow {
+                    position: relative;
+                    top: 79%;
+                    right: 22%;
+                    z-index: 1;
+                }
+            }
+
+            .ball {
                 position: relative;
-                top: 45%;
-                right: 22%;
-                z-index: 2;
+                background: #dfff4f;
+                border-radius: 50%;
+                overflow: hidden;
+                animation: ball_path 1s ease-out both;
             }
 
-            &_shadow {
-                position: relative;
-                top: 79%;
-                right: 22%;
-                z-index: 1;
+            .ball:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background: transparent;
+                border: 5px solid #FFFFFF;
+                left: -65%;
             }
-        }
 
-        .ball {
-            position: relative;
-            background: #dfff4f;
-            border-radius: 50%;
-            overflow: hidden;
-            animation: ball_path 1s ease-out both;
-        }
-
-        .ball:before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            box-sizing: border-box;
-            background: transparent;
-            border: 5px solid #FFFFFF;
-            left: -65%;
-        }
-
-        .ball:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            box-sizing: border-box;
-            background: transparent;
-            border: 5px solid #FFFFFF;
-            right: -65%;
-        }
-
-        @media screen and(min-width:576px) {
-            .ball {
-                width: 18px;
-                height: 18px;
+            .ball:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background: transparent;
+                border: 5px solid #FFFFFF;
+                right: -65%;
             }
-        }
 
-        @media screen and(min-width:768px) {
-            .ball {
-                width: 24px;
-                height: 24px;
+            @media screen and(min-width:576px) {
+                .ball {
+                    width: 18px;
+                    height: 18px;
+                }
             }
-        }
 
-        @media screen and(min-width:992px) {
-            .ball {
-                width: 31px;
-                height: 31px;
+            @media screen and(min-width:768px) {
+                .ball {
+                    width: 24px;
+                    height: 24px;
+                }
             }
-        }
 
-        @media screen and(min-width:1200px) {
-            .ball {
-                width: 37px;
-                height: 37px;
+            @media screen and(min-width:992px) {
+                .ball {
+                    width: 31px;
+                    height: 31px;
+                }
             }
-        }
 
-        @media screen and(min-width:1400px) {
-            .ball {
-                width: 43px;
-                height: 43px;
+            @media screen and(min-width:1200px) {
+                .ball {
+                    width: 37px;
+                    height: 37px;
+                }
+            }
+
+            @media screen and(min-width:1400px) {
+                .ball {
+                    width: 43px;
+                    height: 43px;
+                }
             }
         }
     }
-
 
     footer {}
 }

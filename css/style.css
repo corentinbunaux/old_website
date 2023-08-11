@@ -10555,99 +10555,25 @@ textarea.form-control-lg {
     background-color: var(--l_black); }
 .light__path .path_content {
   background-color: var(--l_blue);
-  border: solid 2px var(--l_black);
-  /* === removing default button style ===*/
-  /* button styling */
-  /* this is the text, when you hover on button */
-  /* hover */ }
+  border: solid 2px var(--l_black); }
+  .light__path .path_content .bubbles {
+    background-color: #272424; }
   .light__path .path_content .prez {
     background-color: var(--l_black);
-    color: var(--l_white);
-    border: solid 5px var(--l_white); }
+    color: var(--l_white); }
   .light__path .path_content .button {
-    margin: 0;
-    height: auto;
-    background: transparent;
-    padding: 0;
-    border: none;
-    width: fit-content; }
-  .light__path .path_content .button {
-    --border-right: 6px;
     --text-stroke-color: var(--l_white);
-    --animation-color: var(--l_green);
-    --fs-size: 2em;
-    letter-spacing: 3px;
-    text-decoration: none;
-    font-size: var(--fs-size);
-    font-family: "Arial";
-    position: relative;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--text-stroke-color); }
-  .light__path .path_content .hover-text {
-    position: absolute;
-    box-sizing: border-box;
-    content: attr(data-text);
-    color: var(--animation-color);
-    width: 0%;
-    inset: 0;
-    border-right: var(--border-right) solid var(--animation-color);
-    overflow: hidden;
-    transition: 0.5s;
-    -webkit-text-stroke: 1px var(--animation-color); }
-  .light__path .path_content .button:hover .hover-text {
-    width: 100%;
-    filter: drop-shadow(0 0 23px var(--animation-color)); }
+    --animation-color: var(--l_green); }
   .light__path .path_content .mse_date {
     color: var(--l_white); }
-  .light__path .path_content .cta {
-    position: relative;
-    margin: auto;
-    padding: 1%;
-    transition: all 0.2s ease;
-    border: none;
-    background: none;
-    width: fit-content; }
   .light__path .path_content .cta:before {
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    background: var(--l_green);
-    width: 20%;
-    height: 100%;
-    transition: all 0.3s ease; }
+    background: var(--l_green); }
   .light__path .path_content .cta span {
-    position: relative;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
     color: var(--l_white); }
   .light__path .path_content .cta svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: var(--l_white);
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease; }
+    stroke: var(--l_white); }
   .light__path .path_content .cta:hover:before {
-    width: 100%;
     background: var(--l_green); }
-  .light__path .path_content .cta:hover svg {
-    transform: translateX(0); }
-  .light__path .path_content .cta:active {
-    transform: scale(0.95); }
-  .light__path .path_content .costume {
-    background-image: url(./../costume.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat; }
   .light__path .path_content .bande {
     background-color: #3b5254;
     border: double 10px var(--l_white); }
@@ -10674,43 +10600,13 @@ textarea.form-control-lg {
     border-left: double 5px var(--l_white); }
   .light__path .path_content .year_right {
     border-right: double 5px var(--l_white); }
-.light__path .relative {
-  position: relative; }
-.light__path .absolute {
-  position: absolute; }
-.light__path .bac {
-  position: absolute;
-  height: 100%;
-  width: 83%; }
 .light__path .date_lycee {
-  position: absolute;
-  top: 25%;
-  left: 10/12%;
-  width: 30%;
-  height: 50%;
   background-color: var(--l_grey);
   border: solid 2px var(--l_white);
   border-radius: 15% 40%;
   color: var(--l_white); }
 .light__path .date_pcsi {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
   color: var(--l_white); }
-  .light__path .date_pcsi .y_2020 {
-    position: relative;
-    top: 25%;
-    left: 0%; }
-  .light__path .date_pcsi .tiret {
-    position: relative;
-    top: 42%;
-    left: 0%; }
-  .light__path .date_pcsi .y_2021 {
-    position: relative;
-    top: 40%;
-    left: 50%; }
 .light__path .col_border {
   border: solid 1px var(--l_black); }
 .light__path .progress_path::after {
@@ -10726,6 +10622,13 @@ textarea.form-control-lg {
   .light__path .progress_path .btn_path:hover {
     background-color: var(--l_grey);
     border: solid 1px var(--l_white); }
+.light__aboutme .front .button {
+  color: var(--l_black);
+  background-color: var(--l_blue); }
+.light__aboutme .front .button:hover:before {
+  background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--l_blue) 20%, transparent 30%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%); }
+.light__aboutme .front .button:hover::after {
+  background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%); }
 .light__footer {
   background-color: var(--l_blue); }
 
@@ -10876,6 +10779,113 @@ body .profile .welcome {
         top: 10%; }
         body .profile .welcome .letter__U .wave {
           animation: wave_animation 4s 1.75s infinite both; } }
+body .path_content {
+  /* this is the text, when you hover on button */
+  /* hover */ }
+  body .path_content .button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    width: fit-content;
+    --border-right: 6px;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color); }
+  body .path_content .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color); }
+  body .path_content .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color)); }
+  body .path_content .cta {
+    position: relative;
+    margin: auto;
+    padding: 1%;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    width: fit-content; }
+  body .path_content .cta:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    width: 20%;
+    height: 100%;
+    transition: all 0.3s ease; }
+  body .path_content .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em; }
+  body .path_content .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease; }
+  body .path_content .cta:hover:before {
+    width: 100%; }
+  body .path_content .cta:hover svg {
+    transform: translateX(0); }
+  body .path_content .cta:active {
+    transform: scale(0.95); }
+  body .path_content .costume {
+    background-image: url(./../costume.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  body .path_content .bac {
+    position: absolute;
+    height: 100%;
+    width: 83%; }
+  body .path_content .date_lycee {
+    position: absolute;
+    top: 25%;
+    left: 10/12%;
+    width: 30%;
+    height: 50%;
+    border-radius: 15% 40%; }
+  body .path_content .date_pcsi {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%; }
+    body .path_content .date_pcsi .y_2020 {
+      position: relative;
+      top: 25%;
+      left: 0%; }
+    body .path_content .date_pcsi .tiret {
+      position: relative;
+      top: 42%;
+      left: 0%; }
+    body .path_content .date_pcsi .y_2021 {
+      position: relative;
+      top: 40%;
+      left: 50%; }
 body .path .contenu .row {
   height: 33%; }
   body .path .contenu .row .col {
@@ -10909,16 +10919,14 @@ body .aboutme .front .button {
   padding: 10px 22px;
   border-radius: 6px;
   border: none;
-  color: var(--l_white);
   cursor: pointer;
-  background-color: var(--l_black);
   transition: all 0.2s ease;
   z-index: 4;
   transform: rotate(30deg); }
   body .aboutme .front .button:active {
     transform: scale(0.86); }
-body .aboutme .button:before,
-body .aboutme .button:after {
+body .aboutme .front .button:before,
+body .aboutme .front .button:after {
   position: absolute;
   content: "";
   width: 100%;
@@ -10927,9 +10935,8 @@ body .aboutme .button:after {
   transform: translateX(-50%);
   z-index: -1000;
   background-repeat: no-repeat; }
-body .aboutme .button:hover:before {
+body .aboutme .front .button:hover:before {
   top: -70%;
-  background-image: radial-gradient(circle, var(--d_navy) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--d_navy) 20%, transparent 30%), radial-gradient(circle, var(--d_navy) 20%, transparent 20%), radial-gradient(circle, var(--d_navy) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--d_navy) 15%, transparent 20%), radial-gradient(circle, var(--d_navy) 20%, transparent 20%), radial-gradient(circle, var(--d_navy) 20%, transparent 20%), radial-gradient(circle, var(--d_navy) 20%, transparent 20%), radial-gradient(circle, var(--d_navy) 20%, transparent 20%);
   background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
   background-position: 50% 120%;
   animation: greentopBubbles 0.6s ease; }
@@ -10941,9 +10948,8 @@ body .aboutme .button:hover:before {
   100% {
     background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; } }
-body .aboutme .button:hover::after {
+body .aboutme .front .button:hover::after {
   bottom: -70%;
-  background-image: radial-gradient(circle, var(--d_navy) 20%, transparent 20%), radial-gradient(circle, var(--d_navy) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--d_navy) 15%, transparent 20%), radial-gradient(circle, var(--d_navy) 20%, transparent 20%), radial-gradient(circle, var(--d_navy) 20%, transparent 20%), radial-gradient(circle, var(--d_navy) 20%, transparent 20%), radial-gradient(circle, var(--d_navy) 20%, transparent 20%);
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
   background-position: 50% 0%;
   animation: greenbottomBubbles 0.6s ease; }
@@ -10955,23 +10961,23 @@ body .aboutme .button:hover::after {
   100% {
     background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; } }
-body .aboutme .origin_ball {
+body .aboutme .tennis_ball .origin_ball {
   position: relative;
   top: 45%;
   right: 22%;
   z-index: 2; }
-body .aboutme .origin_shadow {
+body .aboutme .tennis_ball .origin_shadow {
   position: relative;
   top: 79%;
   right: 22%;
   z-index: 1; }
-body .aboutme .ball {
+body .aboutme .tennis_ball .ball {
   position: relative;
   background: #dfff4f;
   border-radius: 50%;
   overflow: hidden;
   animation: ball_path 1s ease-out both; }
-body .aboutme .ball:before {
+body .aboutme .tennis_ball .ball:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -10981,7 +10987,7 @@ body .aboutme .ball:before {
   background: transparent;
   border: 5px solid #FFFFFF;
   left: -65%; }
-body .aboutme .ball:after {
+body .aboutme .tennis_ball .ball:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -10992,23 +10998,23 @@ body .aboutme .ball:after {
   border: 5px solid #FFFFFF;
   right: -65%; }
 @media screen and (min-width: 576px) {
-  body .aboutme .ball {
+  body .aboutme .tennis_ball .ball {
     width: 18px;
     height: 18px; } }
 @media screen and (min-width: 768px) {
-  body .aboutme .ball {
+  body .aboutme .tennis_ball .ball {
     width: 24px;
     height: 24px; } }
 @media screen and (min-width: 992px) {
-  body .aboutme .ball {
+  body .aboutme .tennis_ball .ball {
     width: 31px;
     height: 31px; } }
 @media screen and (min-width: 1200px) {
-  body .aboutme .ball {
+  body .aboutme .tennis_ball .ball {
     width: 37px;
     height: 37px; } }
 @media screen and (min-width: 1400px) {
-  body .aboutme .ball {
+  body .aboutme .tennis_ball .ball {
     width: 43px;
     height: 43px; } }
 

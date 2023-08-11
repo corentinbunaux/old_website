@@ -49,7 +49,7 @@ h2.7452965V41.6964188z"></path>
         </svg>
     </div>
 </div>
-<div class="row relative">
+<div class="row position-relative">
     <div class="col-10 d-flex justify-content-center align-items-center">
         <div class="container h-100">
             <div class="row h-100">
@@ -195,7 +195,7 @@ for (let elem = 0; elem < button.length; elem++) {
                     </svg>
                 </div>
             </div>
-            <div class="row relative">
+            <div class="row position-relative">
                 <div class="col-10 d-flex justify-content-center align-items-center">
                     <div class="container h-100">
                         <div class="row h-100">
@@ -305,7 +305,7 @@ for (let elem = 0; elem < button.length; elem++) {
                                     </g>
                                 </svg>
                             </div>
-                            <div class="col h-100 relative">
+                            <div class="col h-100 position-relative">
                                 <div class="date_pcsi fs-3">
                                     <span class="y_2020">2020</span>
                                     <span class="tiret">-</span>
@@ -523,12 +523,7 @@ for (let elem = 0; elem < button.length; elem++) {
                 break;
 
             case 3:
-                contenu.innerHTML = `<style>
-                .bubbles {
-                    background-color: #272424;
-                }
-            </style>
-            <div class="row h-25 border_color_bottom">
+                contenu.innerHTML = `<div class="row h-25 border_color_bottom">
                 <div class="col-10 fs-1 fw-lighter d-flex justify-content-center align-items-center">
                     Ecole Nationale Supérieure des Mines de Saint-Etienne
                 </div>
