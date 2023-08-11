@@ -29,12 +29,12 @@
     }
 
     33% {
-        transform: translateY(-75%) rotate(-50deg);
+        transform: translateY(-150%) rotate(-50deg);
         animation-timing-function: ease-in-out;
     }
 
     66% {
-        transform: translateY(75%) rotate(50deg);
+        transform: translateY(150%) rotate(50deg);
         animation-timing-function: ease-in-out;
     }
 
@@ -452,6 +452,200 @@
 
 .light {
     &__body {
+        //background-color: var(--l_green);
+    }
+
+    &__header {
+        background-color: var(--l_blue);
+    }
+
+    &__profile {}
+
+    &__competences {
+        background-color: var(--l_blue);
+        border: solid 1px var(--l_black);
+
+        .progress_background {
+            background-color: var(--l_black);
+        }
+    }
+
+    &__projects {}
+
+    &__path {
+        .path_content {
+            background-color: var(--l_blue);
+            border: solid 2px var(--l_black);
+
+
+            .bubbles {
+                background-color: #272424;
+            }
+
+            .prez {
+                background-color: var(--l_black);
+                color: var(--l_white);
+            }
+
+            .button {
+                --text-stroke-color: var(--l_white);
+                --animation-color: var(--l_green);
+            }
+
+            .mse_date {
+                color: var(--l_white);
+            }
+
+            .cta:before {
+                background: var(--l_green);
+            }
+
+            .cta span {
+                color: var(--l_white);
+            }
+
+            .cta svg {
+                stroke: var(--l_white);
+            }
+
+            .cta:hover:before {
+                background: var(--l_green);
+            }
+
+            .bande {
+                background-color: darken(#81A3A7, 30%);
+                border: double 10px var(--l_white);
+            }
+
+            .border_color {
+                &_top {
+                    border-top: solid 1px var(--l_black);
+                }
+
+                &_bottom {
+                    border-bottom: solid 1px var(--l_black);
+                }
+
+                &_left {
+                    border-left: solid 1px var(--l_black);
+                }
+
+                &_right {
+                    border-right: solid 1px var(--l_black);
+                }
+            }
+
+            .pcsi {
+                background-color: var(--l_black);
+                color: var(--l_white);
+                border-right: solid 2px var(--l_white);
+                border-left: solid 2px var(--l_white);
+
+                .maj {
+                    color: var(--l_green);
+                }
+            }
+
+            .year {
+                &_top {
+                    border-top: double 5px var(--l_white);
+                }
+
+                &_bottom {
+                    border-bottom: double 5px var(--l_white);
+                }
+
+                &_left {
+                    border-left: double 5px var(--l_white);
+                }
+
+                &_right {
+                    border-right: double 5px var(--l_white);
+                }
+            }
+        }
+
+        .date {
+            &_lycee {
+                background-color: var(--l_grey);
+                border: solid 2px var(--l_white);
+                border-radius: 15% 40%;
+                color: var(--l_white);
+            }
+
+            &_pcsi {
+                color: var(--l_white);
+            }
+        }
+
+        .col_border {
+            border: solid 1px var(--l_black);
+        }
+
+        .progress_path {
+            &::after {
+                border: solid 1px var(--d_black);
+                background-color: var(--l_blue);
+            }
+
+            .charging {
+                background-color: var(--l_grey);
+                border: solid 1px var(--l_blue);
+            }
+
+            .checked {
+                background-color: var(--l_grey);
+            }
+
+            .btn_path {
+                border: solid 2px var(--l_black);
+
+                &:hover {
+                    background-color: var(--l_grey);
+                    border: solid 1px var(--l_white);
+                }
+            }
+        }
+    }
+
+    &__aboutme {
+        .front {
+            .button {
+                color: var(--l_black);
+                background-color: var(--l_blue);
+            }
+
+            .button:hover:before {
+                background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, transparent 20%, var(--l_blue) 20%, transparent 30%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%);
+            }
+
+            .button:hover::after {
+                background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%);
+            }
+        }
+    }
+
+    &__footer {
+        background-color: var(--l_blue);
+    }
+}
+
+.dark {
+    &__body {
         background-color: var(--l_green);
     }
 
@@ -661,57 +855,7 @@
     }
 }
 
-.dark {
-    &__body {}
-
-    &__header {}
-
-    &__profile {}
-
-    &__competences {}
-
-    &__projects {}
-
-    &__path {
-        .progress_path {
-            &::after {
-                border: solid 1px var(--l_white);
-            }
-        }
-    }
-
-    &__aboutme {}
-
-    &__footer {}
-}
-
 body {
-    .dimensions {
-        @media (min-width : 0px) {
-            height: 250px;
-        }
-
-        @media (min-width : 576px) {
-            height: 300px;
-        }
-
-        @media (min-width : 768px) {
-            height: 385px;
-        }
-
-        @media (min-width : 992px) {
-            height: 500px;
-        }
-
-        @media (min-width : 1200px) {
-            height: 590px;
-        }
-
-        @media (min-width : 1400px) {
-            height: 690px;
-        }
-    }
-
     header {
         .logo {
             height: 40px;
@@ -808,129 +952,128 @@ body {
 
     }
 
-    .profile {
-        .name {
-            width: fit-content;
-            transition: all 0.5s;
+    section {
+        height: 95vh;
+        width: 100vw;
+    }
 
-            &:hover {
-                transform: scale(1.1) rotateZ(360deg);
-            }
+    .welcome {
+        img {
+            background: url(./../aurore.jpg) 50% 40%;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
-        .welcome {
+        .message {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 40%;
+            height: 50vh;
             width: 100%;
             top: 40%;
 
 
             .letter {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50rem;
+                background-color: transparent;
+                color: white;
 
-                @media screen and(max-width:991px) {
-                    display: none;
+
+                &__B {
+                    .wave {
+                        animation: wave_animation 4s 0s infinite both;
+                    }
+
+                    position: relative;
+                    top: 0%;
                 }
 
-                @media screen and (min-width: 992px) {
+                &__I {
+                    .wave {
+                        animation: wave_animation 4s 0.125s infinite both;
+                    }
 
-                    height: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50rem;
+                    position: relative;
+                    bottom: 10%;
+                }
 
-
-                    &__B {
+                &__E {
+                    &--first {
                         .wave {
-                            animation: wave_animation 4s 0s infinite both;
+                            animation: wave_animation 4s 0.25s infinite both;
+                        }
+
+                        position: relative;
+                        bottom: 15%;
+                    }
+
+                    &--second {
+                        .wave {
+                            animation: wave_animation 4s 0.625s infinite both;
+                        }
+
+                        position: relative;
+                        top: 10%;
+                    }
+
+                    &--third {
+                        .wave {
+                            animation: wave_animation 4s 1s infinite both;
                         }
 
                         position: relative;
                         top: 0%;
                     }
+                }
 
-                    &__I {
+                &__N {
+                    &--first {
                         .wave {
-                            animation: wave_animation 4s 0.25s infinite both;
+                            animation: wave_animation 4s 0.375s infinite both;
                         }
 
                         position: relative;
                         bottom: 10%;
                     }
 
-                    &__E {
-                        &--first {
-                            .wave {
-                                animation: wave_animation 4s 0.5s infinite both;
-                            }
-
-                            position: relative;
-                            bottom: 15%;
-                        }
-
-                        &--second {
-                            .wave {
-                                animation: wave_animation 4s 1.25s infinite both;
-                            }
-
-                            position: relative;
-                            top: 10%;
-                        }
-
-                        &--third {
-                            .wave {
-                                animation: wave_animation 4s 2s infinite both;
-                            }
-
-                            position: relative;
-                            top: 0%;
-                        }
-                    }
-
-                    &__N {
-                        &--first {
-                            .wave {
-                                animation: wave_animation 4s 0.75s infinite both;
-                            }
-
-                            position: relative;
-                            bottom: 10%;
-                        }
-
-                        &--second {
-                            .wave {
-                                animation: wave_animation 4s 1.5s infinite both;
-                            }
-
-                            position: relative;
-                            top: 15%;
-                        }
-                    }
-
-                    &__V {
+                    &--second {
                         .wave {
-                            animation: wave_animation 4s 1s infinite both;
+                            animation: wave_animation 4s 0.75s infinite both;
                         }
 
                         position: relative;
-                        top : 0%;
-                    }
-
-                    &__U {
-                        .wave {
-                            animation: wave_animation 4s 1.75s infinite both;
-                        }
-
-                        position: relative;
-                        top: 10%;
+                        top: 15%;
                     }
                 }
+
+                &__V {
+                    .wave {
+                        animation: wave_animation 4s 0.5s infinite both;
+                    }
+
+                    position: relative;
+                    top : 0%;
+                }
+
+                &__U {
+                    .wave {
+                        animation: wave_animation 4s 0.875s infinite both;
+                    }
+
+                    position: relative;
+                    top: 10%;
+                }
+
 
             }
         }
     }
+
+    .profile {}
 
     .projects {}
 
@@ -1130,6 +1273,82 @@ body {
     .aboutme {
 
         .front {
+            .film {
+                .card-container {
+                    width: fit-content;
+                    height: fit-content;
+                    position: relative;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    z-index: 1000;
+                }
+
+                .card {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                }
+
+                .card .front-content {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+                }
+
+                .card .front-content p {
+                    font-size: 32px;
+                    font-weight: 700;
+                    opacity: 1;
+                    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+                }
+
+                .card .content {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 10px;
+                    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+                    color: #e8e8e8;
+                    padding: 20px;
+                    line-height: 1.5;
+                    border-radius: 5px;
+                    pointer-events: none;
+                    transform: translateY(-96%);
+                    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+                }
+
+                .card .content .heading {
+                    font-size: 32px;
+                    font-weight: 700;
+                }
+
+                .card:hover .content {
+                    transform: translateY(0);
+                }
+
+                .card:hover .front-content {
+                    transform: translateY(50%);
+                }
+
+                .card:hover .front-content p {
+                    opacity: 0;
+                }
+            }
+
             .button {
                 padding: 10px 22px;
                 border-radius: 6px;

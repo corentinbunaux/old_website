@@ -23,10 +23,10 @@
 </head>
 
 <body class="light__body">
-    <header class="sticky-top shadow-sm light__header">
-        <nav class="navbar navbar-expand-lg navbar-light mb-5">
+    <header class="sticky-top light__header">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <div class="navbar-brand ms-lg-5 ms-md-4 ms-sm-3">
+                <!--<div class="navbar-brand ms-lg-5 ms-md-4 ms-sm-3">
                     <label id="theme-toggle-button">
                         <input type="checkbox" id="toggle" class="darkmode">
                         <svg viewBox="0 0 69.667 44" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -116,7 +116,7 @@
                             </g>
                         </svg>
                     </label>
-                </div>
+                </div>-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -145,48 +145,63 @@
             </div>
         </nav>
     </header>
-    <section id="profile">
-        <div class="container profile light__profile p-3 mb-5">
-            <div class="row dimensions">
-                <div class="col-6 d-flex flex-column justify-content-center align-items-center">
-                    <div class="name p-3 mt-2 mb-2 fs-1 fs-md-2 fs-lg-3 fw-light p-4 rounded-pill text-center">
-                        Corentin Bunaux
+    <section id="welcome" class="position-relative welcome">
+        <img src="" alt="" class="position-absolute h-100 w-100">
+        <div class="container-fluid position-absolute h-100 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row message">
+                    <div class="col letter letter__B">
+                        <div class="fs-1 fw-bold wave">B
+                        </div>
                     </div>
-                    <div class="row welcome p-3">
-                        <div class="col m-md-1 mg-lg-2 letter letter__B">
-                            <div class="fs-3 wave">B
-                            </div>
-                        </div>
-                        <div class="col m-md-1 mg-lg-2 letter letter__I">
-                            <div class="fs-3 wave">i</div>
-                        </div>
-                        <div class="col m-md-1 mg-lg-2 letter letter__E--first">
-                            <div class="fs-3 wave">e</div>
-                        </div>
-                        <div class="col m-md-1 mg-lg-2 letter letter__N--first">
-                            <div class="fs-3 wave">n</div>
-                        </div>
-                        <div class="col m-md-1 mg-lg-2 letter letter__V">
-                            <div class="fs-3 wave">v</div>
-                        </div>
-                        <div class="col m-md-1 mg-lg-2 letter letter__E--second">
-                            <div class="fs-3 wave">e</div>
-                        </div>
-                        <div class="col m-md-1 mg-lg-2 letter letter__N--second">
-                            <div class="fs-3 wave">n</div>
-                        </div>
-                        <div class="col m-md-1 mg-lg-2 letter letter__U">
-                            <div class="fs-3 wave">u</div>
-                        </div>
-                        <div class="col m-md-1 mg-lg-2 letter letter__E--third">
-                            <div class="fs-3 wave">e</div>
+                    <div class="col letter letter__I">
+                        <div class="fs-1 fw-bold wave">I</div>
+                    </div>
+                    <div class="col letter letter__E--first">
+                        <div class="fs-1 fw-bold wave">E</div>
+                    </div>
+                    <div class="col letter letter__N--first">
+                        <div class="fs-1 fw-bold wave">N</div>
+                    </div>
+                    <div class="col letter letter__V">
+                        <div class="fs-1 fw-bold wave">V</div>
+                    </div>
+                    <div class="col letter letter__E--second">
+                        <div class="fs-1 fw-bold wave">E</div>
+                    </div>
+                    <div class="col letter letter__N--second">
+                        <div class="fs-1 fw-bold wave">N</div>
+                    </div>
+                    <div class="col letter letter__U">
+                        <div class="fs-1 fw-bold wave">U</div>
+                    </div>
+                    <div class="col letter letter__E--third">
+                        <div class="fs-1 fw-bold wave">E</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="profile" class="profile">
+        <div class="container light__profile h-100">
+            <div class="row h-100">
+                <div class="col d-flex align-items-center p-1 p-sm-2 p-md-3 p-lg-5">
+                    <img src="Photo_CV.jpg" alt="Photo" class="img-fluid"></img>
+                </div>
+                <div class="col-md-4 col-lg-6 d-flex flex-column p-lg-5">
+                    <div class="row h-25 d-flex justify-content-center align-items-end fs-1 fw-bold">Bonjour !
+                    </div>
+                    <div
+                        class="row h-50 border-end border-bottom p-lg-5 fs-4 fw-light d-flex justify-content-center align-items-center">
+                        <div>
+                            <span>Je m'appelle</span> <strong>Corentin Bunaux</strong> <span>.</span> <br><span>Je suis
+                                étudiant
+                                ingénieur à l'école des</span> <strong>Mines de Saint-Etienne</strong>
+                            <span>,cursus</span> <strong>ISMIN</strong><span>.</span>
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex align-items-center p-2 p-sm-3 p-md-4 p-lg-5 m-2 m-sm-3 m-md-4 m-lg-5">
-                    <img src="Photo_CV.jpg" alt="Photo"
-                        class="img-fluid rounded-1 rounded-sm-2 rounded-md-3 rounded-lg-4 border border-2 border-white"></img>
-                </div>
+
             </div>
         </div>
     </section>
@@ -582,13 +597,34 @@
         <div class="container aboutme light__aboutme p-3 mb-5 dimensions position-relative">
             <div class="container position-absolute top-0 start-0 h-100 front">
                 <div class="row h-100">
-                    <div class="col">
-                        <div class="row h-50 border">Films
-
+                    <div class="col-6 border border-dark">
+                        <div class="row h-50">
+                            <div class="d-flex justify-content-center mt-4">
+                                <span class="fw-bold fs-1">A propos de moi</span>
+                            </div>
+                            <div class="fw-lighter fs-2">
+                                <div class="d-flex flex-column align-items-center border border-light">
+                                    <div>
+                                        <span>Passioné de</span> <span>TENNIS</span>
+                                    </div>
+                                    <span>depuis mon plus jeune âge</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row h-50 border">Musique</div>
+                        <div class="row h-50 border">
+                            <div class="col">
+                                <div class="fw-lighter row h-25">
+                                    <div class="d-flex flex-column align-items-center fs-4">
+
+                                    </div>
+                                </div>
+                                <div class="row h-75">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <div class="position-relative d-flex justify-content-end">
                             <button class="button position-absolute">
                                 PRESS !
