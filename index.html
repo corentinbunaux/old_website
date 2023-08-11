@@ -5,7 +5,7 @@
     <title>Portfolio Corentin Bunaux</title>
     <link rel="stylesheet" href="css/style.css">
 
-    <script type="module" src="darkmode.js"></script>
+    <!--<script type="module" src="darkmode.js"></script>-->
     <script type="module" src="path.js"></script>
 
     <!-- Bootstrap JS bundle -->
@@ -23,6 +23,7 @@
 </head>
 
 <body class="light__body">
+
     <header class="sticky-top light__header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -148,6 +149,7 @@
             </div>
         </nav>
     </header>
+
     <section id="welcome" class="position-relative welcome">
         <img src="" alt="" class="position-absolute h-100 w-100">
         <div class="container-fluid position-absolute h-100 d-flex justify-content-center align-items-center">
@@ -185,6 +187,7 @@
             </div>
         </div>
     </section>
+
     <section id="profile" class="profile">
         <div class="container light__profile h-100">
             <div class="row h-100">
@@ -268,19 +271,37 @@
             </div>
         </div>
     </section>
-    <section id="path">
-        <div class="container path light__path p-3 mb-5 dimensions">
-            <div class="row h-100">
-                <div class="col-1 col-2-sm col-3-md col-4-lg">
-                    <div class="progress_path d-flex flex-column justify-content-between align-items-center h-100">
-                        <div class="charging rounded-pill" id="charging"></div>
-                        <button class="rounded-circle btn_path"></button>
-                        <button class="rounded-circle btn_path"></button>
-                        <button class="rounded-circle btn_path"></button>
-                        <button class="rounded-circle btn_path"></button>
+
+    <section id="path" class="path light__path">
+        <div class="container-fluid">
+            <div class="row h-100 contenu">
+                <div class="col">
+                    <div class="row border slides"></div>
+                    <div class="row border progress_bar_placement">
+                        <div class="col-10 offset-1 progress_bar d-flex align-items-center justify-content-between">
+                            <div class="charging rounded-pill" id="charging"></div>
+                            <div class="btn_path rounded-circle checked"></div>
+                            <div class="btn_path rounded-circle"></div>
+                            <div class="btn_path rounded-circle"></div>
+                            <div class="btn_path rounded-circle"></div>
+                        </div>
+                    </div>
+                    <div class="row border slides"></div>
+                    <!--
+                <div class="col">
+                    <div class="row h-25"></div>
+                    <div
+                        class="row h-50 d-flex flex-column justify-content-center align-items-center fs-1 fw-lighter prez">
+                        Mon parcours
+                        <button data-text="Awesome" class="button btn_start mt-5">
+                            <span class="actual-text">&nbsp;Découvrir&nbsp;</span>
+                            <span class="hover-text" aria-hidden="true">&nbsp;Découvrir&nbsp;</span>
+                        </button>
                     </div>
                 </div>
-                <div class="col path_content">
+                -->
+
+                    <!--<div class="col path_content">
                     <div class="container contenu h-100 d-flex flex-column">
                         <div class="row h-25"></div>
                         <div
@@ -293,14 +314,14 @@
                         </div>
                         <div class="row h-25"></div>
                     </div>
+                </div>-->
                 </div>
             </div>
-        </div>
 
     </section>
 
     <section id="competences">
-        <div class="container competences light__competences p-3 mb-5">
+        <div class="container competences light__competences">
             <div class="row">
                 <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">

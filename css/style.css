@@ -10542,75 +10542,124 @@ textarea.form-control-lg {
   border: solid 1px var(--l_black); }
   .light__competences .progress_background {
     background-color: var(--l_black); }
-.light__path .path_content {
-  background-color: var(--l_blue);
-  border: solid 2px var(--l_black); }
-  .light__path .path_content .bubbles {
-    background-color: #272424; }
-  .light__path .path_content .prez {
-    background-color: var(--l_black);
-    color: var(--l_white); }
-  .light__path .path_content .button {
+.light__path {
+        /*.path_content {
+            background-color: var(--l_blue);
+            border: solid 2px var(--l_black);
+
+
+            .bubbles {
+                background-color: #272424;
+            }
+
+            .mse_date {
+                color: var(--l_white);
+            }
+
+            .cta:before {
+                background: var(--l_green);
+            }
+
+            .cta span {
+                color: var(--l_white);
+            }
+
+            .cta svg {
+                stroke: var(--l_white);
+            }
+
+            .cta:hover:before {
+                background: var(--l_green);
+            }
+
+            .bande {
+                background-color: darken(#81A3A7, 30%);
+                border: double 10px var(--l_white);
+            }
+
+            .border_color {
+                &_top {
+                    border-top: solid 1px var(--l_black);
+                }
+
+                &_bottom {
+                    border-bottom: solid 1px var(--l_black);
+                }
+
+                &_left {
+                    border-left: solid 1px var(--l_black);
+                }
+
+                &_right {
+                    border-right: solid 1px var(--l_black);
+                }
+            }
+
+            .pcsi {
+                background-color: var(--l_black);
+                color: var(--l_white);
+                border-right: solid 2px var(--l_white);
+                border-left: solid 2px var(--l_white);
+
+                .maj {
+                    color: var(--l_green);
+                }
+            }
+
+            .year {
+                &_top {
+                    border-top: double 5px var(--l_white);
+                }
+
+                &_bottom {
+                    border-bottom: double 5px var(--l_white);
+                }
+
+                &_left {
+                    border-left: double 5px var(--l_white);
+                }
+
+                &_right {
+                    border-right: double 5px var(--l_white);
+                }
+            }
+        }
+
+        .date {
+            &_lycee {
+                background-color: var(--l_grey);
+                border: solid 2px var(--l_white);
+                border-radius: 15% 40%;
+                color: var(--l_white);
+            }
+
+            &_pcsi {
+                color: var(--l_white);
+            }
+        }
+
+        .col_border {
+            border: solid 1px var(--l_black);
+        }*/ }
+  .light__path .contenu .button {
     --text-stroke-color: var(--l_white);
     --animation-color: var(--l_green); }
-  .light__path .path_content .mse_date {
-    color: var(--l_white); }
-  .light__path .path_content .cta:before {
-    background: var(--l_green); }
-  .light__path .path_content .cta span {
-    color: var(--l_white); }
-  .light__path .path_content .cta svg {
-    stroke: var(--l_white); }
-  .light__path .path_content .cta:hover:before {
-    background: var(--l_green); }
-  .light__path .path_content .bande {
-    background-color: #3b5254;
-    border: double 10px var(--l_white); }
-  .light__path .path_content .border_color_top {
-    border-top: solid 1px var(--l_black); }
-  .light__path .path_content .border_color_bottom {
-    border-bottom: solid 1px var(--l_black); }
-  .light__path .path_content .border_color_left {
-    border-left: solid 1px var(--l_black); }
-  .light__path .path_content .border_color_right {
-    border-right: solid 1px var(--l_black); }
-  .light__path .path_content .pcsi {
+  .light__path .contenu .prez {
     background-color: var(--l_black);
-    color: var(--l_white);
-    border-right: solid 2px var(--l_white);
-    border-left: solid 2px var(--l_white); }
-    .light__path .path_content .pcsi .maj {
-      color: var(--l_green); }
-  .light__path .path_content .year_top {
-    border-top: double 5px var(--l_white); }
-  .light__path .path_content .year_bottom {
-    border-bottom: double 5px var(--l_white); }
-  .light__path .path_content .year_left {
-    border-left: double 5px var(--l_white); }
-  .light__path .path_content .year_right {
-    border-right: double 5px var(--l_white); }
-.light__path .date_lycee {
-  background-color: var(--l_grey);
-  border: solid 2px var(--l_white);
-  border-radius: 15% 40%;
-  color: var(--l_white); }
-.light__path .date_pcsi {
-  color: var(--l_white); }
-.light__path .col_border {
-  border: solid 1px var(--l_black); }
-.light__path .progress_path::after {
-  border: solid 1px var(--d_black);
-  background-color: var(--l_blue); }
-.light__path .progress_path .charging {
-  background-color: var(--l_grey);
-  border: solid 1px var(--l_blue); }
-.light__path .progress_path .checked {
-  background-color: var(--l_grey); }
-.light__path .progress_path .btn_path {
-  border: solid 2px var(--l_black); }
-  .light__path .progress_path .btn_path:hover {
-    background-color: var(--l_grey);
-    border: solid 1px var(--l_white); }
+    color: var(--l_white); }
+  .light__path .contenu .progress_bar_placement .progress_bar::after {
+    border: solid 1px var(--d_black);
+    background-color: var(--l_blue); }
+  .light__path .contenu .progress_bar_placement .progress_bar .btn_path {
+    border: solid 2px var(--l_black);
+    background-color: var(--l_white); }
+    .light__path .contenu .progress_bar_placement .progress_bar .btn_path:hover {
+      background-color: var(--l_grey);
+      border: solid 1px var(--l_white); }
+  .light__path .contenu .progress_bar_placement .progress_bar .charging {
+    background-color: var(--l_grey); }
+  .light__path .contenu .progress_bar_placement .progress_bar .checked {
+    background-color: var(--l_grey); }
 .light__aboutme .front .button {
   color: var(--l_black);
   background-color: var(--l_blue); }
@@ -10639,75 +10688,87 @@ textarea.form-control-lg {
   border: solid 1px var(--l_black); }
   .dark__competences .progress_background {
     background-color: var(--l_black); }
-.dark__path .path_content {
-  background-color: var(--l_blue);
-  border: solid 2px var(--l_black); }
-  .dark__path .path_content .bubbles {
-    background-color: #272424; }
-  .dark__path .path_content .prez {
-    background-color: var(--l_black);
-    color: var(--l_white); }
-  .dark__path .path_content .button {
-    --text-stroke-color: var(--l_white);
-    --animation-color: var(--l_green); }
-  .dark__path .path_content .mse_date {
-    color: var(--l_white); }
-  .dark__path .path_content .cta:before {
-    background: var(--l_green); }
-  .dark__path .path_content .cta span {
-    color: var(--l_white); }
-  .dark__path .path_content .cta svg {
-    stroke: var(--l_white); }
-  .dark__path .path_content .cta:hover:before {
-    background: var(--l_green); }
-  .dark__path .path_content .bande {
-    background-color: #3b5254;
-    border: double 10px var(--l_white); }
-  .dark__path .path_content .border_color_top {
-    border-top: solid 1px var(--l_black); }
-  .dark__path .path_content .border_color_bottom {
-    border-bottom: solid 1px var(--l_black); }
-  .dark__path .path_content .border_color_left {
-    border-left: solid 1px var(--l_black); }
-  .dark__path .path_content .border_color_right {
-    border-right: solid 1px var(--l_black); }
-  .dark__path .path_content .pcsi {
-    background-color: var(--l_black);
-    color: var(--l_white);
-    border-right: solid 2px var(--l_white);
-    border-left: solid 2px var(--l_white); }
-    .dark__path .path_content .pcsi .maj {
-      color: var(--l_green); }
-  .dark__path .path_content .year_top {
-    border-top: double 5px var(--l_white); }
-  .dark__path .path_content .year_bottom {
-    border-bottom: double 5px var(--l_white); }
-  .dark__path .path_content .year_left {
-    border-left: double 5px var(--l_white); }
-  .dark__path .path_content .year_right {
-    border-right: double 5px var(--l_white); }
-.dark__path .date_lycee {
-  background-color: var(--l_grey);
-  border: solid 2px var(--l_white);
-  border-radius: 15% 40%;
-  color: var(--l_white); }
-.dark__path .date_pcsi {
-  color: var(--l_white); }
-.dark__path .col_border {
-  border: solid 1px var(--l_black); }
-.dark__path .progress_path::after {
-  border: solid 1px var(--d_black);
-  background-color: var(--l_blue); }
-.dark__path .progress_path .charging {
-  background-color: var(--l_grey);
-  border: solid 1px var(--l_blue); }
-.dark__path .progress_path .checked {
-  background-color: var(--l_grey); }
-.dark__path .progress_path .btn_path {
-  border: solid 2px var(--l_black); }
-  .dark__path .progress_path .btn_path:hover {
+.dark__path {
+        /*.progress_path {
+            &::after {
+                border: solid 1px var(--d_black);
+                background-color: var(--l_blue);
+            }
+
+            .charging {
+                background-color: var(--l_grey);
+                border: solid 1px var(--l_blue);
+            }
+
+            .checked {
+                background-color: var(--l_grey);
+            }
+
+            .btn_path {
+                border: solid 2px var(--l_black);
+
+                &:hover {
+                    background-color: var(--l_grey);
+                    border: solid 1px var(--l_white);
+                }
+            }
+        }*/ }
+  .dark__path .path_content {
+    background-color: var(--l_blue);
+    border: solid 2px var(--l_black); }
+    .dark__path .path_content .bubbles {
+      background-color: #272424; }
+    .dark__path .path_content .prez {
+      background-color: var(--l_black);
+      color: var(--l_white); }
+    .dark__path .path_content .button {
+      --text-stroke-color: var(--l_white);
+      --animation-color: var(--l_green); }
+    .dark__path .path_content .mse_date {
+      color: var(--l_white); }
+    .dark__path .path_content .cta:before {
+      background: var(--l_green); }
+    .dark__path .path_content .cta span {
+      color: var(--l_white); }
+    .dark__path .path_content .cta svg {
+      stroke: var(--l_white); }
+    .dark__path .path_content .cta:hover:before {
+      background: var(--l_green); }
+    .dark__path .path_content .bande {
+      background-color: #3b5254;
+      border: double 10px var(--l_white); }
+    .dark__path .path_content .border_color_top {
+      border-top: solid 1px var(--l_black); }
+    .dark__path .path_content .border_color_bottom {
+      border-bottom: solid 1px var(--l_black); }
+    .dark__path .path_content .border_color_left {
+      border-left: solid 1px var(--l_black); }
+    .dark__path .path_content .border_color_right {
+      border-right: solid 1px var(--l_black); }
+    .dark__path .path_content .pcsi {
+      background-color: var(--l_black);
+      color: var(--l_white);
+      border-right: solid 2px var(--l_white);
+      border-left: solid 2px var(--l_white); }
+      .dark__path .path_content .pcsi .maj {
+        color: var(--l_green); }
+    .dark__path .path_content .year_top {
+      border-top: double 5px var(--l_white); }
+    .dark__path .path_content .year_bottom {
+      border-bottom: double 5px var(--l_white); }
+    .dark__path .path_content .year_left {
+      border-left: double 5px var(--l_white); }
+    .dark__path .path_content .year_right {
+      border-right: double 5px var(--l_white); }
+  .dark__path .date_lycee {
     background-color: var(--l_grey);
-    border: solid 1px var(--l_white); }
+    border: solid 2px var(--l_white);
+    border-radius: 15% 40%;
+    color: var(--l_white); }
+  .dark__path .date_pcsi {
+    color: var(--l_white); }
+  .dark__path .col_border {
+    border: solid 1px var(--l_black); }
 .dark__aboutme .front .button {
   color: var(--l_black);
   background-color: var(--l_blue); }
@@ -10846,10 +10907,145 @@ body .welcome .message {
         animation: wave_animation 4s 0.875s infinite both; }
 body .profile .langues .row {
   height: 30%; }
-body .path_content {
-  /* this is the text, when you hover on button */
-  /* hover */ }
-  body .path_content .button {
+body .path {
+        /*
+        &_content {
+            
+
+            .cta {
+                position: relative;
+                margin: auto;
+                padding: 1%;
+                transition: all 0.2s ease;
+                border: none;
+                background: none;
+                width: fit-content;
+            }
+
+            .cta:before {
+                content: "";
+                position: absolute;
+                top: 0%;
+                left: 0;
+                display: block;
+                border-radius: 50px;
+                width: 20%;
+                height: 100%;
+                transition: all 0.3s ease;
+            }
+
+            .cta span {
+                position: relative;
+                font-family: "Ubuntu", sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 0.05em;
+            }
+
+            .cta svg {
+                position: relative;
+                top: 0;
+                margin-left: 10px;
+                fill: none;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 2;
+                transform: translateX(-5px);
+                transition: all 0.3s ease;
+            }
+
+            .cta:hover:before {
+                width: 100%;
+            }
+
+            .cta:hover svg {
+                transform: translateX(0);
+            }
+
+            .cta:active {
+                transform: scale(0.95);
+            }
+
+            .costume {
+                background-image: url(./../costume.jpeg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .bac {
+                position: absolute;
+                height: 100%;
+                width: 83%;
+            }
+
+            .date {
+                &_lycee {
+                    position: absolute;
+                    top: 25%;
+                    left: 10/12%;
+                    width: 30%;
+                    height: 50%;
+                    border-radius: 15% 40%;
+                }
+
+                &_pcsi {
+                    position: absolute;
+                    top: 25%;
+                    left: 25%;
+                    width: 50%;
+                    height: 50%;
+
+                    .y_2020 {
+                        position: relative;
+                        top: 25%;
+                        left: 0%;
+                    }
+
+                    .tiret {
+                        position: relative;
+                        top: 42%;
+                        left: 0%;
+                    }
+
+                    .y_2021 {
+                        position: relative;
+                        top: 40%;
+                        left: 50%;
+                    }
+                }
+            }
+        }
+        }*/ }
+  body .path .contenu .slides {
+    height: 48%; }
+  body .path .contenu .progress_bar_placement {
+    height: 4%; }
+  body .path .contenu .progress_bar {
+    position: relative; }
+    body .path .contenu .progress_bar::after {
+      content: '';
+      position: absolute;
+      height: 50%;
+      width: 105%;
+      top: 25%;
+      z-index: -2;
+      border-radius: 2rem;
+      background-color: transparent; }
+    body .path .contenu .progress_bar .btn_path {
+      height: 100%;
+      width: 2%;
+      transition: all 0.3s ease-in-out; }
+      body .path .contenu .progress_bar .btn_path:hover {
+        transform: scale(1.2); }
+      body .path .contenu .progress_bar .btn_path:active {
+        transform: scale(0.5); }
+    body .path .contenu .progress_bar .charging {
+      position: absolute;
+      width: 0%;
+      height: 50%;
+      z-index: -1;
+      transition: width 0.2s ease-in; }
+  body .path .contenu .button {
     margin: 0;
     height: auto;
     background: transparent;
@@ -10866,7 +11062,7 @@ body .path_content {
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color); }
-  body .path_content .hover-text {
+  body .path .contenu .hover-text {
     position: absolute;
     box-sizing: border-box;
     content: attr(data-text);
@@ -10877,111 +11073,9 @@ body .path_content {
     overflow: hidden;
     transition: 0.5s;
     -webkit-text-stroke: 1px var(--animation-color); }
-  body .path_content .button:hover .hover-text {
+  body .path .contenu .button:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color)); }
-  body .path_content .cta {
-    position: relative;
-    margin: auto;
-    padding: 1%;
-    transition: all 0.2s ease;
-    border: none;
-    background: none;
-    width: fit-content; }
-  body .path_content .cta:before {
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    width: 20%;
-    height: 100%;
-    transition: all 0.3s ease; }
-  body .path_content .cta span {
-    position: relative;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.05em; }
-  body .path_content .cta svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease; }
-  body .path_content .cta:hover:before {
-    width: 100%; }
-  body .path_content .cta:hover svg {
-    transform: translateX(0); }
-  body .path_content .cta:active {
-    transform: scale(0.95); }
-  body .path_content .costume {
-    background-image: url(./../costume.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat; }
-  body .path_content .bac {
-    position: absolute;
-    height: 100%;
-    width: 83%; }
-  body .path_content .date_lycee {
-    position: absolute;
-    top: 25%;
-    left: 10/12%;
-    width: 30%;
-    height: 50%;
-    border-radius: 15% 40%; }
-  body .path_content .date_pcsi {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 50%;
-    height: 50%; }
-    body .path_content .date_pcsi .y_2020 {
-      position: relative;
-      top: 25%;
-      left: 0%; }
-    body .path_content .date_pcsi .tiret {
-      position: relative;
-      top: 42%;
-      left: 0%; }
-    body .path_content .date_pcsi .y_2021 {
-      position: relative;
-      top: 40%;
-      left: 50%; }
-body .path .contenu .row {
-  height: 33%; }
-  body .path .contenu .row .col {
-    max-height: 100%; }
-body .path .progress_path {
-  position: relative;
-  max-height: 50%;
-  top: 25%; }
-  body .path .progress_path::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 15%;
-    z-index: -2;
-    border-radius: 2rem; }
-  body .path .progress_path .charging {
-    position: absolute;
-    width: 15%;
-    height: 0%;
-    z-index: -1;
-    transition: height 0.2s ease-in; }
-  body .path .progress_path .btn_path {
-    height: 10%;
-    width: 40%;
-    transition: all 0.3s ease-in-out; }
-    body .path .progress_path .btn_path:hover {
-      transform: scale(1.2); }
-    body .path .progress_path .btn_path:active {
-      transform: scale(0.5); }
 body .aboutme .front .film .card-container {
   width: fit-content;
   height: fit-content;
