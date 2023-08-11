@@ -10844,6 +10844,8 @@ body .welcome .message {
       top: 10%; }
       body .welcome .message .letter__U .wave {
         animation: wave_animation 4s 0.875s infinite both; }
+body .profile .langues .row {
+  height: 30%; }
 body .path_content {
   /* this is the text, when you hover on button */
   /* hover */ }

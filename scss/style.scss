@@ -1073,7 +1073,14 @@ body {
         }
     }
 
-    .profile {}
+    .profile {
+        .langues {
+            .row {
+                height: 30%;
+            }
+        }
+    }
+
 
     .projects {}
 
