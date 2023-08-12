@@ -10536,12 +10536,14 @@ textarea.form-control-lg {
   100% {
     transform: translate(3230%, 0%) rotate(45deg); } }
 .light__header {
-  background-color: var(--l_blue); }
+  background-color: var(--l_white); }
 .light__competences {
-  background-color: var(--l_blue);
-  border: solid 1px var(--l_black); }
-  .light__competences .progress_background {
-    background-color: var(--l_black); }
+  background: var(--l_white); }
+  .light__competences .all_rows .row .progress {
+    background: var(--l_blue); }
+    .light__competences .all_rows .row .progress .progress-bar {
+      background: var(--l_black);
+      color: var(--l_white); }
 .light__path {
   background-color: var(--l_green);
         /*.path_content {
@@ -11038,7 +11040,8 @@ body .path {
       height: 100%;
       width: 2%;
       transition: all 0.3s ease-in-out;
-      z-index: 2; }
+      z-index: 2;
+      opacity: 0; }
       body .path .contenu .progress_bar .btn_path:hover {
         transform: scale(1.2); }
       body .path .contenu .progress_bar .btn_path:active {
@@ -11080,6 +11083,10 @@ body .path {
   body .path .contenu .button:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color)); }
+body .competences .all_rows .row {
+  height: 16.66%; }
+  body .competences .all_rows .row .progress .progress-bar {
+    font-size: medium; }
 body .aboutme .front .film .card-container {
   width: fit-content;
   height: fit-content;

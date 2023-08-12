@@ -451,22 +451,26 @@
 }
 
 .light {
-    &__body {
-        //background-color: var(--l_green);
-    }
-
     &__header {
-        background-color: var(--l_blue);
+        background-color: var(--l_white);
     }
 
     &__profile {}
 
     &__competences {
-        background-color: var(--l_blue);
-        border: solid 1px var(--l_black);
+        background: var(--l_white);
 
-        .progress_background {
-            background-color: var(--l_black);
+        .all_rows {
+            .row {
+                .progress {
+                    background: var(--l_blue);
+
+                    .progress-bar {
+                        background: var(--l_black);
+                        color: var(--l_white);
+                    }
+                }
+            }
         }
     }
 
@@ -1092,9 +1096,6 @@ body {
         }
     }
 
-
-    .projects {}
-
     .path {
         .contenu {
             #decouvrir {
@@ -1128,6 +1129,7 @@ body {
                     width: 2%;
                     transition: all 0.3s ease-in-out;
                     z-index: 2;
+                    opacity: 0;
 
                     &:hover {
                         transform: scale(1.2);
@@ -1295,6 +1297,20 @@ body {
             }
         }
         }*/
+    }
+
+    .competences {
+        .all_rows {
+            .row {
+                height: 16.66%;
+
+                .progress {
+                    .progress-bar {
+                        font-size: medium;
+                    }
+                }
+            }
+        }
     }
 
     .aboutme {

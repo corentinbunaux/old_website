@@ -24,18 +24,22 @@ for (let elem = 0; elem < button.length; elem++) {
 
         charging.style.width = (elem * 33) + '%';
 
+        //fait déborder la barre au dernier point
         if (elem == button.length - 1) {
             charging.style.width = '103%';
         }
 
+        //anime les boutons selon celui activé
         for (let i = 0; i <= elem; i++) {
             button[i].classList.add('checked');
+            button[i + 1].classList.add('opacity-100');
         }
         for (let i = button.length - 1; i > elem; i--) {
             button[i].classList.remove('checked');
         }
-
-
+        for (let i = button.length - 1; i > elem + 1; i--) {
+            button[i].classList.remove('opacity-100');
+        }
     })
 };
 
