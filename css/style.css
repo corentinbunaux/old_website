@@ -10536,6 +10536,9 @@ textarea.form-control-lg {
   100% {
     transform: translate(3230%, 0%) rotate(45deg); } }
 .light__header {
+  background: var(--l_blue);
+  border-bottom: solid 1px var(--l_black); }
+.light__profile {
   background-color: var(--l_white); }
 .light__competences {
   background: var(--l_white); }
@@ -10544,6 +10547,8 @@ textarea.form-control-lg {
     .light__competences .all_rows .row .progress .progress-bar {
       background: var(--l_black);
       color: var(--l_white); }
+.light__projects {
+  background: var(--l_green); }
 .light__path {
   background-color: var(--l_green);
         /*.path_content {
@@ -10663,13 +10668,15 @@ textarea.form-control-lg {
     background-color: var(--l_grey); }
   .light__path .contenu .progress_bar_placement .progress_bar .checked {
     background-color: var(--l_grey); }
-.light__aboutme .front .button {
-  color: var(--l_black);
-  background-color: var(--l_blue); }
-.light__aboutme .front .button:hover:before {
-  background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--l_blue) 20%, transparent 30%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%); }
-.light__aboutme .front .button:hover::after {
-  background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%); }
+.light__aboutme {
+  background: var(--l_white); }
+  .light__aboutme .front .button {
+    color: var(--l_black);
+    background-color: var(--l_blue); }
+  .light__aboutme .front .button:hover:before {
+    background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--l_blue) 20%, transparent 30%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%); }
+  .light__aboutme .front .button:hover::after {
+    background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%); }
 .light__footer {
   background-color: var(--l_blue); }
 

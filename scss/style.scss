@@ -452,10 +452,13 @@
 
 .light {
     &__header {
-        background-color: var(--l_white);
+        background: var(--l_blue);
+        border-bottom: solid 1px var(--l_black);
     }
 
-    &__profile {}
+    &__profile {
+        background-color: var(--l_white);
+    }
 
     &__competences {
         background: var(--l_white);
@@ -474,7 +477,9 @@
         }
     }
 
-    &__projects {}
+    &__projects {
+        background: var(--l_green);
+    }
 
     &__path {
         background-color: var(--l_green);
@@ -624,6 +629,8 @@
     }
 
     &__aboutme {
+        background: var(--l_white);
+
         .front {
             .button {
                 color: var(--l_black);
@@ -1312,6 +1319,8 @@ body {
             }
         }
     }
+
+    .projects {}
 
     .aboutme {
 
