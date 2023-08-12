@@ -2,22 +2,23 @@ const button = document.querySelectorAll(".btn_path");
 const charging = document.querySelector("#charging");
 const contenu = document.querySelector(".contenu");
 const tennis = document.querySelector(".aboutme button");
+const decouvrir = document.getElementById('decouvrir');
+const path_slide_top = document.getElementById("slide_top");
+const path_slide_bottom = document.getElementById("slide_bottom");
+console.log(path_slide_bottom, path_slide_top);
+
+//découvre la barre de progression 
+function GenereProgression() {
+    decouvrir.innerHTML = ``;
+    decouvrir.style.zIndex = '-1000';
+}
+
+document.querySelector(".btn_start").addEventListener("click", function () {
+    GenereProgression();
+});
 
 
-//animation balle de tennis
-tennis.addEventListener("click", function () {
-    document.querySelector(".tennis_ball").innerHTML = `<div class="origin_ball">
-    <div class="ball border border-3 border-dark"></div>
-</div>`;
-})
-
-//bouton découvrir parcours
-/*document.querySelector(".btn_start").addEventListener("click", function () {
-    //button[0].classList.add('checked');
-    contenu.innerHTML = ``;
-})*/
-
-//caroussel parcours
+//évolution de la barre de progression au fil des clics + génération des slides
 for (let elem = 0; elem < button.length; elem++) {
     button[elem].addEventListener("click", function () {
 
@@ -34,9 +35,16 @@ for (let elem = 0; elem < button.length; elem++) {
             button[i].classList.remove('checked');
         }
 
-        console.log(button);
+
     })
 };
+
+//animation balle de tennis
+tennis.addEventListener("click", function () {
+    document.querySelector(".tennis_ball").innerHTML = `<div class="origin_ball">
+    <div class="ball border border-3 border-dark"></div>
+</div>`;
+});
 
 /*
         switch (elem) {

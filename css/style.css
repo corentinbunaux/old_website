@@ -10543,6 +10543,7 @@ textarea.form-control-lg {
   .light__competences .progress_background {
     background-color: var(--l_black); }
 .light__path {
+  background-color: var(--l_green);
         /*.path_content {
             background-color: var(--l_blue);
             border: solid 2px var(--l_black);
@@ -11016,6 +11017,8 @@ body .path {
             }
         }
         }*/ }
+  body .path .contenu #decouvrir {
+    z-index: 3; }
   body .path .contenu .slides {
     height: 48%; }
   body .path .contenu .progress_bar_placement {
@@ -11028,13 +11031,14 @@ body .path {
       height: 50%;
       width: 105%;
       top: 25%;
-      z-index: -2;
+      z-index: 0;
       border-radius: 2rem;
       background-color: transparent; }
     body .path .contenu .progress_bar .btn_path {
       height: 100%;
       width: 2%;
-      transition: all 0.3s ease-in-out; }
+      transition: all 0.3s ease-in-out;
+      z-index: 2; }
       body .path .contenu .progress_bar .btn_path:hover {
         transform: scale(1.2); }
       body .path .contenu .progress_bar .btn_path:active {
@@ -11043,7 +11047,7 @@ body .path {
       position: absolute;
       width: 0%;
       height: 50%;
-      z-index: -1;
+      z-index: 1;
       transition: width 0.2s ease-in; }
   body .path .contenu .button {
     margin: 0;

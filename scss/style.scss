@@ -473,6 +473,8 @@
     &__projects {}
 
     &__path {
+        background-color: var(--l_green);
+
         .contenu {
             .button {
                 --text-stroke-color: var(--l_white);
@@ -1095,6 +1097,10 @@ body {
 
     .path {
         .contenu {
+            #decouvrir {
+                z-index: 3;
+            }
+
             .slides {
                 height: 48%;
             }
@@ -1112,7 +1118,7 @@ body {
                     height: 50%;
                     width: 105%;
                     top: 25%;
-                    z-index: -2;
+                    z-index: 0;
                     border-radius: 2rem;
                     background-color: transparent;
                 }
@@ -1121,6 +1127,7 @@ body {
                     height: 100%;
                     width: 2%;
                     transition: all 0.3s ease-in-out;
+                    z-index: 2;
 
                     &:hover {
                         transform: scale(1.2);
@@ -1135,7 +1142,7 @@ body {
                     position: absolute;
                     width: 0%;
                     height: 50%;
-                    z-index: -1;
+                    z-index: 1;
                     transition: width 0.2s ease-in;
                 }
 
