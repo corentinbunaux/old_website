@@ -917,6 +917,8 @@ body {
     @media (orientation : landscape) {
 
         header {
+            width: 100vw;
+
             .logo {
                 height: 40px;
             }
@@ -1014,7 +1016,7 @@ body {
 
         section {
             height: 95vh;
-            width: 120vw;
+            width: 100vw;
         }
 
         .welcome {
@@ -1651,7 +1653,9 @@ body {
             }
         }
 
-        footer {}
+        footer {
+            width: 100vw;
+        }
     }
 
     @media (orientation : portrait) {

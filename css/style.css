@@ -10817,6 +10817,7 @@ textarea.form-control-lg {
 
 @media (orientation: landscape) {
   body header {
+    width: 100vw;
     /* The switch - the box around the slider */
     /* Hide default HTML checkbox */
     /* night sky background */
@@ -10878,7 +10879,7 @@ textarea.form-control-lg {
       opacity: 1; }
   body section {
     height: 95vh;
-    width: 120vw; }
+    width: 100vw; }
   body .welcome img {
     background: url(./../aurore.jpg) 50% 40%;
     background-size: cover;
@@ -11314,7 +11315,9 @@ textarea.form-control-lg {
   body .aboutme .tennis_ball .ball {
     width: 43px;
     height: 43px; } }
-
+@media (orientation: landscape) {
+  body footer {
+    width: 100vw; } }
 @media (orientation: portrait) {
   body {
     display: none; } }
