@@ -11122,6 +11122,40 @@ textarea.form-control-lg {
     height: 16.66%; }
     body .competences .all_rows .row .progress .progress-bar {
       font-size: medium; }
+  body .projects .card {
+    border-radius: 4px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: .4em; }
+    body .projects .card p {
+      position: relative;
+      height: 100%;
+      flex: 1;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all .5s;
+      background: transparent;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body .projects .card p:hover {
+        flex: 10; }
+        body .projects .card p:hover span {
+          transform: rotate(0); }
+      body .projects .card p span {
+        min-width: 14em;
+        padding: .5em;
+        text-align: center;
+        transform: rotate(-90deg);
+        transition: all .5s;
+        color: black;
+        letter-spacing: .1em; }
+    body .projects .card:hover > p:not(:hover) {
+      filter: blur(4px); }
   body .aboutme .front .film .card-container {
     width: fit-content;
     height: fit-content;
