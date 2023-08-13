@@ -7,9 +7,10 @@ const path_slide_top = document.getElementById("slide_top");
 const path_slide_bottom = document.getElementById("slide_bottom");
 //console.log(path_slide_bottom, path_slide_top);
 
-const card = document.querySelector(".card");
 
-//afficher le contenu selon la colonne surlignée
+
+//afficher le contenu selon la colonne surlignée dans projets
+const card = document.querySelector(".card");
 for (let elem = 0; elem < card.children.length; elem++) {
     card.children[elem].addEventListener("mouseover", (event) => {
         switch (elem) {
@@ -44,16 +45,6 @@ for (let elem = 0; elem < card.children.length; elem++) {
     );
 }
 
-//message pour les téléphones en mode portrait
-let message_error = `
-<div class="message">
-  <div>
-  <span>Veuillez positionner votre</span> <span>écran en mode paysage</span></div>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="screen-rotation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M16.48 2.52c3.27 1.55 5.61 4.72 5.97 8.48h1.5C23.44 4.84 18.29 0 12 0l-.66.03 3.81 3.81 1.33-1.32zm-6.25-.77c-.59-.59-1.54-.59-2.12 0L1.75 8.11c-.59.59-.59 1.54 0 2.12l12.02 12.02c.59.59 1.54.59 2.12 0l6.36-6.36c.59-.59.59-1.54 0-2.12L10.23 1.75zm4.6 19.44L2.81 9.17l6.36-6.36 12.02 12.02-6.36 6.36zm-7.31.29C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32z"></path>
-</svg>
-  
-</div>`
 
 //teste l'orientation du site
 var mql = window.matchMedia("(orientation: portrait)");
@@ -62,30 +53,13 @@ handleOrientationChange(mql);
 
 function handleOrientationChange(mql) {
     if (mql.matches) {//portrait
-        const html = document.querySelector("html");
-        const deja_tourne = document.querySelector(".error");
-
-        if (!deja_tourne) {
-            const error = document.createElement("div");
-            error.classList.add('error');
-            error.innerHTML = message_error;
-            html.appendChild(error);
-        }
-        else {
-            deja_tourne.innerHTML = message_error;
-        }
 
     } else {//paysage
-        const error = document.querySelector(".error");
-        if (error) {
-            error.innerHTML = '';
-            error.classList.remove('error');
-        }
     }
 }
 
 
-//découvre la barre de progression 
+//découvre la barre de progression de parcours
 function GenereProgression() {
     decouvrir.innerHTML = ``;
     decouvrir.style.zIndex = '-1000';
