@@ -11131,8 +11131,8 @@ body .projects .card {
   flex-direction: row;
   gap: 5px;
   padding: .4em; }
-  body .projects .card .flex_10 {
-    flex: 10; }
+  body .projects .card .flex_0 {
+    flex: 0; }
   body .projects .card .flex_1 {
     flex: 1; }
   body .projects .card .stage,
