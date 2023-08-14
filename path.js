@@ -5,41 +5,105 @@ const tennis = document.querySelector(".aboutme button");
 const decouvrir = document.getElementById('decouvrir');
 const path_slides = document.querySelectorAll(".slides");
 
+
+
+
+
 //afficher le contenu selon la colonne surlignée dans projets
 const card = document.querySelector(".card");
 for (let elem = 0; elem < card.children.length; elem++) {
-    card.children[elem].addEventListener("mouseover", (event) => {
-        switch (elem) {
-            case 0:
-                card.children[elem].innerHTML = `Automatisation des machines chez Kusmi Tea`;
-                break;
-            case 1:
-                card.children[elem].innerHTML = `Projets d'info des Mines, TIPE`;
-                break;
-            case 2:
-                card.children[elem].innerHTML = `Portfolio`;
-                break;
+    card.children[elem].addEventListener("click", () => {
+
+        function HigherSize() {
+            card.children[elem].classList.add("flex_10");
+            card.children[elem].classList.remove("flex_1");
         }
-    },
-        false,
-    );
-    card.children[elem].addEventListener("mouseout", (event) => {
+
+        function LowerSize() {
+            card.children[elem].classList.remove("flex_10");
+            card.children[elem].classList.add("flex_1");
+        }
+
+        //augmente taille colonne
+        HigherSize();
+
+        //affiche le contenu selon celle selectionnée
         switch (elem) {
             case 0:
-                card.children[elem].innerHTML = `<p class="stage"><span class="border fs-2">STAGES</span></p>`;
+                card.children[elem].innerHTML = `<div class="container">
+                <button class="cross">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" id="cross">
+                        <path
+                            d="M83.9 17.1c-.9-.9-2.5-.9-3.4 0l-30 30-30-30c-.9-.9-2.5-.9-3.4 0s-.9 2.5 0 3.4l30 30-30 30c-.9.9-.9 2.5 0 3.4.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7l30-30 30 30c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4l-30-30 30-30c.9-.9.9-2.4 0-3.4z">
+                        </path>
+                    </svg>
+                </button>
+            </div>`;
                 break;
             case 1:
-                card.children[elem].innerHTML = `<p class="pro"><span class="border fs-2">PROFESSIONNEL</span></p>`;
+                card.children[elem].innerHTML = `<div class="container">
+                <button class="cross">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" id="cross">
+                        <path
+                            d="M83.9 17.1c-.9-.9-2.5-.9-3.4 0l-30 30-30-30c-.9-.9-2.5-.9-3.4 0s-.9 2.5 0 3.4l30 30-30 30c-.9.9-.9 2.5 0 3.4.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7l30-30 30 30c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4l-30-30 30-30c.9-.9.9-2.4 0-3.4z">
+                        </path>
+                    </svg>
+                </button>
+            </div>`;
                 break;
             case 2:
-                card.children[elem].innerHTML = `<p class="perso"><span class="border fs-2">PERSONNEL</span></p>`;
+                card.children[elem].innerHTML = `<div class="container">
+                <button class="cross">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" id="cross">
+                        <path
+                            d="M83.9 17.1c-.9-.9-2.5-.9-3.4 0l-30 30-30-30c-.9-.9-2.5-.9-3.4 0s-.9 2.5 0 3.4l30 30-30 30c-.9.9-.9 2.5 0 3.4.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7l30-30 30 30c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4l-30-30 30-30c.9-.9.9-2.4 0-3.4z">
+                        </path>
+                    </svg>
+                </button>
+            </div>`;
                 break;
         }
 
-    },
-        false,
-    );
+        console.log(card.children[elem].innerHTML)
+        //reset les inscriptions avant l'ouverture des fenêtres
+        const cross = document.querySelector(".cross");
+        cross.addEventListener("click", () => {
+            setTimeout(LowerSize, 0);
+
+            function PlaceElementInCard() {
+                let card = cross.parentElement.parentElement.parentElement.children;
+                let categorie = cross.parentElement.parentElement.classList[0];
+                for (let elem = 0; elem < card.length; elem++) {
+                    if (card[elem].classList[0] == categorie) {
+                        return elem;
+                    }
+                }
+            }
+
+            let place_element = PlaceElementInCard();
+
+            function Resetcross() {
+                switch (place_element) {
+                    case 0:
+                        card.children[place_element].innerHTML = `<span class="fs-2">STAGES</span>`;
+                        break;
+                    case 1:
+                        card.children[place_element].innerHTML = `<span class="fs-2">PROFESSIONNEL</span>`;
+                        break;
+                    case 2:
+                        card.children[place_element].innerHTML = `<span class="fs-2">PERSONNEL</span>`;
+                        break;
+                }
+
+            }
+
+            setTimeout(Resetcross, 0);
+
+        });
+    });
 }
+
+
 
 
 //teste l'orientation du site

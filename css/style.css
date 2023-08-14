@@ -11131,10 +11131,15 @@ body .projects .card {
   flex-direction: row;
   gap: 5px;
   padding: .4em; }
-  body .projects .card p {
+  body .projects .card .flex_10 {
+    flex: 10; }
+  body .projects .card .flex_1 {
+    flex: 1; }
+  body .projects .card .stage,
+  body .projects .card .pro,
+  body .projects .card .perso {
     position: relative;
     height: 100%;
-    flex: 1;
     overflow: hidden;
     cursor: pointer;
     border-radius: 2px;
@@ -11144,11 +11149,13 @@ body .projects .card {
     display: flex;
     justify-content: center;
     align-items: center; }
-    body .projects .card p:hover {
-      flex: 10; }
-      body .projects .card p:hover span {
-        transform: rotate(0); }
-    body .projects .card p span {
+    body .projects .card .stage:hover span,
+    body .projects .card .pro:hover span,
+    body .projects .card .perso:hover span {
+      transform: rotate(0); }
+    body .projects .card .stage span,
+    body .projects .card .pro span,
+    body .projects .card .perso span {
       min-width: 14em;
       padding: .5em;
       text-align: center;
@@ -11156,7 +11163,25 @@ body .projects .card {
       transition: all .5s;
       color: black;
       letter-spacing: .1em; }
-  body .projects .card:hover > p:not(:hover) {
+    body .projects .card .stage .container,
+    body .projects .card .pro .container,
+    body .projects .card .perso .container {
+      position: relative;
+      height: 200px;
+      width: 200px; }
+    body .projects .card .stage .container svg,
+    body .projects .card .pro .container svg,
+    body .projects .card .perso .container svg {
+      max-width: 100%;
+      max-height: 100%; }
+    body .projects .card .stage .container button,
+    body .projects .card .pro .container button,
+    body .projects .card .perso .container button {
+      height: 100%;
+      width: 100%;
+      background: transparent;
+      border: none; }
+  body .projects .card:hover > div:not(:hover) {
     filter: blur(4px); }
 body .aboutme .button {
   padding: 10px 22px;

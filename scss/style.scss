@@ -1414,10 +1414,19 @@ body {
             gap: 5px;
             padding: .4em;
 
-            p {
+            .flex_10 {
+                flex: 10;
+            }
+
+            .flex_1 {
+                flex: 1;
+            }
+
+            .stage,
+            .pro,
+            .perso {
                 position: relative;
                 height: 100%;
-                flex: 1;
                 overflow: hidden;
                 cursor: pointer;
                 border-radius: 2px;
@@ -1428,9 +1437,8 @@ body {
                 justify-content: center;
                 align-items: center;
 
-                &:hover {
-                    flex: 10;
 
+                &:hover {
                     span {
                         transform: rotate(0);
                     }
@@ -1446,9 +1454,27 @@ body {
                     letter-spacing: .1em;
                 }
 
+                .container {
+                    position: relative;
+                    height: 200px;
+                    width: 200px;
+                }
+
+                .container svg {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+
+                .container button {
+                    height: 100%;
+                    width: 100%;
+                    background: transparent;
+                    border: none;
+                }
+
             }
 
-            &:hover>p:not(:hover) {
+            &:hover>div:not(:hover) {
                 filter: blur(4px);
             }
         }
