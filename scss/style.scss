@@ -1125,8 +1125,11 @@ body {
                 height: 48%;
 
                 .date {
-                    width: 10%;
+                    width: fit-content;
                     height: fit-content;
+
+                    opacity: 0;
+                    transition: opacity 0.3s ease-in-out;
 
                     &_mse {
                         left: 7%;
@@ -1134,18 +1137,32 @@ body {
                     }
 
                     &_vh {
-                        left: 32%;
+                        left: 33%;
                         top: 85%;
+                    }
+
+                    &_f1 {
+                        top: 5%;
+                        left: 60%;
+                    }
+
+                    &_glc {
+                        top: 85%;
+                        left: 87%;
                     }
                 }
 
                 .formation {
-                    height: 50%;
+                    height: fit-content;
+                    max-height: 50%;
                     width: fit-content;
                     max-width: 50%;
                     overflow: scroll;
                     border-radius: 2rem;
                     padding: 20px;
+
+                    opacity: 0;
+                    transition: opacity 0.3s ease-in-out;
 
                     &_mse {
                         top: 25%;
@@ -1155,6 +1172,16 @@ body {
                     &_vh {
                         top: 15%;
                         left: 25%;
+                    }
+
+                    &_f1 {
+                        top: 30%;
+                        left: 55%;
+                    }
+
+                    &_glc {
+                        top: 25%;
+                        left: 75%;
                     }
 
                     .cta {
@@ -1219,6 +1246,8 @@ body {
             #decouvrir {
                 opacity: 1;
                 z-index: 3;
+
+                transition: opacity 0.5s ease-in-out;
             }
 
             .progress_bar_placement {
@@ -1455,8 +1484,8 @@ body {
 
         .button:hover:before {
             top: -70%;
-            background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
-                10% 10%, 18% 18%;
+            background-size: 20% 20%, 40% 40%, 30% 30%, 40% 40%, 36% 36%, 20% 20%, 30% 30%,
+                20% 20%, 36% 36%;
             background-position: 50% 120%;
             animation: greentopBubbles 0.6s ease;
         }
@@ -1481,7 +1510,7 @@ body {
 
         .button:hover::after {
             bottom: -70%;
-            background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+            background-size: 30% 30%, 40% 40%, 36% 36%, 40% 40%, 30% 30%, 40% 40%, 36% 36%;
             background-position: 50% 0%;
             animation: greenbottomBubbles 0.6s ease;
         }
