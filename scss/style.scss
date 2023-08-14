@@ -491,11 +491,40 @@
             }
 
             .prez {
-                background-color: var(--l_black);
+                background: var(--l_black);
                 color: var(--l_white);
             }
 
-            .slides {}
+            .slides {
+                .date {
+                    background: var(--l_blue);
+                    color: var(--l_black);
+                    border: solid 1px var(--l_black);
+                }
+
+
+                .formation {
+                    background: var(--l_blue);
+                    border: solid 1px var(--l_black);
+                }
+
+
+                .cta:before {
+                    background: var(--l_white);
+                }
+
+                .cta span {
+                    color: var(--l_black);
+                }
+
+                .cta svg {
+                    stroke: var(--l_black);
+                }
+
+                .cta:hover:before {
+                    background: var(--l_white);
+                }
+            }
 
             .progress_bar_placement {
 
@@ -503,12 +532,12 @@
 
                     &::after {
                         border: solid 1px var(--d_black);
-                        background-color: var(--l_blue);
+                        background-color: var(--l_white);
                     }
 
                     .btn_path {
                         border: solid 2px var(--l_black);
-                        background-color: var(--l_white);
+                        background-color: var(--l_blue);
 
                         &:hover {
                             background-color: var(--l_grey);
@@ -541,21 +570,7 @@
                 color: var(--l_white);
             }
 
-            .cta:before {
-                background: var(--l_green);
-            }
-
-            .cta span {
-                color: var(--l_white);
-            }
-
-            .cta svg {
-                stroke: var(--l_white);
-            }
-
-            .cta:hover:before {
-                background: var(--l_green);
-            }
+            
 
             .bande {
                 background-color: darken(#81A3A7, 30%);
@@ -1106,12 +1121,104 @@ body {
 
     .path {
         .contenu {
-            #decouvrir {
-                z-index: 3;
-            }
-
             .slides {
                 height: 48%;
+
+                .date {
+                    width: 10%;
+                    height: fit-content;
+
+                    &_mse {
+                        left: 7%;
+                        top: 5%;
+                    }
+
+                    &_vh {
+                        left: 32%;
+                        top: 85%;
+                    }
+                }
+
+                .formation {
+                    height: 50%;
+                    width: fit-content;
+                    max-width: 50%;
+                    overflow: scroll;
+                    border-radius: 2rem;
+                    padding: 20px;
+
+                    &_mse {
+                        top: 25%;
+                        left: 5%;
+                    }
+
+                    &_vh {
+                        top: 15%;
+                        left: 25%;
+                    }
+
+                    .cta {
+                        position: relative;
+                        margin: auto;
+                        padding: 1%;
+                        transition: all 0.2s ease;
+                        border: none;
+                        background: none;
+                        width: fit-content;
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: 0%;
+                            left: 0;
+                            display: block;
+                            border-radius: 50px;
+                            width: 20%;
+                            height: 100%;
+                            transition: all 0.3s ease;
+                        }
+
+                        span {
+                            position: relative;
+                            font-size: 18px;
+                            font-weight: 700;
+                            letter-spacing: 0.05em;
+                        }
+
+                        svg {
+                            position: relative;
+                            top: 0;
+                            margin-left: 10px;
+                            fill: none;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-width: 2;
+                            transform: translateX(-5px);
+                            transition: all 0.3s ease;
+                        }
+
+                        &:hover {
+                            &::before {
+                                width: 100%;
+                            }
+
+                            svg {
+                                transform: translateX(0);
+                            }
+                        }
+
+                        &:active {
+                            transform: scale(0.95);
+                        }
+                    }
+                }
+            }
+
+
+
+            #decouvrir {
+                opacity: 1;
+                z-index: 3;
             }
 
             .progress_bar_placement {
@@ -1201,59 +1308,7 @@ body {
             &_content {
                 
     
-                .cta {
-                    position: relative;
-                    margin: auto;
-                    padding: 1%;
-                    transition: all 0.2s ease;
-                    border: none;
-                    background: none;
-                    width: fit-content;
-                }
-    
-                .cta:before {
-                    content: "";
-                    position: absolute;
-                    top: 0%;
-                    left: 0;
-                    display: block;
-                    border-radius: 50px;
-                    width: 20%;
-                    height: 100%;
-                    transition: all 0.3s ease;
-                }
-    
-                .cta span {
-                    position: relative;
-                    font-family: "Ubuntu", sans-serif;
-                    font-size: 18px;
-                    font-weight: 700;
-                    letter-spacing: 0.05em;
-                }
-    
-                .cta svg {
-                    position: relative;
-                    top: 0;
-                    margin-left: 10px;
-                    fill: none;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-width: 2;
-                    transform: translateX(-5px);
-                    transition: all 0.3s ease;
-                }
-    
-                .cta:hover:before {
-                    width: 100%;
-                }
-    
-                .cta:hover svg {
-                    transform: translateX(0);
-                }
-    
-                .cta:active {
-                    transform: scale(0.95);
-                }
+                
     
                 .costume {
                     background-image: url(./../costume.jpeg);
