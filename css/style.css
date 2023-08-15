@@ -10918,7 +10918,8 @@ body .profile .bonjour {
 body .profile .message {
   font-size: 1.5rem; }
 body .profile img {
-  height: fit-content;
+  height: auto;
+  width: fit-content;
   max-width: 100%;
   max-height: 100%; }
 body .profile .langues .row {
@@ -11272,11 +11273,22 @@ body .aboutme .tennis_ball .ball:after {
 body footer {
   width: 100vw; }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) and (orientation: portrait) {
   .profile .flux {
     height: 100%; }
   .profile .col-h {
-    height: 50%; }
+    height: 50%;
+    width: 100%; }
+
+  .aboutme .ball {
+    width: 24px;
+    height: 24px; } }
+@media (max-width: 992px) and (orientation: landscape) {
+  .profile .flux {
+    height: 100%; }
+  .profile .col-h {
+    height: 100%;
+    width: 50%; }
 
   .aboutme .ball {
     width: 24px;

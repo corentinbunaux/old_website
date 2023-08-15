@@ -1114,7 +1114,8 @@ body {
         }
 
         img {
-            height: fit-content;
+            height: auto;
+            width: fit-content;
             max-width: 100%;
             max-height: 100%;
         }
@@ -1629,7 +1630,7 @@ body {
 //mobile =<480
 
 //tel == md
-@media (max-width:992px) {
+@media (max-width:992px) and (orientation:portrait) {
     .welcome {}
 
     .profile {
@@ -1639,6 +1640,35 @@ body {
 
         .col-h {
             height: 50%;
+            width: 100%;
+        }
+    }
+
+    .path {}
+
+    .competences {}
+
+    .projects {}
+
+    .aboutme {
+        .ball {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+@media (max-width:992px) and (orientation:landscape) {
+    .welcome {}
+
+    .profile {
+        .flux {
+            height: 100%;
+        }
+
+        .col-h {
+            height: 100%;
+            width: 50%;
         }
     }
 
