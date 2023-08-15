@@ -10802,14 +10802,10 @@ body header {
     height: 40px; }
   body header .nav-link {
     transition: all 0.2s ease-out; }
-    @media (max-width: 991px) {
-      body header .nav-link:hover {
-        transform: translate(2%); } }
-    @media (min-width: 992px) {
-      body header .nav-link:hover {
-        transform: scale(1.2);
-        background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-        color: var(--d_black); } }
+    body header .nav-link:hover {
+      transform: scale(1.2);
+      background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+      color: var(--d_black); }
   body header #theme-toggle-button {
     font-size: xx-small;
     position: relative;
@@ -10917,6 +10913,14 @@ body .welcome .message {
       top: 10%; }
       body .welcome .message .letter__U .wave {
         animation: wave_animation 4s 0.875s infinite both; }
+body .profile .bonjour {
+  font-size: 3rem; }
+body .profile .message {
+  font-size: 1.5rem; }
+body .profile img {
+  height: fit-content;
+  max-width: 100%;
+  max-height: 100%; }
 body .profile .langues .row {
   height: 30%; }
 body .path {
@@ -11265,27 +11269,34 @@ body .aboutme .tennis_ball .ball:after {
   background: transparent;
   border: 5px solid #FFFFFF;
   right: -65%; }
-@media screen and (min-width: 576px) {
-  body .aboutme .tennis_ball .ball {
-    width: 18px;
-    height: 18px; } }
-@media screen and (min-width: 768px) {
-  body .aboutme .tennis_ball .ball {
-    width: 24px;
-    height: 24px; } }
-@media screen and (min-width: 992px) {
-  body .aboutme .tennis_ball .ball {
-    width: 31px;
-    height: 31px; } }
-@media screen and (min-width: 1200px) {
-  body .aboutme .tennis_ball .ball {
-    width: 37px;
-    height: 37px; } }
-@media screen and (min-width: 1400px) {
-  body .aboutme .tennis_ball .ball {
-    width: 43px;
-    height: 43px; } }
 body footer {
   width: 100vw; }
+
+@media (max-width: 992px) {
+  .profile .flux {
+    height: 100%; }
+  .profile .col-h {
+    height: 50%; }
+
+  .aboutme .ball {
+    width: 24px;
+    height: 24px; } }
+@media (min-width: 992px) {
+  .profile .flux {
+    height: 75%; }
+  .profile .col-h {
+    height: 100%; } }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .aboutme .ball {
+    width: 31px;
+    height: 31px; } }
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .aboutme .ball {
+    width: 37px;
+    height: 37px; } }
+@media (min-width: 1400px) {
+  .aboutme .ball {
+    width: 43px;
+    height: 43px; } }
 
 /*# sourceMappingURL=style.css.map */
