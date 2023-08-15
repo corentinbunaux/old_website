@@ -6,6 +6,33 @@ const decouvrir = document.getElementById('decouvrir');
 const path_slides = document.querySelectorAll(".slides");
 const card = document.querySelector(".card");
 
+var chargement_progress_bar = 0;
+var orientation = '';
+var mql = window.matchMedia("(orientation: portrait)");//récupère l'orientation du site
+PrintOrientationChange(); //récupère l'orientation à l'ouverture du site
+
+mql.addListener(PrintOrientationChange); //appelle la fonction à chaque changemen de mql
+mql.addListener(TransformProgressBarPath);
+
+
+function PrintOrientationChange() {//met à jour l'orientation du site
+    if (mql.matches) {
+        orientation = 'portrait'
+    } else {
+        orientation = 'paysage';
+    }
+    console.log(orientation);
+}
+function TransformProgressBarPath() {
+    if (mql.matches) {
+        charging.style.width = '100%';
+        charging.style.heigth = chargement_progress_bar + '%';
+    }
+    else {
+        charging.style.width = chargement_progress_bar + '%';
+        charging.style.heigth = '100%';
+    }
+}
 
 
 
@@ -100,31 +127,43 @@ function PrintContentProjects() {
         });
     }
 }
+
 //Découvre le bandeau du parcours
 function SupprDecouvrir() {
     decouvrir.style.zIndex = -1;
 }
+
 //Apparition des bulles dans le parcours
 function ApparaitreSlides() {
     for (let elem = 0; elem < path_slides.length; elem++) {
-        path_slides[elem].children[0].style.opacity = 1;
+        if (path_slides[elem].children.length != 0) {
+            path_slides[elem].children[0].style.opacity = 1;
+        }
     }
 }
 //Disparition des bulles dans le parcours
 function DisparaitreSlides() {
     for (let elem = 0; elem < path_slides.length; elem++) {
-        path_slides[elem].children[0].style.opacity = 0;
+        if (path_slides[elem].children.length != 0) {
+            path_slides[elem].children[0].style.opacity = 0;
+        }
     }
 }
+
 //génére la barre de progression de parcours
 function GenereProgression() {
+    chargement_progress_bar = 13;
+    if (orientation == 'paysage') {
+        charging.style.width = chargement_progress_bar + '%';
+    }
+    else {
+        charging.style.height = chargement_progress_bar + '%';
+    }
+
     decouvrir.style.opacity = 0;
-    console.log(decouvrir);
     setTimeout(SupprDecouvrir, 500);
 
-    path_slides[1].innerHTML = `                            <div
-    class="position-absolute date date_mse fs-5 p-1 d-flex justify-content-center align-items-center">
-    2025 - 2022</div>`
+    path_slides[1].innerHTML = '';
     path_slides[0].innerHTML = `<div class="position-absolute formation formation_mse">
     <h3>École des Mines de Saint-Étienne</h1>
         <p>
@@ -160,17 +199,9 @@ document.querySelector(".btn_start").addEventListener("click", function () {
     GenereProgression();
 });
 
-/*
 //évolution de la barre de progression au fil des clics + génération des slides
 for (let elem = 0; elem < button.length; elem++) {
     button[elem].addEventListener("click", function () {
-
-        charging.style.width = (elem * 33) + '%';
-
-        //fait déborder la barre au dernier point
-        if (elem == button.length - 1) {
-            charging.style.width = '103%';
-        }
 
         //anime les boutons selon celui activé
         for (let i = 0; i <= elem; i++) {
@@ -189,11 +220,10 @@ for (let elem = 0; elem < button.length; elem++) {
         switch (elem) {
 
             case 0:
+                chargement_progress_bar = 13;
                 DisparaitreSlides;
 
-                path_slides[1].innerHTML = `                            <div
-    class="position-absolute date date_mse fs-5 p-1 rounded-pill d-flex justify-content-center align-items-center">
-    2025 - 2022</div>`
+                path_slides[1].innerHTML = '';
                 path_slides[0].innerHTML = `<div class="position-absolute formation formation_mse">
     <h3>École des Mines de Saint-Étienne</h1>
         <p>
@@ -225,6 +255,7 @@ for (let elem = 0; elem < button.length; elem++) {
                 break;
 
             case 1:
+                chargement_progress_bar = 38;
                 DisparaitreSlides;
                 path_slides[1].innerHTML = `<div class="position-absolute formation formation_vh">
                 <h3>CPGE - Lycée Victor Hugo</h3>
@@ -239,17 +270,14 @@ for (let elem = 0; elem < button.length; elem++) {
                         <strong>Mines-Telecom</strong><span>.</span>
                     </p>
             </div>`;
-                path_slides[0].innerHTML = `<div
-                class="position-absolute date date_vh fs-5 p-1 rounded-pill d-flex justify-content-center align-items-center">
-                2022 - 2021</div>`;
+                path_slides[0].innerHTML = '';
                 setTimeout(ApparaitreSlides, 100);
                 break;
 
             case 2:
+                chargement_progress_bar = 63;
                 DisparaitreSlides;
-                path_slides[1].innerHTML = `                            <div
-                class="position-absolute date date_f1 fs-5 p-1 rounded-pill d-flex justify-content-center align-items-center">
-                2021 - 2020</div>`;
+                path_slides[1].innerHTML = '';
                 path_slides[0].innerHTML = `                            <div class="position-absolute formation formation_f1">
                 <h3>CPGE - Lycée François 1er</h3>
                 <h5>Le Havre</h5>
@@ -265,6 +293,7 @@ for (let elem = 0; elem < button.length; elem++) {
                 break;
 
             case 3:
+                chargement_progress_bar = 95;
                 DisparaitreSlides;
                 path_slides[1].innerHTML = `<div class="position-absolute formation formation_glc">
                 <h3>Lycée Guillaume Le Conquérant</h3>
@@ -277,14 +306,23 @@ for (let elem = 0; elem < button.length; elem++) {
                     <span>Admis mention</span> <strong>Très Bien</strong>
                 </p>
             </div>`;
-                path_slides[0].innerHTML = `<div
-                class="position-absolute date date_glc fs-5 p-1 rounded-pill d-flex justify-content-center align-items-center">
-                2020 - 2017</div>`;
+                path_slides[0].innerHTML = '';
                 setTimeout(ApparaitreSlides, 100);
                 break;
         }
+
+        if (orientation == 'paysage') {
+            charging.style.width = chargement_progress_bar + '%';
+        }
+        else {
+            charging.style.height = chargement_progress_bar + '%';
+        }
     })
-};*/
+};
+
+//teste l'orientation du site
+
+
 
 //animation des colonnes pour les projets
 PrintContentProjects();
@@ -298,20 +336,3 @@ tennis.addEventListener("click", function () {
     <div class="ball border border-3 border-dark"></div>
 </div>`;
 });
-
-
-
-
-
-//teste l'orientation du site
-/*var mql = window.matchMedia("(orientation: portrait)");
-mql.addListener(handleOrientationChange);
-handleOrientationChange(mql);
-
-function handleOrientationChange(mql) {
-    if (mql.matches) {//portrait
-
-    } else {//paysage
-    }
-}
-*/
