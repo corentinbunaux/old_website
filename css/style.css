@@ -10550,91 +10550,7 @@ textarea.form-control-lg {
 .light__projects {
   background: var(--l_green); }
 .light__path {
-  background-color: var(--l_green);
-        /*.path_content {
-            background-color: var(--l_blue);
-            border: solid 2px var(--l_black);
-
-
-            .bubbles {
-                background-color: #272424;
-            }
-
-            .mse_date {
-                color: var(--l_white);
-            }
-
-            
-
-            .bande {
-                background-color: darken(#81A3A7, 30%);
-                border: double 10px var(--l_white);
-            }
-
-            .border_color {
-                &_top {
-                    border-top: solid 1px var(--l_black);
-                }
-
-                &_bottom {
-                    border-bottom: solid 1px var(--l_black);
-                }
-
-                &_left {
-                    border-left: solid 1px var(--l_black);
-                }
-
-                &_right {
-                    border-right: solid 1px var(--l_black);
-                }
-            }
-
-            .pcsi {
-                background-color: var(--l_black);
-                color: var(--l_white);
-                border-right: solid 2px var(--l_white);
-                border-left: solid 2px var(--l_white);
-
-                .maj {
-                    color: var(--l_green);
-                }
-            }
-
-            .year {
-                &_top {
-                    border-top: double 5px var(--l_white);
-                }
-
-                &_bottom {
-                    border-bottom: double 5px var(--l_white);
-                }
-
-                &_left {
-                    border-left: double 5px var(--l_white);
-                }
-
-                &_right {
-                    border-right: double 5px var(--l_white);
-                }
-            }
-        }
-
-        .date {
-            &_lycee {
-                background-color: var(--l_grey);
-                border: solid 2px var(--l_white);
-                border-radius: 15% 40%;
-                color: var(--l_white);
-            }
-
-            &_pcsi {
-                color: var(--l_white);
-            }
-        }
-
-        .col_border {
-            border: solid 1px var(--l_black);
-        }*/ }
+  background-color: var(--l_green); }
   .light__path .contenu .button {
     --text-stroke-color: var(--l_white);
     --animation-color: var(--l_green); }
@@ -10642,9 +10558,7 @@ textarea.form-control-lg {
     background: var(--l_black);
     color: var(--l_white); }
   .light__path .contenu .slides .date {
-    background: var(--l_blue);
-    color: var(--l_black);
-    border: solid 1px var(--l_black); }
+    color: var(--l_black); }
   .light__path .contenu .slides .formation {
     background: var(--l_blue);
     border: solid 1px var(--l_black); }
@@ -10657,18 +10571,19 @@ textarea.form-control-lg {
   .light__path .contenu .slides .cta:hover:before {
     background: var(--l_white); }
   .light__path .contenu .progress_bar_placement .progress_bar::after {
-    border: solid 1px var(--d_black);
+    border: solid 1px var(--l_black);
     background-color: var(--l_white); }
   .light__path .contenu .progress_bar_placement .progress_bar .btn_path {
-    border: solid 2px var(--l_black);
-    background-color: var(--l_blue); }
+    border: solid 1px var(--l_black);
+    background-color: var(--l_white); }
     .light__path .contenu .progress_bar_placement .progress_bar .btn_path:hover {
-      background-color: var(--l_grey);
+      background-color: var(--l_blue);
       border: solid 1px var(--l_white); }
-  .light__path .contenu .progress_bar_placement .progress_bar .charging {
-    background-color: var(--l_grey); }
+  .light__path .contenu .progress_bar_placement .progress_bar #charging {
+    background-color: var(--l_blue);
+    border: solid 1px var(--l_white); }
   .light__path .contenu .progress_bar_placement .progress_bar .checked {
-    background-color: var(--l_grey); }
+    background-color: var(--l_blue); }
 .light__aboutme {
   background: var(--l_white); }
   .light__aboutme .button {
@@ -10919,212 +10834,143 @@ body .profile .message {
   font-size: 1.5rem; }
 body .profile img {
   height: auto;
-  width: fit-content;
   max-width: 100%;
   max-height: 100%; }
 body .profile .langues .row {
   height: 30%; }
-body .path {
-    /*
-        &_content {
-            
-
-            
-
-            .costume {
-                background-image: url(./../costume.jpeg);
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .bac {
-                position: absolute;
-                height: 100%;
-                width: 83%;
-            }
-
-            .date {
-                &_lycee {
-                    position: absolute;
-                    top: 25%;
-                    left: 10/12%;
-                    width: 30%;
-                    height: 50%;
-                    border-radius: 15% 40%;
-                }
-
-                &_pcsi {
-                    position: absolute;
-                    top: 25%;
-                    left: 25%;
-                    width: 50%;
-                    height: 50%;
-
-                    .y_2020 {
-                        position: relative;
-                        top: 25%;
-                        left: 0%;
-                    }
-
-                    .tiret {
-                        position: relative;
-                        top: 42%;
-                        left: 0%;
-                    }
-
-                    .y_2021 {
-                        position: relative;
-                        top: 40%;
-                        left: 50%;
-                    }
-                }
-            }
-        }
-        }*/ }
-  body .path .contenu .slides {
-    height: 48%; }
-    body .path .contenu .slides .date {
-      width: fit-content;
-      height: fit-content;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out; }
-      body .path .contenu .slides .date_mse {
-        left: 7%;
-        top: 5%; }
-      body .path .contenu .slides .date_vh {
-        left: 33%;
-        top: 85%; }
-      body .path .contenu .slides .date_f1 {
-        top: 5%;
-        left: 60%; }
-      body .path .contenu .slides .date_glc {
-        top: 85%;
-        left: 87%; }
-    body .path .contenu .slides .formation {
-      height: fit-content;
-      max-height: 50%;
-      width: fit-content;
-      max-width: 50%;
-      overflow: scroll;
-      border-radius: 2rem;
-      padding: 20px;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out; }
-      body .path .contenu .slides .formation_mse {
-        top: 25%;
-        left: 5%; }
-      body .path .contenu .slides .formation_vh {
-        top: 15%;
-        left: 25%; }
-      body .path .contenu .slides .formation_f1 {
-        top: 30%;
-        left: 55%; }
-      body .path .contenu .slides .formation_glc {
-        top: 25%;
-        left: 75%; }
-      body .path .contenu .slides .formation .cta {
-        position: relative;
-        margin: auto;
-        padding: 1%;
-        transition: all 0.2s ease;
-        border: none;
-        background: none;
-        width: fit-content; }
-        body .path .contenu .slides .formation .cta:before {
-          content: "";
-          position: absolute;
-          top: 0%;
-          left: 0;
-          display: block;
-          border-radius: 50px;
-          width: 20%;
-          height: 100%;
-          transition: all 0.3s ease; }
-        body .path .contenu .slides .formation .cta span {
-          position: relative;
-          font-size: 18px;
-          font-weight: 700;
-          letter-spacing: 0.05em; }
-        body .path .contenu .slides .formation .cta svg {
-          position: relative;
-          top: 0;
-          margin-left: 10px;
-          fill: none;
-          stroke-linecap: round;
-          stroke-linejoin: round;
-          stroke-width: 2;
-          transform: translateX(-5px);
-          transition: all 0.3s ease; }
-        body .path .contenu .slides .formation .cta:hover::before {
-          width: 100%; }
-        body .path .contenu .slides .formation .cta:hover svg {
-          transform: translateX(0); }
-        body .path .contenu .slides .formation .cta:active {
-          transform: scale(0.95); }
-  body .path .contenu #decouvrir {
-    opacity: 1;
-    z-index: 3;
-    transition: opacity 0.5s ease-in-out; }
-  body .path .contenu .progress_bar_placement {
-    height: 4%; }
-  body .path .contenu .progress_bar {
-    position: relative; }
-    body .path .contenu .progress_bar::after {
-      content: '';
-      position: absolute;
-      height: 50%;
-      width: 105%;
-      top: 25%;
-      z-index: 0;
-      border-radius: 2rem;
-      background-color: transparent; }
-    body .path .contenu .progress_bar .btn_path {
-      height: 100%;
-      width: 2%;
-      transition: all 0.3s ease-in-out;
-      z-index: 2;
-      opacity: 0; }
-      body .path .contenu .progress_bar .btn_path:hover {
-        transform: scale(1.2); }
-      body .path .contenu .progress_bar .btn_path:active {
-        transform: scale(0.5); }
-    body .path .contenu .progress_bar .charging {
-      position: absolute;
-      width: 0%;
-      height: 50%;
-      z-index: 1;
-      transition: width 0.2s ease-in; }
-  body .path .contenu .button {
-    margin: 0;
-    height: auto;
-    background: transparent;
-    padding: 0;
-    border: none;
-    width: fit-content;
-    --border-right: 6px;
-    --fs-size: 2em;
-    letter-spacing: 3px;
-    text-decoration: none;
-    font-size: var(--fs-size);
-    font-family: "Arial";
+body .path .contenu .slides .date {
+  width: fit-content;
+  height: fit-content;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; }
+  body .path .contenu .slides .date_mse {
+    left: 7%;
+    top: 5%; }
+  body .path .contenu .slides .date_vh {
+    left: 33%;
+    top: 85%; }
+  body .path .contenu .slides .date_f1 {
+    top: 5%;
+    left: 60%; }
+  body .path .contenu .slides .date_glc {
+    top: 85%;
+    left: 87%; }
+body .path .contenu .slides .formation {
+  height: fit-content;
+  max-height: 50%;
+  width: fit-content;
+  max-width: 50%;
+  overflow: scroll;
+  border-radius: 1rem;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; }
+  body .path .contenu .slides .formation_mse {
+    top: 25%;
+    left: 5%; }
+  body .path .contenu .slides .formation_vh {
+    top: 15%;
+    left: 25%; }
+  body .path .contenu .slides .formation_f1 {
+    top: 30%;
+    left: 55%; }
+  body .path .contenu .slides .formation_glc {
+    top: 25%;
+    left: 75%; }
+  body .path .contenu .slides .formation .cta {
     position: relative;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--text-stroke-color); }
-  body .path .contenu .hover-text {
+    margin: auto;
+    padding: 1%;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    width: fit-content; }
+    body .path .contenu .slides .formation .cta:before {
+      content: "";
+      position: absolute;
+      top: 0%;
+      left: 0;
+      display: block;
+      border-radius: 50px;
+      width: 20%;
+      height: 100%;
+      transition: all 0.3s ease; }
+    body .path .contenu .slides .formation .cta span {
+      position: relative;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.05em; }
+    body .path .contenu .slides .formation .cta svg {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all 0.3s ease; }
+    body .path .contenu .slides .formation .cta:hover::before {
+      width: 100%; }
+    body .path .contenu .slides .formation .cta:hover svg {
+      transform: translateX(0); }
+    body .path .contenu .slides .formation .cta:active {
+      transform: scale(0.95); }
+body .path .contenu #decouvrir {
+  opacity: 1;
+  z-index: 3;
+  transition: opacity 0.5s ease-in-out; }
+body .path .contenu .progress_bar {
+  position: relative; }
+  body .path .contenu .progress_bar::after {
+    content: '';
     position: absolute;
-    box-sizing: border-box;
-    content: attr(data-text);
-    color: var(--animation-color);
+    z-index: 0; }
+  body .path .contenu .progress_bar .btn_path {
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+    opacity: 0; }
+    body .path .contenu .progress_bar .btn_path:hover {
+      transform: scale(1.2); }
+    body .path .contenu .progress_bar .btn_path:active {
+      transform: scale(0.5); }
+  body .path .contenu .progress_bar #charging {
+    position: absolute;
     width: 0%;
-    inset: 0;
-    border-right: var(--border-right) solid var(--animation-color);
-    overflow: hidden;
-    transition: 0.5s;
-    -webkit-text-stroke: 1px var(--animation-color); }
-  body .path .contenu .button:hover .hover-text {
-    width: 100%;
-    filter: drop-shadow(0 0 23px var(--animation-color)); }
+    height: 0%;
+    z-index: 1;
+    transition: width 0.2s ease-in; }
+body .path .contenu .button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  width: fit-content;
+  --border-right: 6px;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color); }
+body .path .contenu .hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color); }
+body .path .contenu .button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color)); }
 body .competences .all_rows .row {
   height: 16.66%; }
   body .competences .all_rows .row .progress .progress-bar {
@@ -11280,6 +11126,32 @@ body footer {
     height: 50%;
     width: 100%; }
 
+  .path .contenu .ensemble {
+    display: flex; }
+    .path .contenu .ensemble .slides {
+      width: 48vw;
+      height: 95vh; }
+    .path .contenu .ensemble .progress_bar_placement {
+      height: 95vh;
+      width: 4vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .path .contenu .ensemble .progress_bar_placement .progress_bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 80%;
+        width: 100%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar::after {
+          width: 100%;
+          height: 100%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path {
+          height: 5rem;
+          width: 5rem; }
+
   .aboutme .ball {
     width: 24px;
     height: 24px; } }
@@ -11290,6 +11162,32 @@ body footer {
     height: 100%;
     width: 50%; }
 
+  .path .contenu .ensemble {
+    display: flex;
+    flex-direction: column; }
+    .path .contenu .ensemble .slides {
+      height: 48vh;
+      width: 95vw; }
+    .path .contenu .ensemble .progress_bar_placement {
+      height: 4vh;
+      width: 95vw;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .path .contenu .ensemble .progress_bar_placement .progress_bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 80%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar::after {
+          width: 100%;
+          height: 50%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path {
+          height: 2rem;
+          width: 2rem; }
+
   .aboutme .ball {
     width: 24px;
     height: 24px; } }
@@ -11297,7 +11195,33 @@ body footer {
   .profile .flux {
     height: 75%; }
   .profile .col-h {
-    height: 100%; } }
+    height: 100%; }
+
+  .path .contenu .ensemble {
+    display: flex;
+    flex-direction: column; }
+    .path .contenu .ensemble .slides {
+      height: 45vh;
+      width: 98.5vw; }
+    .path .contenu .ensemble .progress_bar_placement {
+      height: 5vh;
+      width: 98.5vw;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .path .contenu .ensemble .progress_bar_placement .progress_bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 80%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar::after {
+          width: 100%;
+          height: 50%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path {
+          height: 2rem;
+          width: 2rem; } }
 @media (min-width: 992px) and (max-width: 1200px) {
   .aboutme .ball {
     width: 31px;

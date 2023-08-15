@@ -497,9 +497,8 @@
 
             .slides {
                 .date {
-                    background: var(--l_blue);
                     color: var(--l_black);
-                    border: solid 1px var(--l_black);
+
                 }
 
 
@@ -531,116 +530,31 @@
                 .progress_bar {
 
                     &::after {
-                        border: solid 1px var(--d_black);
+                        border: solid 1px var(--l_black);
                         background-color: var(--l_white);
                     }
 
                     .btn_path {
-                        border: solid 2px var(--l_black);
-                        background-color: var(--l_blue);
+                        border: solid 1px var(--l_black);
+                        background-color: var(--l_white);
 
                         &:hover {
-                            background-color: var(--l_grey);
+                            background-color: var(--l_blue);
                             border: solid 1px var(--l_white);
                         }
                     }
 
-                    .charging {
-                        background-color: var(--l_grey);
+                    #charging {
+                        background-color: var(--l_blue);
+                        border: solid 1px var(--l_white);
                     }
 
                     .checked {
-                        background-color: var(--l_grey);
+                        background-color: var(--l_blue);
                     }
                 }
             }
-
         }
-
-        /*.path_content {
-            background-color: var(--l_blue);
-            border: solid 2px var(--l_black);
-
-
-            .bubbles {
-                background-color: #272424;
-            }
-
-            .mse_date {
-                color: var(--l_white);
-            }
-
-            
-
-            .bande {
-                background-color: darken(#81A3A7, 30%);
-                border: double 10px var(--l_white);
-            }
-
-            .border_color {
-                &_top {
-                    border-top: solid 1px var(--l_black);
-                }
-
-                &_bottom {
-                    border-bottom: solid 1px var(--l_black);
-                }
-
-                &_left {
-                    border-left: solid 1px var(--l_black);
-                }
-
-                &_right {
-                    border-right: solid 1px var(--l_black);
-                }
-            }
-
-            .pcsi {
-                background-color: var(--l_black);
-                color: var(--l_white);
-                border-right: solid 2px var(--l_white);
-                border-left: solid 2px var(--l_white);
-
-                .maj {
-                    color: var(--l_green);
-                }
-            }
-
-            .year {
-                &_top {
-                    border-top: double 5px var(--l_white);
-                }
-
-                &_bottom {
-                    border-bottom: double 5px var(--l_white);
-                }
-
-                &_left {
-                    border-left: double 5px var(--l_white);
-                }
-
-                &_right {
-                    border-right: double 5px var(--l_white);
-                }
-            }
-        }
-
-        .date {
-            &_lycee {
-                background-color: var(--l_grey);
-                border: solid 2px var(--l_white);
-                border-radius: 15% 40%;
-                color: var(--l_white);
-            }
-
-            &_pcsi {
-                color: var(--l_white);
-            }
-        }
-
-        .col_border {
-            border: solid 1px var(--l_black);
-        }*/
     }
 
     &__aboutme {
@@ -1115,7 +1029,6 @@ body {
 
         img {
             height: auto;
-            width: fit-content;
             max-width: 100%;
             max-height: 100%;
         }
@@ -1130,12 +1043,9 @@ body {
     .path {
         .contenu {
             .slides {
-                height: 48%;
-
                 .date {
                     width: fit-content;
                     height: fit-content;
-
                     opacity: 0;
                     transition: opacity 0.3s ease-in-out;
 
@@ -1166,7 +1076,7 @@ body {
                     width: fit-content;
                     max-width: 50%;
                     overflow: scroll;
-                    border-radius: 2rem;
+                    border-radius: 1rem;
                     padding: 20px;
 
                     opacity: 0;
@@ -1258,27 +1168,17 @@ body {
                 transition: opacity 0.5s ease-in-out;
             }
 
-            .progress_bar_placement {
-                height: 4%;
-            }
-
             .progress_bar {
                 position: relative;
 
                 &::after {
+                    //fond de la barre de chargement
                     content: '';
                     position: absolute;
-                    height: 50%;
-                    width: 105%;
-                    top: 25%;
                     z-index: 0;
-                    border-radius: 2rem;
-                    background-color: transparent;
                 }
 
                 .btn_path {
-                    height: 100%;
-                    width: 2%;
                     transition: all 0.3s ease-in-out;
                     z-index: 2;
                     opacity: 0;
@@ -1292,10 +1192,10 @@ body {
                     }
                 }
 
-                .charging {
+                #charging {
                     position: absolute;
                     width: 0%;
-                    height: 50%;
+                    height: 0%;
                     z-index: 1;
                     transition: width 0.2s ease-in;
                 }
@@ -1339,64 +1239,6 @@ body {
                 filter: drop-shadow(0 0 23px var(--animation-color))
             }
         }
-
-
-        /*
-            &_content {
-                
-    
-                
-    
-                .costume {
-                    background-image: url(./../costume.jpeg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-    
-                .bac {
-                    position: absolute;
-                    height: 100%;
-                    width: 83%;
-                }
-    
-                .date {
-                    &_lycee {
-                        position: absolute;
-                        top: 25%;
-                        left: 10/12%;
-                        width: 30%;
-                        height: 50%;
-                        border-radius: 15% 40%;
-                    }
-    
-                    &_pcsi {
-                        position: absolute;
-                        top: 25%;
-                        left: 25%;
-                        width: 50%;
-                        height: 50%;
-    
-                        .y_2020 {
-                            position: relative;
-                            top: 25%;
-                            left: 0%;
-                        }
-    
-                        .tiret {
-                            position: relative;
-                            top: 42%;
-                            left: 0%;
-                        }
-    
-                        .y_2021 {
-                            position: relative;
-                            top: 40%;
-                            left: 50%;
-                        }
-                    }
-                }
-            }
-            }*/
     }
 
     .competences {
@@ -1624,12 +1466,7 @@ body {
     }
 }
 
-
-//portrait 
-//384 412 360 375 414 390 375 428 320 414 375
-//mobile =<480
-
-//tel == md
+//téléphone en mode portrait
 @media (max-width:992px) and (orientation:portrait) {
     .welcome {}
 
@@ -1644,7 +1481,47 @@ body {
         }
     }
 
-    .path {}
+    .path {
+        .contenu {
+            .ensemble {
+                display: flex;
+
+                .slides {
+                    width: 48vw;
+                    height: 95vh;
+                }
+
+                .progress_bar_placement {
+                    height: 95vh;
+                    width: 4vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .progress_bar {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 80%;
+                        width: 100%;
+
+                        &::after {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .btn_path {
+                            height: 5rem;
+                            width: 5rem;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 
     .competences {}
 
@@ -1658,6 +1535,7 @@ body {
     }
 }
 
+//téléphone en mode paysage
 @media (max-width:992px) and (orientation:landscape) {
     .welcome {}
 
@@ -1672,7 +1550,47 @@ body {
         }
     }
 
-    .path {}
+    .path {
+        .contenu {
+            .ensemble {
+                display: flex;
+                flex-direction: column;
+
+                .slides {
+                    height: 48vh;
+                    width: 95vw;
+                }
+
+                .progress_bar_placement {
+                    height: 4vh;
+                    width: 95vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .progress_bar {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 100%;
+                        width: 80%;
+
+                        &::after {
+                            width: 100%;
+                            height: 50%;
+                        }
+
+                        .btn_path {
+                            height: 2rem;
+                            width: 2rem;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 
     .competences {}
 
@@ -1700,7 +1618,46 @@ body {
         }
     }
 
-    .path {}
+    .path {
+        .contenu {
+            .ensemble {
+                display: flex;
+                flex-direction: column;
+
+                .slides {
+                    height: 45vh;
+                    width: 98.5vw;
+                }
+
+                .progress_bar_placement {
+                    height: 5vh;
+                    width: 98.5vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .progress_bar {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 100%;
+                        width: 80%;
+
+                        &::after {
+                            width: 100%;
+                            height: 50%;
+                        }
+
+                        .btn_path {
+                            height: 2rem;
+                            width: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .competences {}
 
@@ -1708,6 +1665,10 @@ body {
 
     .aboutme {}
 }
+
+
+
+//animation balle de tennis
 
 //tablettes ==lg
 @media (min-width:992px)and(max-width:1200px) {

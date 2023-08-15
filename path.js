@@ -123,7 +123,7 @@ function GenereProgression() {
     setTimeout(SupprDecouvrir, 500);
 
     path_slides[1].innerHTML = `                            <div
-    class="position-absolute date date_mse fs-5 p-1 rounded-pill d-flex justify-content-center align-items-center">
+    class="position-absolute date date_mse fs-5 p-1 d-flex justify-content-center align-items-center">
     2025 - 2022</div>`
     path_slides[0].innerHTML = `<div class="position-absolute formation formation_mse">
     <h3>École des Mines de Saint-Étienne</h1>
@@ -160,7 +160,7 @@ document.querySelector(".btn_start").addEventListener("click", function () {
     GenereProgression();
 });
 
-
+/*
 //évolution de la barre de progression au fil des clics + génération des slides
 for (let elem = 0; elem < button.length; elem++) {
     button[elem].addEventListener("click", function () {
@@ -284,7 +284,7 @@ for (let elem = 0; elem < button.length; elem++) {
                 break;
         }
     })
-};
+};*/
 
 //animation des colonnes pour les projets
 PrintContentProjects();
