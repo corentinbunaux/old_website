@@ -23,11 +23,9 @@ function PrintOrientationChange() {//met à jour l'orientation du site
 
     } else {
         orientation = 'paysage';
-        charging.style.height = 100 + '%';
+        charging.style.height = 50 + '%';
         charging.style.width = chargement_progress_bar + '%';
     }
-    console.log(orientation);
-    console.log(charging.style.width, charging.style.height);
 }
 
 
@@ -312,7 +310,6 @@ for (let elem = 0; elem < button.length; elem++) {
         else {
             charging.style.height = chargement_progress_bar + '%';
         }
-        console.log(charging.style.width, charging.style.height, chargement_progress_bar);
     })
 };
 
