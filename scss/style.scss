@@ -809,18 +809,29 @@ body {
     header {
         width: 100vw;
 
-        .logo {
-            height: 40px;
-        }
-
-        .nav-link {
-            transition: all 0.2s ease-out;
+        .nav-link,
+        .btn {
+            transition: transform 0.2s ease-out;
 
             &:hover {
                 transform: scale(1.2);
-                background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-                color: var(--d_black);
+                color: (var(--l_black));
+                border: transparent;
             }
+        }
+
+        .dropdown-menu {
+            background: var(--l_white);
+
+            .dropdown-item {
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background: var(--l_blue);
+                    font-size: larger;
+                }
+            }
+
         }
 
         /* The switch - the box around the slider */

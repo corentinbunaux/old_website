@@ -9,8 +9,14 @@
     <script type="module" src="path.js"></script>
 
     <!-- Bootstrap JS bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
     <!--Tooltips-->
@@ -26,8 +32,8 @@
     <header class="sticky-top light__header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <!--<div class="navbar-brand ms-lg-5 ms-md-4 ms-sm-3">
-                    <label id="theme-toggle-button">
+                <div class="navbar-brand ms-lg-5 ms-md-4 ms-sm-3">
+                    <!--<label id="theme-toggle-button">
                         <input type="checkbox" id="toggle" class="darkmode">
                         <svg viewBox="0 0 69.667 44" xmlns:xlink="http://www.w3.org/1999/xlink"
                             xmlns="http://www.w3.org/2000/svg">
@@ -115,34 +121,43 @@
                                 </g>
                             </g>
                         </svg>
-                    </label>
-                </div>-->
+                    </label>-->
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto d-flex align-items-center">
+                    <ul class="navbar-nav m-auto d-flex align-items-center" style="height : 3rem;">
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
-                            <a class="nav-link rounded-pill" aria-current="page" href="#welcome">Accueil</a>
+                            <a class="nav-link" aria-current="page" href="#welcome">Accueil</a>
                         </li>
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
-                            <a class="nav-link rounded-pill" aria-current="page" href="#profile">Profil</a>
+                            <a class="nav-link" aria-current="page" href="#profile">Profil</a>
                         </li>
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
-                            <a class="nav-link rounded-pill" href="#path">Parcours</a>
+                            <a class="nav-link" href="#path">Parcours</a>
                         </li>
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
-                            <a class="nav-link rounded-pill" href="#competences">Compétences</a>
+                            <a class="nav-link" href="#competences">Compétences</a>
                         </li>
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
-                            <a class="nav-link rounded-pill" href="#projects">Projets</a>
+                            <a class="nav-link" href="#projects">Projets</a>
                         </li>
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
-                            <a class="nav-link rounded-pill" href="#aboutme">À propos</a>
+                            <a class="nav-link" href="#aboutme">À propos</a>
                         </li>
-                        <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
+                        <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3 dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-expanded="false">
+                                <img src="language.png" alt="Langue" style="height : 2rem;">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Français</a>
+                                <a class="dropdown-item" href="#">English</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -703,9 +718,9 @@
                     </a>
                 </div>
                 <div class="col">
-                    <div class="d-flex justify-content-center" data-bs-toggle="tooltip"
-                        title="corentin.bunaux@etu.emse.fr ou corentin.bunaux@gmail.com"><svg
-                            xmlns="http://www.w3.org/2000/svg" id="mail" x="0" y="0" version="1.1" viewBox="0 0 29 29"
+                    <a href="mailto:corentin.bunaux@gmail.com" class="d-flex justify-content-center"
+                        data-bs-toggle="tooltip" title="Mail">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="mail" x="0" y="0" version="1.1" viewBox="0 0 29 29"
                             xml:space="preserve" height="50px">
                             <path fill="#272424"
                                 d="M2 7.42v14.172l7.086-7.086zM3.408 6l8.971 8.971c1.133 1.133 3.109 1.133 4.242 0L25.592 6H3.408z">
@@ -714,7 +729,7 @@
                                 d="M18.035 16.385c-.943.944-2.199 1.465-3.535 1.465s-2.592-.521-3.535-1.465l-.465-.465L3.42 23h22.16l-7.08-7.08-.465.465zM19.914 14.506L27 21.592V7.42z">
                             </path>
                         </svg>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="row">

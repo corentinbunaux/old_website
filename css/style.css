@@ -10713,14 +10713,21 @@ body header {
   /* move button to right when checked */
   /* show/hide sun and moon based on checkbox state */
   /* show or hide background items on checkbox state */ }
-  body header .logo {
-    height: 40px; }
-  body header .nav-link {
-    transition: all 0.2s ease-out; }
-    body header .nav-link:hover {
+  body header .nav-link,
+  body header .btn {
+    transition: transform 0.2s ease-out; }
+    body header .nav-link:hover,
+    body header .btn:hover {
       transform: scale(1.2);
-      background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-      color: var(--d_black); }
+      color: var(--l_black);
+      border: transparent; }
+  body header .dropdown-menu {
+    background: var(--l_white); }
+    body header .dropdown-menu .dropdown-item {
+      transition: all 0.3s ease-in-out; }
+      body header .dropdown-menu .dropdown-item:hover {
+        background: var(--l_blue);
+        font-size: larger; }
   body header #theme-toggle-button {
     font-size: xx-small;
     position: relative;

@@ -275,7 +275,12 @@ for (let elem = 0; elem < button.length; elem++) {
                 path_slides[0].innerHTML = `                            <div class="position-absolute formation formation_f1">
                 <h3>CPGE - Lycée François 1er</h3>
                 <h5>Le Havre</h5>
-
+                <p>
+                <strong>C</strong><span>lasses</span>
+                <strong>P</strong><span>réparatoires aux</span>
+                <strong>G</strong><span>randes</span>
+                <strong>E</strong><span>coles</span>
+                </p>
                 <p>
                     <strong>P</strong><span>hysique</span>
                     <strong>C</strong><span>himie &</span>
