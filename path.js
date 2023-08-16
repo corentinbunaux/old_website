@@ -145,6 +145,7 @@ function DisparaitreSlides() {
 
 //génére la barre de progression de parcours
 function GenereProgression() {
+    document.querySelector(".ensemble").classList.add("opacity-100");
     chargement_progress_bar = 13;
     if (mql.matches) {
         charging.style.height = chargement_progress_bar + '%';

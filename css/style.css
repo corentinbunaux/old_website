@@ -10838,6 +10838,9 @@ body .profile img {
   max-height: 100%; }
 body .profile .langues .row {
   height: 30%; }
+body .path .contenu .ensemble {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; }
 body .path .contenu .slides .date {
   width: fit-content;
   height: fit-content;
@@ -10985,7 +10988,11 @@ body .path .contenu .button:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color)); }
 body .competences .all_rows .row {
-  height: 16.66%; }
+  height: 16.66%;
+  max-height: 16.66%; }
+  body .competences .all_rows .row svg {
+    max-height: 100%;
+    width: auto; }
   body .competences .all_rows .row .progress .progress-bar {
     font-size: medium; }
 body .projects .card {

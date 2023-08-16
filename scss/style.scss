@@ -1042,6 +1042,11 @@ body {
 
     .path {
         .contenu {
+            .ensemble {
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+            }
+
             .slides {
                 .date {
                     width: fit-content;
@@ -1266,6 +1271,12 @@ body {
         .all_rows {
             .row {
                 height: 16.66%;
+                max-height: 16.66%;
+
+                svg {
+                    max-height: 100%;
+                    width: auto;
+                }
 
                 .progress {
                     .progress-bar {
