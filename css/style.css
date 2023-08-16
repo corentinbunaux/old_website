@@ -10948,7 +10948,7 @@ body .path .contenu .progress_bar {
   body .path .contenu .progress_bar #charging {
     position: absolute;
     width: 0%;
-    height: 50%;
+    height: 0%;
     z-index: 1;
     transition: width 0.2s ease-in;
     border-radius: 2rem;
@@ -11169,6 +11169,9 @@ body footer {
           .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path::after {
             left: 5rem;
             right: 0rem; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar #charging {
+          width: 100%;
+          height: 0%; }
 
   .aboutme .ball {
     width: 24px;
@@ -11203,13 +11206,16 @@ body footer {
           height: 100%; }
         .path .contenu .ensemble .progress_bar_placement .progress_bar::after {
           width: 100%;
-          height: 50%; }
+          height: 100%; }
         .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path {
           height: 2rem;
           width: 2rem; }
           .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path::after {
             top: 100%;
             bottom: 0%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar #charging {
+          width: 0%;
+          height: 100%; }
 
   .aboutme .ball {
     width: 24px;
@@ -11243,13 +11249,16 @@ body footer {
           height: 50%; }
         .path .contenu .ensemble .progress_bar_placement .progress_bar::after {
           width: 100%;
-          height: 50%; }
+          height: 100%; }
         .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path {
           height: 2rem;
           width: 2rem; }
           .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path::after {
             top: 100%;
-            bottom: 0%; } }
+            bottom: 0%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar #charging {
+          width: 0%;
+          height: 100%; } }
 @media (min-width: 992px) and (max-width: 1200px) {
   .aboutme .ball {
     width: 31px;

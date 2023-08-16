@@ -12,28 +12,23 @@ var mql = window.matchMedia("(orientation: portrait)");//récupère l'orientatio
 PrintOrientationChange(); //récupère l'orientation à l'ouverture du site
 
 mql.addListener(PrintOrientationChange); //appelle la fonction à chaque changemen de mql
-mql.addListener(TransformProgressBarPath);
+
 
 
 function PrintOrientationChange() {//met à jour l'orientation du site
     if (mql.matches) {
-        orientation = 'portrait'
+        orientation = 'portrait';
+        charging.style.height = chargement_progress_bar + '%';
+        charging.style.width = 100 + '%';
+
     } else {
         orientation = 'paysage';
+        charging.style.height = 100 + '%';
+        charging.style.width = chargement_progress_bar + '%';
     }
     console.log(orientation);
+    console.log(charging.style.width, charging.style.height);
 }
-function TransformProgressBarPath() {
-    if (mql.matches) {
-        charging.style.width = '100%';
-        charging.style.heigth = chargement_progress_bar + '%';
-    }
-    else {
-        charging.style.width = chargement_progress_bar + '%';
-        charging.style.heigth = '100%';
-    }
-}
-
 
 
 //afficher le contenu selon la colonne surlignée dans projets
@@ -153,11 +148,11 @@ function DisparaitreSlides() {
 //génére la barre de progression de parcours
 function GenereProgression() {
     chargement_progress_bar = 13;
-    if (orientation == 'paysage') {
-        charging.style.width = chargement_progress_bar + '%';
+    if (mql.matches) {
+        charging.style.height = chargement_progress_bar + '%';
     }
     else {
-        charging.style.height = chargement_progress_bar + '%';
+        charging.style.width = chargement_progress_bar + '%';
     }
 
     decouvrir.style.opacity = 0;
@@ -317,6 +312,7 @@ for (let elem = 0; elem < button.length; elem++) {
         else {
             charging.style.height = chargement_progress_bar + '%';
         }
+        console.log(charging.style.width, charging.style.height, chargement_progress_bar);
     })
 };
 
