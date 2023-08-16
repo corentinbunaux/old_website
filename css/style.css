@@ -11054,6 +11054,12 @@ body .projects .card {
       border: none; }
   body .projects .card:hover > div:not(:hover) {
     filter: blur(4px); }
+body .aboutme .apropos {
+  font-size: 2rem; }
+body .aboutme .passionne {
+  font-size: 1.7rem; }
+body .aboutme .description {
+  font-size: 1.5rem; }
 body .aboutme .button {
   padding: 10px 22px;
   border-radius: 6px;
@@ -11177,9 +11183,16 @@ body footer {
             left: 5rem;
             right: 0rem; }
 
+  .aboutme .tennis_ball {
+    height: 50%;
+    top: 50%;
+    right: 100%; }
+  .aboutme .col-h {
+    height: 50%;
+    width: 100%; }
   .aboutme .ball {
-    width: 24px;
-    height: 24px; } }
+    width: 44px;
+    height: 44px; } }
 @media (max-width: 992px) and (orientation: landscape) {
   .profile .flux {
     height: 100%; }
@@ -11218,6 +11231,11 @@ body footer {
             top: 100%;
             bottom: 0%; }
 
+  .aboutme .tennis_ball {
+    height: 100%; }
+  .aboutme .col-h {
+    height: 100%;
+    width: 50%; }
   .aboutme .ball {
     width: 24px;
     height: 24px; } }
@@ -11256,7 +11274,12 @@ body footer {
           width: 2rem; }
           .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path::after {
             top: 100%;
-            bottom: 0%; } }
+            bottom: 0%; }
+
+  .aboutme .tennis_ball {
+    height: 100%; }
+  .aboutme .col-h {
+    height: 100%; } }
 @media (min-width: 992px) and (max-width: 1200px) {
   .aboutme .ball {
     width: 31px;

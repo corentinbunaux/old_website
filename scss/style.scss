@@ -1363,6 +1363,18 @@ body {
     }
 
     .aboutme {
+        .apropos {
+            font-size: 2rem;
+        }
+
+        .passionne {
+            font-size: 1.7rem;
+        }
+
+        .description {
+            font-size: 1.5rem;
+        }
+
         .button {
             padding: 10px 22px;
             border-radius: 6px;
@@ -1569,9 +1581,20 @@ body {
     .projects {}
 
     .aboutme {
+        .tennis_ball {
+            height: 50%;
+            top: 50%;
+            right: 100%;
+        }
+
+        .col-h {
+            height: 50%;
+            width: 100%;
+        }
+
         .ball {
-            width: 24px;
-            height: 24px;
+            width: 44px;
+            height: 44px;
         }
     }
 }
@@ -1647,6 +1670,15 @@ body {
     .projects {}
 
     .aboutme {
+        .tennis_ball {
+            height: 100%;
+        }
+
+        .col-h {
+            height: 100%;
+            width: 50%;
+        }
+
         .ball {
             width: 24px;
             height: 24px;
@@ -1722,7 +1754,15 @@ body {
 
     .projects {}
 
-    .aboutme {}
+    .aboutme {
+        .tennis_ball {
+            height: 100%;
+        }
+
+        .col-h {
+            height: 100%;
+        }
+    }
 }
 
 
