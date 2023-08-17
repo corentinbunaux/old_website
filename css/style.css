@@ -10313,11 +10313,12 @@ textarea.form-control-lg {
   --l_green: #81A3A7;
   --l_blue: #C2D3DA;
   /*dark*/
+  /*
   --d_black: #040C0E;
   --d_navy: #132226;
   --d_green: #525B56;
   --d_wood: #BE9063;
-  --d_beige: #A4978E; }
+  --d_beige: #A4978E;*/ }
 
 @keyframes wave_animation {
   0% {
@@ -10536,14 +10537,13 @@ textarea.form-control-lg {
   100% {
     transform: translate(3230%, 0%) rotate(45deg); } }
 .light__header {
-  background: var(--l_white);
-  border-bottom: solid 1px var(--l_black); }
+  background: var(--l_white); }
 .light__profile {
   background-color: var(--l_white); }
 .light__competences {
   background: var(--l_white); }
   .light__competences .all_rows .row .progress {
-    background: var(--l_blue); }
+    background: var(--l_green); }
     .light__competences .all_rows .row .progress .progress-bar {
       background: var(--l_black);
       color: var(--l_white); }
@@ -10563,13 +10563,13 @@ textarea.form-control-lg {
     background: var(--l_white);
     border: solid 1px var(--l_black); }
   .light__path .contenu .slides .cta:before {
-    background: var(--l_white); }
+    background: var(--l_green); }
   .light__path .contenu .slides .cta span {
     color: var(--l_black); }
   .light__path .contenu .slides .cta svg {
     stroke: var(--l_black); }
   .light__path .contenu .slides .cta:hover:before {
-    background: var(--l_white); }
+    background: var(--l_green); }
   .light__path .contenu .progress_bar_placement .progress_bar::after {
     border: solid 1px var(--l_black);
     background-color: var(--l_white); }
@@ -10587,122 +10587,13 @@ textarea.form-control-lg {
 .light__aboutme {
   background: var(--l_white); }
   .light__aboutme .button {
-    color: var(--l_black);
-    background-color: var(--l_blue); }
+    color: var(--l_white);
+    background-color: var(--l_green); }
   .light__aboutme .button:hover:before {
-    background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--l_blue) 20%, transparent 30%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%); }
+    background-image: radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--l_green) 20%, transparent 30%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_green) 15%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%); }
   .light__aboutme .button:hover::after {
-    background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%); }
+    background-image: radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_green) 15%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%); }
 .light__footer {
-  background-color: var(--l_blue); }
-
-.dark__body {
-  background-color: var(--l_green); }
-.dark__header {
-  background-color: var(--l_blue); }
-.dark__profile .name {
-  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); }
-  .dark__profile .name:hover {
-    background-image: linear-gradient(to top, var(--l_grey) 0%, var(--l_blue) 100%);
-    color: var(--l_white); }
-.dark__profile .letter {
-  background-color: var(--l_grey); }
-  .dark__profile .letter .wave {
-    color: var(--l_white); }
-.dark__competences {
-  background-color: var(--l_blue);
-  border: solid 1px var(--l_black); }
-  .dark__competences .progress_background {
-    background-color: var(--l_black); }
-.dark__path {
-        /*.progress_path {
-            &::after {
-                border: solid 1px var(--d_black);
-                background-color: var(--l_blue);
-            }
-
-            .charging {
-                background-color: var(--l_grey);
-                border: solid 1px var(--l_blue);
-            }
-
-            .checked {
-                background-color: var(--l_grey);
-            }
-
-            .btn_path {
-                border: solid 2px var(--l_black);
-
-                &:hover {
-                    background-color: var(--l_grey);
-                    border: solid 1px var(--l_white);
-                }
-            }
-        }*/ }
-  .dark__path .path_content {
-    background-color: var(--l_blue);
-    border: solid 2px var(--l_black); }
-    .dark__path .path_content .bubbles {
-      background-color: #272424; }
-    .dark__path .path_content .prez {
-      background-color: var(--l_black);
-      color: var(--l_white); }
-    .dark__path .path_content .button {
-      --text-stroke-color: var(--l_white);
-      --animation-color: var(--l_green); }
-    .dark__path .path_content .mse_date {
-      color: var(--l_white); }
-    .dark__path .path_content .cta:before {
-      background: var(--l_green); }
-    .dark__path .path_content .cta span {
-      color: var(--l_white); }
-    .dark__path .path_content .cta svg {
-      stroke: var(--l_white); }
-    .dark__path .path_content .cta:hover:before {
-      background: var(--l_green); }
-    .dark__path .path_content .bande {
-      background-color: #3b5254;
-      border: double 10px var(--l_white); }
-    .dark__path .path_content .border_color_top {
-      border-top: solid 1px var(--l_black); }
-    .dark__path .path_content .border_color_bottom {
-      border-bottom: solid 1px var(--l_black); }
-    .dark__path .path_content .border_color_left {
-      border-left: solid 1px var(--l_black); }
-    .dark__path .path_content .border_color_right {
-      border-right: solid 1px var(--l_black); }
-    .dark__path .path_content .pcsi {
-      background-color: var(--l_black);
-      color: var(--l_white);
-      border-right: solid 2px var(--l_white);
-      border-left: solid 2px var(--l_white); }
-      .dark__path .path_content .pcsi .maj {
-        color: var(--l_green); }
-    .dark__path .path_content .year_top {
-      border-top: double 5px var(--l_white); }
-    .dark__path .path_content .year_bottom {
-      border-bottom: double 5px var(--l_white); }
-    .dark__path .path_content .year_left {
-      border-left: double 5px var(--l_white); }
-    .dark__path .path_content .year_right {
-      border-right: double 5px var(--l_white); }
-  .dark__path .date_lycee {
-    background-color: var(--l_grey);
-    border: solid 2px var(--l_white);
-    border-radius: 15% 40%;
-    color: var(--l_white); }
-  .dark__path .date_pcsi {
-    color: var(--l_white); }
-  .dark__path .col_border {
-    border: solid 1px var(--l_black); }
-.dark__aboutme .front .button {
-  color: var(--l_black);
-  background-color: var(--l_blue); }
-.dark__aboutme .front .button:hover:before {
-  background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--l_blue) 20%, transparent 30%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%); }
-.dark__aboutme .front .button:hover::after {
-  background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%); }
-.dark__footer {
   background-color: var(--l_blue); }
 
 body header {
@@ -10719,14 +10610,15 @@ body header {
     body header .nav-link:hover,
     body header .btn:hover {
       transform: scale(1.2);
-      color: var(--l_black);
+      color: var(--l_green);
       border: transparent; }
   body header .dropdown-menu {
     background: var(--l_white); }
     body header .dropdown-menu .dropdown-item {
       transition: all 0.3s ease-in-out; }
       body header .dropdown-menu .dropdown-item:hover {
-        background: var(--l_blue);
+        background: var(--l_green);
+        color: var(--l_white);
         font-size: larger; }
   body header #theme-toggle-button {
     font-size: xx-small;
@@ -10949,8 +10841,10 @@ body .path .contenu .progress_bar {
       padding: 1rem;
       transition: transform 0.3s ease-in-out;
       font-size: 1.5rem; }
-    body .path .contenu .progress_bar .btn_path:hover::after {
+    body .path .contenu .progress_bar .btn_path:hover {
       transform: scale(1.2); }
+      body .path .contenu .progress_bar .btn_path:hover::after {
+        transform: scale(1.2); }
     body .path .contenu .progress_bar .btn_path:active {
       transform: scale(0.5); }
       body .path .contenu .progress_bar .btn_path:active::after {

@@ -15,11 +15,12 @@
     --l_blue: #C2D3DA;
 
     /*dark*/
+    /*
     --d_black: #040C0E;
     --d_navy: #132226;
     --d_green: #525B56;
     --d_wood: #BE9063;
-    --d_beige: #A4978E;
+    --d_beige: #A4978E;*/
 }
 
 @keyframes wave_animation {
@@ -453,7 +454,6 @@
 .light {
     &__header {
         background: var(--l_white);
-        border-bottom: solid 1px var(--l_black);
     }
 
     &__profile {
@@ -466,7 +466,7 @@
         .all_rows {
             .row {
                 .progress {
-                    background: var(--l_blue);
+                    background: var(--l_green);
 
                     .progress-bar {
                         background: var(--l_black);
@@ -508,7 +508,7 @@
 
 
                 .cta:before {
-                    background: var(--l_white);
+                    background: var(--l_green);
                 }
 
                 .cta span {
@@ -520,7 +520,7 @@
                 }
 
                 .cta:hover:before {
-                    background: var(--l_white);
+                    background: var(--l_green);
                 }
             }
 
@@ -560,243 +560,32 @@
         background: var(--l_white);
 
         .button {
-            color: var(--l_black);
-            background-color: var(--l_blue);
+            color: var(--l_white);
+            background-color: var(--l_green);
         }
 
         .button:hover:before {
-            background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                radial-gradient(circle, transparent 20%, var(--l_blue) 20%, transparent 30%),
-                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%),
-                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_blue) 20%, transparent 20%);
+            background-image: radial-gradient(circle, var(--l_green) 20%, transparent 20%),
+                radial-gradient(circle, transparent 20%, var(--l_green) 20%, transparent 30%),
+                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
+                radial-gradient(circle, transparent 10%, var(--l_green) 15%, transparent 20%),
+                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_green) 20%, transparent 20%);
         }
 
         .button:hover::after {
-            background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%),
-                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_blue) 20%, transparent 20%);
+            background-image: radial-gradient(circle, var(--l_green) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
+                radial-gradient(circle, transparent 10%, var(--l_green) 15%, transparent 20%),
+                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_green) 20%, transparent 20%);
         }
 
-    }
-
-    &__footer {
-        background-color: var(--l_blue);
-    }
-}
-
-.dark {
-    &__body {
-        background-color: var(--l_green);
-    }
-
-    &__header {
-        background-color: var(--l_blue);
-    }
-
-    &__profile {
-        .name {
-            background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-
-            &:hover {
-                background-image: linear-gradient(to top, var(--l_grey) 0%, var(--l_blue) 100%);
-                color: var(--l_white);
-            }
-        }
-
-        .letter {
-            background-color: var(--l_grey);
-
-            .wave {
-                color: var(--l_white);
-            }
-        }
-    }
-
-    &__competences {
-        background-color: var(--l_blue);
-        border: solid 1px var(--l_black);
-
-        .progress_background {
-            background-color: var(--l_black);
-        }
-    }
-
-    &__projects {}
-
-    &__path {
-        .path_content {
-            background-color: var(--l_blue);
-            border: solid 2px var(--l_black);
-
-
-            .bubbles {
-                background-color: #272424;
-            }
-
-            .prez {
-                background-color: var(--l_black);
-                color: var(--l_white);
-            }
-
-            .button {
-                --text-stroke-color: var(--l_white);
-                --animation-color: var(--l_green);
-            }
-
-            .mse_date {
-                color: var(--l_white);
-            }
-
-            .cta:before {
-                background: var(--l_green);
-            }
-
-            .cta span {
-                color: var(--l_white);
-            }
-
-            .cta svg {
-                stroke: var(--l_white);
-            }
-
-            .cta:hover:before {
-                background: var(--l_green);
-            }
-
-            .bande {
-                background-color: darken(#81A3A7, 30%);
-                border: double 10px var(--l_white);
-            }
-
-            .border_color {
-                &_top {
-                    border-top: solid 1px var(--l_black);
-                }
-
-                &_bottom {
-                    border-bottom: solid 1px var(--l_black);
-                }
-
-                &_left {
-                    border-left: solid 1px var(--l_black);
-                }
-
-                &_right {
-                    border-right: solid 1px var(--l_black);
-                }
-            }
-
-            .pcsi {
-                background-color: var(--l_black);
-                color: var(--l_white);
-                border-right: solid 2px var(--l_white);
-                border-left: solid 2px var(--l_white);
-
-                .maj {
-                    color: var(--l_green);
-                }
-            }
-
-            .year {
-                &_top {
-                    border-top: double 5px var(--l_white);
-                }
-
-                &_bottom {
-                    border-bottom: double 5px var(--l_white);
-                }
-
-                &_left {
-                    border-left: double 5px var(--l_white);
-                }
-
-                &_right {
-                    border-right: double 5px var(--l_white);
-                }
-            }
-        }
-
-        .date {
-            &_lycee {
-                background-color: var(--l_grey);
-                border: solid 2px var(--l_white);
-                border-radius: 15% 40%;
-                color: var(--l_white);
-            }
-
-            &_pcsi {
-                color: var(--l_white);
-            }
-        }
-
-        .col_border {
-            border: solid 1px var(--l_black);
-        }
-
-        /*.progress_path {
-            &::after {
-                border: solid 1px var(--d_black);
-                background-color: var(--l_blue);
-            }
-
-            .charging {
-                background-color: var(--l_grey);
-                border: solid 1px var(--l_blue);
-            }
-
-            .checked {
-                background-color: var(--l_grey);
-            }
-
-            .btn_path {
-                border: solid 2px var(--l_black);
-
-                &:hover {
-                    background-color: var(--l_grey);
-                    border: solid 1px var(--l_white);
-                }
-            }
-        }*/
-    }
-
-    &__aboutme {
-        .front {
-            .button {
-                color: var(--l_black);
-                background-color: var(--l_blue);
-            }
-
-            .button:hover:before {
-                background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                    radial-gradient(circle, transparent 20%, var(--l_blue) 20%, transparent 30%),
-                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                    radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%),
-                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%);
-            }
-
-            .button:hover::after {
-                background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                    radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%),
-                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
-                    radial-gradient(circle, var(--l_blue) 20%, transparent 20%);
-            }
-        }
     }
 
     &__footer {
@@ -814,7 +603,7 @@ body {
 
             &:hover {
                 transform: scale(1.2);
-                color: (var(--l_black));
+                color: (var(--l_green));
                 border: transparent;
             }
         }
@@ -826,7 +615,8 @@ body {
                 transition: all 0.3s ease-in-out;
 
                 &:hover {
-                    background: var(--l_blue);
+                    background: var(--l_green);
+                    color: var(--l_white);
                     font-size: larger;
                 }
             }
@@ -1210,6 +1000,8 @@ body {
                     }
 
                     &:hover {
+                        transform: scale(1.2);
+
                         &::after {
                             transform: scale(1.2);
                         }
@@ -1522,8 +1314,6 @@ body {
 
 //téléphone en mode portrait
 @media (max-width:992px) and (orientation:portrait) {
-    .welcome {}
-
     .profile {
         .flux {
             height: 100%;
@@ -1586,8 +1376,6 @@ body {
         }
     }
 
-    .competences {}
-
     .projects {}
 
     .aboutme {
@@ -1611,8 +1399,6 @@ body {
 
 //téléphone en mode paysage
 @media (max-width:992px) and (orientation:landscape) {
-    .welcome {}
-
     .profile {
         .flux {
             height: 100%;
@@ -1675,8 +1461,6 @@ body {
         }
     }
 
-    .competences {}
-
     .projects {}
 
     .aboutme {
@@ -1698,8 +1482,6 @@ body {
 
 //ordis
 @media (min-width:992px) {
-    .welcome {}
-
     .profile {
         .flux {
             height: 75%;
@@ -1759,8 +1541,6 @@ body {
             }
         }
     }
-
-    .competences {}
 
     .projects {}
 

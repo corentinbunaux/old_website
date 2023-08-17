@@ -5,6 +5,7 @@ const tennis = document.querySelector(".aboutme button");
 const decouvrir = document.getElementById('decouvrir');
 const path_slides = document.querySelectorAll(".slides");
 const card = document.querySelector(".card");
+const langue = document.querySelector("html").attributes.lang.value; //fr ou en
 
 var chargement_progress_bar = 0;
 var orientation = '';
