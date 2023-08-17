@@ -820,14 +820,6 @@ body {
     }
 
     .profile {
-        .bonjour {
-            font-size: 3rem;
-        }
-
-        .message {
-            font-size: 1.5rem;
-        }
-
         img {
             height: auto;
             max-width: 100%;
@@ -849,64 +841,11 @@ body {
             }
 
             .slides {
-                .date {
-                    width: fit-content;
-                    height: fit-content;
-                    opacity: 0;
-                    transition: opacity 0.3s ease-in-out;
-
-                    &_mse {
-                        left: 7%;
-                        top: 5%;
-                    }
-
-                    &_vh {
-                        left: 33%;
-                        top: 85%;
-                    }
-
-                    &_f1 {
-                        top: 5%;
-                        left: 60%;
-                    }
-
-                    &_glc {
-                        top: 85%;
-                        left: 87%;
-                    }
-                }
-
                 .formation {
-                    height: fit-content;
-                    max-height: 50%;
-                    width: fit-content;
-                    max-width: 50%;
                     overflow: scroll;
                     border-radius: 1rem;
-                    padding: 20px;
-
                     opacity: 0;
                     transition: opacity 0.3s ease-in-out;
-
-                    &_mse {
-                        top: 25%;
-                        left: 5%;
-                    }
-
-                    &_vh {
-                        top: 15%;
-                        left: 25%;
-                    }
-
-                    &_f1 {
-                        top: 30%;
-                        left: 55%;
-                    }
-
-                    &_glc {
-                        top: 25%;
-                        left: 75%;
-                    }
 
                     .cta {
                         position: relative;
@@ -1316,6 +1255,14 @@ body {
 //téléphone en mode portrait
 @media (max-width:992px) and (orientation:portrait) {
     .profile {
+        .message {
+            font-size: 3rem;
+        }
+
+        .bonjour {
+            font-size: 4.5rem;
+        }
+
         .flux {
             height: 100%;
         }
@@ -1334,6 +1281,50 @@ body {
                 .slides {
                     width: 48vw;
                     height: 95vh;
+
+                    .formation {
+                        height: 17vh;
+                        width: 75vw;
+                        z-index: 3;
+                        padding: 2rem;
+
+                        h3 {
+                            font-size: 3rem;
+                        }
+
+                        p {
+                            font-size: 1.5rem;
+                        }
+
+                        .cta {
+                            width: fit-content;
+                            height: fit-content;
+
+                            span {
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                        &_mse {
+                            top: 10%;
+                            left: 25%;
+                        }
+
+                        &_vh {
+                            top: 30%;
+                            right: 25%;
+                        }
+
+                        &_f1 {
+                            top: 50%;
+                            left: 25%;
+                        }
+
+                        &_glc {
+                            top: 70%;
+                            right: 25%;
+                        }
+                    }
                 }
 
                 .progress_bar_placement {
@@ -1401,6 +1392,14 @@ body {
 //téléphone en mode paysage
 @media (max-width:992px) and (orientation:landscape) {
     .profile {
+        .message {
+            font-size: 1.5rem;
+        }
+
+        .bonjour {
+            font-size: 3rem;
+        }
+
         .flux {
             height: 100%;
         }
@@ -1420,6 +1419,51 @@ body {
                 .slides {
                     height: 48vh;
                     width: 95vw;
+
+                    .formation {
+                        height: 80%;
+                        width: fit-content;
+                        max-width: 100%;
+                        z-index: 3;
+                        padding: 1rem;
+
+                        h3 {
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                        }
+
+                        .cta {
+                            width: fit-content;
+                            height: fit-content;
+
+                            span {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        &_mse {
+                            top: 10%;
+                            left: 10%;
+                        }
+
+                        &_vh {
+                            top: 5%;
+                            left: 25%;
+                        }
+
+                        &_f1 {
+                            top: 10%;
+                            right: 20%;
+                        }
+
+                        &_glc {
+                            top: 5%;
+                            right: 2%;
+                        }
+                    }
                 }
 
                 .progress_bar_placement {
@@ -1484,6 +1528,14 @@ body {
 //ordis
 @media (min-width:992px) {
     .profile {
+        .message {
+            font-size: 1.5rem;
+        }
+
+        .bonjour {
+            font-size: 3rem;
+        }
+
         .flux {
             height: 75%;
         }
@@ -1502,6 +1554,33 @@ body {
                 .slides {
                     height: 45vh;
                     width: 98.5vw;
+
+                    .formation {
+                        height: fit-content;
+                        width: fit-content;
+                        padding: 2rem;
+
+                        &_mse {
+                            top: 25%;
+                            left: 5%;
+                        }
+
+                        &_vh {
+                            top: 15%;
+                            left: 25%;
+                        }
+
+                        &_f1 {
+                            top: 30%;
+                            left: 55%;
+                        }
+
+                        &_glc {
+                            top: 25%;
+                            left: 75%;
+                        }
+                    }
+
                 }
 
                 .progress_bar_placement {

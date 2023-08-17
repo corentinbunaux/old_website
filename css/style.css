@@ -10728,10 +10728,6 @@ body .welcome .message {
       top: 10%; }
       body .welcome .message .letter__U .wave {
         animation: wave_animation 4s 0.875s infinite both; }
-body .profile .bonjour {
-  font-size: 3rem; }
-body .profile .message {
-  font-size: 1.5rem; }
 body .profile img {
   height: auto;
   max-width: 100%;
@@ -10741,45 +10737,11 @@ body .profile .langues .row {
 body .path .contenu .ensemble {
   opacity: 0;
   transition: opacity 0.3s ease-in-out; }
-body .path .contenu .slides .date {
-  width: fit-content;
-  height: fit-content;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out; }
-  body .path .contenu .slides .date_mse {
-    left: 7%;
-    top: 5%; }
-  body .path .contenu .slides .date_vh {
-    left: 33%;
-    top: 85%; }
-  body .path .contenu .slides .date_f1 {
-    top: 5%;
-    left: 60%; }
-  body .path .contenu .slides .date_glc {
-    top: 85%;
-    left: 87%; }
 body .path .contenu .slides .formation {
-  height: fit-content;
-  max-height: 50%;
-  width: fit-content;
-  max-width: 50%;
   overflow: scroll;
   border-radius: 1rem;
-  padding: 20px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out; }
-  body .path .contenu .slides .formation_mse {
-    top: 25%;
-    left: 5%; }
-  body .path .contenu .slides .formation_vh {
-    top: 15%;
-    left: 25%; }
-  body .path .contenu .slides .formation_f1 {
-    top: 30%;
-    left: 55%; }
-  body .path .contenu .slides .formation_glc {
-    top: 25%;
-    left: 75%; }
   body .path .contenu .slides .formation .cta {
     position: relative;
     margin: auto;
@@ -11048,6 +11010,10 @@ body footer {
   width: 100vw; }
 
 @media (max-width: 992px) and (orientation: portrait) {
+  .profile .message {
+    font-size: 3rem; }
+  .profile .bonjour {
+    font-size: 4.5rem; }
   .profile .flux {
     height: 100%; }
   .profile .col-h {
@@ -11059,6 +11025,32 @@ body footer {
     .path .contenu .ensemble .slides {
       width: 48vw;
       height: 95vh; }
+      .path .contenu .ensemble .slides .formation {
+        height: 17vh;
+        width: 75vw;
+        z-index: 3;
+        padding: 2rem; }
+        .path .contenu .ensemble .slides .formation h3, .path .contenu .ensemble .slides .formation .h3 {
+          font-size: 3rem; }
+        .path .contenu .ensemble .slides .formation p {
+          font-size: 1.5rem; }
+        .path .contenu .ensemble .slides .formation .cta {
+          width: fit-content;
+          height: fit-content; }
+          .path .contenu .ensemble .slides .formation .cta span {
+            font-size: 1.5rem; }
+        .path .contenu .ensemble .slides .formation_mse {
+          top: 10%;
+          left: 25%; }
+        .path .contenu .ensemble .slides .formation_vh {
+          top: 30%;
+          right: 25%; }
+        .path .contenu .ensemble .slides .formation_f1 {
+          top: 50%;
+          left: 25%; }
+        .path .contenu .ensemble .slides .formation_glc {
+          top: 70%;
+          right: 25%; }
     .path .contenu .ensemble .progress_bar_placement {
       height: 95vh;
       width: 4vw;
@@ -11096,6 +11088,10 @@ body footer {
     width: 44px;
     height: 44px; } }
 @media (max-width: 992px) and (orientation: landscape) {
+  .profile .message {
+    font-size: 1.5rem; }
+  .profile .bonjour {
+    font-size: 3rem; }
   .profile .flux {
     height: 100%; }
   .profile .col-h {
@@ -11108,6 +11104,33 @@ body footer {
     .path .contenu .ensemble .slides {
       height: 48vh;
       width: 95vw; }
+      .path .contenu .ensemble .slides .formation {
+        height: 80%;
+        width: fit-content;
+        max-width: 100%;
+        z-index: 3;
+        padding: 1rem; }
+        .path .contenu .ensemble .slides .formation h3, .path .contenu .ensemble .slides .formation .h3 {
+          font-size: 1.5rem; }
+        .path .contenu .ensemble .slides .formation p {
+          font-size: 1rem; }
+        .path .contenu .ensemble .slides .formation .cta {
+          width: fit-content;
+          height: fit-content; }
+          .path .contenu .ensemble .slides .formation .cta span {
+            font-size: 1rem; }
+        .path .contenu .ensemble .slides .formation_mse {
+          top: 10%;
+          left: 10%; }
+        .path .contenu .ensemble .slides .formation_vh {
+          top: 5%;
+          left: 25%; }
+        .path .contenu .ensemble .slides .formation_f1 {
+          top: 10%;
+          right: 20%; }
+        .path .contenu .ensemble .slides .formation_glc {
+          top: 5%;
+          right: 2%; }
     .path .contenu .ensemble .progress_bar_placement {
       height: 4vh;
       width: 95vw;
@@ -11142,6 +11165,10 @@ body footer {
     width: 24px;
     height: 24px; } }
 @media (min-width: 992px) {
+  .profile .message {
+    font-size: 1.5rem; }
+  .profile .bonjour {
+    font-size: 3rem; }
   .profile .flux {
     height: 75%; }
   .profile .col-h {
@@ -11153,6 +11180,22 @@ body footer {
     .path .contenu .ensemble .slides {
       height: 45vh;
       width: 98.5vw; }
+      .path .contenu .ensemble .slides .formation {
+        height: fit-content;
+        width: fit-content;
+        padding: 2rem; }
+        .path .contenu .ensemble .slides .formation_mse {
+          top: 25%;
+          left: 5%; }
+        .path .contenu .ensemble .slides .formation_vh {
+          top: 15%;
+          left: 25%; }
+        .path .contenu .ensemble .slides .formation_f1 {
+          top: 30%;
+          left: 55%; }
+        .path .contenu .ensemble .slides .formation_glc {
+          top: 25%;
+          left: 75%; }
     .path .contenu .ensemble .progress_bar_placement {
       height: 5vh;
       width: 98.5vw;

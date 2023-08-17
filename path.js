@@ -160,7 +160,7 @@ function GenereProgression() {
 
     path_slides[1].innerHTML = '';
     path_slides[0].innerHTML = `<div class="position-absolute formation formation_mse">
-    <h3>École des Mines de Saint-Étienne</h1>
+    <h3>École des Mines de Saint-Étienne</h3>
         <p>
             <strong>I</strong><span>ngénieur</span>
             <strong>S</strong><span>pécialité</span>
