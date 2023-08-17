@@ -10536,7 +10536,7 @@ textarea.form-control-lg {
   100% {
     transform: translate(3230%, 0%) rotate(45deg); } }
 .light__header {
-  background: var(--l_blue);
+  background: var(--l_white);
   border-bottom: solid 1px var(--l_black); }
 .light__profile {
   background-color: var(--l_white); }
@@ -10548,9 +10548,9 @@ textarea.form-control-lg {
       background: var(--l_black);
       color: var(--l_white); }
 .light__projects {
-  background: var(--l_green); }
+  background: var(--l_blue); }
 .light__path {
-  background-color: var(--l_green); }
+  background-color: var(--l_blue); }
   .light__path .contenu .button {
     --text-stroke-color: var(--l_white);
     --animation-color: var(--l_green); }
@@ -10560,7 +10560,7 @@ textarea.form-control-lg {
   .light__path .contenu .slides .date {
     color: var(--l_black); }
   .light__path .contenu .slides .formation {
-    background: var(--l_blue);
+    background: var(--l_white);
     border: solid 1px var(--l_black); }
   .light__path .contenu .slides .cta:before {
     background: var(--l_white); }
@@ -10577,13 +10577,13 @@ textarea.form-control-lg {
     border: solid 1px var(--l_black);
     background-color: var(--l_white); }
     .light__path .contenu .progress_bar_placement .progress_bar .btn_path:hover {
-      background-color: var(--l_blue);
-      border: solid 1px var(--l_white); }
+      background-color: var(--l_green);
+      border: solid 1px var(--l_black); }
   .light__path .contenu .progress_bar_placement .progress_bar #charging {
-    background-color: var(--l_blue);
-    border: solid 1px var(--l_white); }
+    background-color: var(--l_green);
+    border: solid 1px var(--l_black); }
   .light__path .contenu .progress_bar_placement .progress_bar .checked {
-    background-color: var(--l_blue); }
+    background-color: var(--l_green); }
 .light__aboutme {
   background: var(--l_white); }
   .light__aboutme .button {
@@ -10772,7 +10772,7 @@ body section {
   height: 95vh;
   width: 100vw; }
 body .welcome img {
-  background: url(./../aurore.jpg) 50% 40%;
+  background: url(./../lune.jpg) 50% 40%;
   background-size: cover;
   background-repeat: no-repeat; }
 body .welcome .message {

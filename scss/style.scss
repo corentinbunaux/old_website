@@ -452,7 +452,7 @@
 
 .light {
     &__header {
-        background: var(--l_blue);
+        background: var(--l_white);
         border-bottom: solid 1px var(--l_black);
     }
 
@@ -478,11 +478,11 @@
     }
 
     &__projects {
-        background: var(--l_green);
+        background: var(--l_blue);
     }
 
     &__path {
-        background-color: var(--l_green);
+        background-color: var(--l_blue);
 
         .contenu {
             .button {
@@ -498,12 +498,11 @@
             .slides {
                 .date {
                     color: var(--l_black);
-
                 }
 
 
                 .formation {
-                    background: var(--l_blue);
+                    background: var(--l_white);
                     border: solid 1px var(--l_black);
                 }
 
@@ -539,18 +538,18 @@
                         background-color: var(--l_white);
 
                         &:hover {
-                            background-color: var(--l_blue);
-                            border: solid 1px var(--l_white);
+                            background-color: var(--l_green);
+                            border: solid 1px var(--l_black);
                         }
                     }
 
                     #charging {
-                        background-color: var(--l_blue);
-                        border: solid 1px var(--l_white);
+                        background-color: var(--l_green);
+                        border: solid 1px var(--l_black);
                     }
 
                     .checked {
-                        background-color: var(--l_blue);
+                        background-color: var(--l_green);
                     }
                 }
             }
@@ -915,7 +914,7 @@ body {
 
     .welcome {
         img {
-            background: url(./../aurore.jpg) 50% 40%;
+            background: url(./../lune.jpg) 50% 40%;
             background-size: cover;
             background-repeat: no-repeat;
         }
