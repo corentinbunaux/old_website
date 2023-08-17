@@ -5,8 +5,7 @@
     <title>Portfolio Corentin Bunaux</title>
     <link rel="stylesheet" href="css/style.css">
 
-    <!--<script type="module" src="darkmode.js"></script>-->
-    <script type="module" src="path.js"></script>
+    <!--<script type="module" src="path.js"></script>-->
 
     <!-- Bootstrap JS bundle -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -19,6 +18,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
+
     <!--Tooltips-->
     <script>
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -29,6 +29,9 @@
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <header class="sticky-top light__header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -38,7 +41,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto d-flex align-items-center" style="height : 3rem;">
+                    <ul class="navbar-nav m-auto d-flex align-items-center">
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
                             <a class="nav-link" aria-current="page" href="#welcome">Accueil</a>
                         </li>
@@ -282,7 +285,7 @@
                                         <path fill="#272424"
                                             d="M19.037 113.876l-10.005-112.215h109.936l-10.016 112.198-45.019 12.48z">
                                         </path>
-                                        <path fill="#81A3A7" d="M64 116.8l36.378-10.086 8.559-95.878h-44.937z">
+                                        <path fill="#585A56" d="M64 116.8l36.378-10.086 8.559-95.878h-44.937z">
                                         </path>
                                         <path fill="#F1F3F2"
                                             d="M64 52.455h-18.212l-1.258-14.094h19.47v-13.762h-34.511l.33 3.692 3.382 37.927h30.799zM64 88.198l-.061.017-15.327-4.14-.979-10.975h-13.817l1.928 21.609 28.193 7.826.063-.017z">
@@ -313,7 +316,7 @@
                                         <path fill="#272424"
                                             d="M18.814 114.123l-10.054-112.771h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z">
                                         </path>
-                                        <path fill="#81A3A7"
+                                        <path fill="#585A56"
                                             d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z">
                                         </path>
                                         <path fill="#F1F3F2"
@@ -363,7 +366,7 @@
                                     data-bs-toggle="tooltip" title="C" style="cursor: help;">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="c"
                                         style="max-height: 100%; height : 100%;">
-                                        <path fill="#81A3A7"
+                                        <path fill="#585A56"
                                             d="M115.4 30.7l-48.3-27.8c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z">
                                         </path>
                                         <path fill="#272424"
@@ -373,7 +376,6 @@
                                             d="M85.3 76.1c-4.2 7.4-12.2 12.4-21.3 12.4-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z">
                                         </path>
                                     </svg>
-                                    </svg>
                                 </div>
                             </div>
                             <div class="row">
@@ -382,7 +384,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" height="fit-content"
                                         preserveAspectRatio="xMinYMin meet" viewBox="0 0 256 288" id="c"
                                         style="max-height: 100%; height : 100%;">
-                                        <path fill="#81A3A7"
+                                        <path fill="#585A56"
                                             d="M255.569 84.72c-.002-4.83-1.035-9.098-3.124-12.761-2.052-3.602-5.125-6.621-9.247-9.008-34.025-19.619-68.083-39.178-102.097-58.817-9.17-5.294-18.061-5.101-27.163.269C100.395 12.39 32.59 51.237 12.385 62.94 4.064 67.757.015 75.129.013 84.711 0 124.166.013 163.62 0 203.076c.002 4.724.991 8.909 2.988 12.517 2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.269 34.015-19.64 68.075-39.198 102.105-58.817 4.217-2.44 7.333-5.544 9.386-9.252 1.994-3.608 2.985-7.793 2.987-12.518 0 0 0-78.889-.013-118.345">
                                         </path>
                                         <path fill="#272424"
@@ -421,11 +423,11 @@
                                     data-bs-toggle="tooltip" title="Python" style="cursor: help;">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="python"
                                         style="max-height: 100%; height : 100%;">
-                                        <path fill="" d="M18.231 7.357h.001v-.004z"></path>
+                                        <path d="M18.231 7.357h.001v-.004z"></path>
                                         <path fill="#272424"
                                             d="M20.699 17.748c1.666 0 2.282-1.162 2.861-2.904.6-1.794.574-3.52 0-5.818-.413-1.655-1.194-2.904-2.861-2.904h-2.147v2.541c0 1.971-1.672 3.632-3.578 3.632H9.252c-1.565 0-2.861 1.339-2.861 2.909v5.454c0 1.553 1.35 2.464 2.861 2.909 1.81.53 3.552.626 5.721 0 1.441-.418 2.861-1.26 2.861-2.909v-2.181h-5.717v-.728h8.582zm-5.367 2.181c.594 0 1.077.488 1.077 1.088 0 .606-.482 1.093-1.077 1.093a1.09 1.09 0 0 1-1.077-1.093 1.088 1.088 0 0 1 1.077-1.088z">
                                         </path>
-                                        <path fill="#81A3A7"
+                                        <path fill="#585A56"
                                             d="M3.444 17.749H5.41v-2.615c0-1.891 1.634-3.558 3.578-3.558h5.721c1.591 0 2.861-1.312 2.861-2.909V3.209c0-1.553-1.307-2.717-2.861-2.978-1.918-.317-4.002-.299-5.721.006l.001-.001c-2.422.428-2.86 1.322-2.86 2.977v2.181h5.727v.729H3.98C2.314 6.123.856 7.125.402 9.027c-.525 2.181-.546 3.541 0 5.818.406 1.693 1.377 2.904 3.042 2.904zM8.63 3.937a1.084 1.084 0 0 1-1.077-1.088A1.089 1.089 0 0 1 8.63 1.756c.59 0 1.077.492 1.077 1.093S9.225 3.937 8.63 3.937z">
                                         </path>
                                     </svg>

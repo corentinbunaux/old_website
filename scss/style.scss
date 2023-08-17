@@ -454,6 +454,7 @@
 .light {
     &__header {
         background: var(--l_white);
+        border-bottom: solid var(--l_black);
     }
 
     &__profile {
@@ -466,7 +467,7 @@
         .all_rows {
             .row {
                 .progress {
-                    background: var(--l_green);
+                    background: var(--l_blue);
 
                     .progress-bar {
                         background: var(--l_black);
@@ -482,7 +483,7 @@
     }
 
     &__path {
-        background-color: var(--l_blue);
+        background-color: var(--l_green);
 
         .contenu {
             .button {
@@ -502,13 +503,13 @@
 
 
                 .formation {
-                    background: var(--l_white);
+                    background: var(--l_blue);
                     border: solid 1px var(--l_black);
                 }
 
 
                 .cta:before {
-                    background: var(--l_green);
+                    background: var(--l_white);
                 }
 
                 .cta span {
@@ -520,7 +521,7 @@
                 }
 
                 .cta:hover:before {
-                    background: var(--l_green);
+                    background: var(--l_white);
                 }
             }
 
@@ -538,18 +539,18 @@
                         background-color: var(--l_white);
 
                         &:hover {
-                            background-color: var(--l_green);
+                            background-color: var(--l_blue);
                             border: solid 1px var(--l_black);
                         }
                     }
 
                     #charging {
-                        background-color: var(--l_green);
+                        background-color: var(--l_blue);
                         border: solid 1px var(--l_black);
                     }
 
                     .checked {
-                        background-color: var(--l_green);
+                        background-color: var(--l_blue);
                     }
                 }
             }
@@ -560,30 +561,30 @@
         background: var(--l_white);
 
         .button {
-            color: var(--l_white);
-            background-color: var(--l_green);
+            color: var(--l_black);
+            background-color: var(--l_blue);
         }
 
         .button:hover:before {
-            background-image: radial-gradient(circle, var(--l_green) 20%, transparent 20%),
-                radial-gradient(circle, transparent 20%, var(--l_green) 20%, transparent 30%),
-                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
-                radial-gradient(circle, transparent 10%, var(--l_green) 15%, transparent 20%),
-                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_green) 20%, transparent 20%);
+            background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                radial-gradient(circle, transparent 20%, var(--l_blue) 20%, transparent 30%),
+                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%),
+                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_blue) 20%, transparent 20%);
         }
 
         .button:hover::after {
-            background-image: radial-gradient(circle, var(--l_green) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
-                radial-gradient(circle, transparent 10%, var(--l_green) 15%, transparent 20%),
-                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_green) 20%, transparent 20%),
-                radial-gradient(circle, var(--l_green) 20%, transparent 20%);
+            background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%),
+                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_blue) 20%, transparent 20%),
+                radial-gradient(circle, var(--l_blue) 20%, transparent 20%);
         }
 
     }
@@ -615,8 +616,8 @@ body {
                 transition: all 0.3s ease-in-out;
 
                 &:hover {
-                    background: var(--l_green);
-                    color: var(--l_white);
+                    background: var(--l_blue);
+                    color: var(--l_black);
                     font-size: larger;
                 }
             }
@@ -704,7 +705,7 @@ body {
 
     .welcome {
         img {
-            background: url(./../lune.jpg) 50% 40%;
+            background: url(./../welcome.jpg) 50% 40%; //50% 40%
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -725,7 +726,7 @@ body {
                 align-items: center;
                 border-radius: 50rem;
                 background-color: transparent;
-                color: white;
+                color: var(--l_white);
 
 
                 &__B {

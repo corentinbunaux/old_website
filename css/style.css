@@ -10537,20 +10537,21 @@ textarea.form-control-lg {
   100% {
     transform: translate(3230%, 0%) rotate(45deg); } }
 .light__header {
-  background: var(--l_white); }
+  background: var(--l_white);
+  border-bottom: solid var(--l_black); }
 .light__profile {
   background-color: var(--l_white); }
 .light__competences {
   background: var(--l_white); }
   .light__competences .all_rows .row .progress {
-    background: var(--l_green); }
+    background: var(--l_blue); }
     .light__competences .all_rows .row .progress .progress-bar {
       background: var(--l_black);
       color: var(--l_white); }
 .light__projects {
   background: var(--l_blue); }
 .light__path {
-  background-color: var(--l_blue); }
+  background-color: var(--l_green); }
   .light__path .contenu .button {
     --text-stroke-color: var(--l_white);
     --animation-color: var(--l_green); }
@@ -10560,16 +10561,16 @@ textarea.form-control-lg {
   .light__path .contenu .slides .date {
     color: var(--l_black); }
   .light__path .contenu .slides .formation {
-    background: var(--l_white);
+    background: var(--l_blue);
     border: solid 1px var(--l_black); }
   .light__path .contenu .slides .cta:before {
-    background: var(--l_green); }
+    background: var(--l_white); }
   .light__path .contenu .slides .cta span {
     color: var(--l_black); }
   .light__path .contenu .slides .cta svg {
     stroke: var(--l_black); }
   .light__path .contenu .slides .cta:hover:before {
-    background: var(--l_green); }
+    background: var(--l_white); }
   .light__path .contenu .progress_bar_placement .progress_bar::after {
     border: solid 1px var(--l_black);
     background-color: var(--l_white); }
@@ -10577,22 +10578,22 @@ textarea.form-control-lg {
     border: solid 1px var(--l_black);
     background-color: var(--l_white); }
     .light__path .contenu .progress_bar_placement .progress_bar .btn_path:hover {
-      background-color: var(--l_green);
+      background-color: var(--l_blue);
       border: solid 1px var(--l_black); }
   .light__path .contenu .progress_bar_placement .progress_bar #charging {
-    background-color: var(--l_green);
+    background-color: var(--l_blue);
     border: solid 1px var(--l_black); }
   .light__path .contenu .progress_bar_placement .progress_bar .checked {
-    background-color: var(--l_green); }
+    background-color: var(--l_blue); }
 .light__aboutme {
   background: var(--l_white); }
   .light__aboutme .button {
-    color: var(--l_white);
-    background-color: var(--l_green); }
+    color: var(--l_black);
+    background-color: var(--l_blue); }
   .light__aboutme .button:hover:before {
-    background-image: radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--l_green) 20%, transparent 30%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_green) 15%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%); }
+    background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--l_blue) 20%, transparent 30%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%); }
   .light__aboutme .button:hover::after {
-    background-image: radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_green) 15%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%), radial-gradient(circle, var(--l_green) 20%, transparent 20%); }
+    background-image: radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--l_blue) 15%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%), radial-gradient(circle, var(--l_blue) 20%, transparent 20%); }
 .light__footer {
   background-color: var(--l_blue); }
 
@@ -10617,8 +10618,8 @@ body header {
     body header .dropdown-menu .dropdown-item {
       transition: all 0.3s ease-in-out; }
       body header .dropdown-menu .dropdown-item:hover {
-        background: var(--l_green);
-        color: var(--l_white);
+        background: var(--l_blue);
+        color: var(--l_black);
         font-size: larger; }
   body header #theme-toggle-button {
     font-size: xx-small;
@@ -10664,7 +10665,7 @@ body section {
   height: 95vh;
   width: 100vw; }
 body .welcome img {
-  background: url(./../lune.jpg) 50% 40%;
+  background: url(./../welcome.jpg) 50% 40%;
   background-size: cover;
   background-repeat: no-repeat; }
 body .welcome .message {
@@ -10681,7 +10682,7 @@ body .welcome .message {
     align-items: center;
     border-radius: 50rem;
     background-color: transparent;
-    color: white; }
+    color: var(--l_white); }
     body .welcome .message .letter__B {
       position: relative;
       top: 0%; }
