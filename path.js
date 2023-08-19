@@ -4,7 +4,11 @@ const contenu = document.querySelector(".contenu");
 const tennis = document.querySelector(".aboutme button");
 const decouvrir = document.getElementById('decouvrir');
 const path_slides = document.querySelectorAll(".slides");
-const card = document.querySelector(".card");
+const btn_activation = document.querySelectorAll(".card_col .btn_activation");
+const card = document.querySelector(".card_col");
+const cross = document.querySelectorAll(".cross");
+console.log(card);
+
 const langue = document.querySelector("html").attributes.lang.value; //fr ou en
 
 var chargement_progress_bar = 0;
@@ -13,8 +17,6 @@ var mql = window.matchMedia("(orientation: portrait)");//récupère l'orientatio
 PrintOrientationChange(); //récupère l'orientation à l'ouverture du site
 
 mql.addListener(PrintOrientationChange); //appelle la fonction à chaque changemen de mql
-
-
 
 function PrintOrientationChange() {//met à jour l'orientation du site
     if (mql.matches) {
@@ -29,98 +31,50 @@ function PrintOrientationChange() {//met à jour l'orientation du site
     }
 }
 
-
 //afficher le contenu selon la colonne surlignée dans projets
-function PrintContentProjects() {
-    for (let elem = 0; elem < card.children.length; elem++) {
-        card.children[elem].addEventListener("click", () => {
+for (let elem = 0; elem < btn_activation.length; elem++) {
+    btn_activation[elem].addEventListener("click", () => {
 
-            function HigherSize() {
-                for (let i = 0; i < card.children.length; i++) {
-                    if (i != elem) {
-                        card.children[i].classList.add("flex_0");
-                        card.children[i].classList.remove("flex_1");
-                    }
-                }
-
-            }
-
-            function LowerSize() {
-                for (let i = 0; i < card.children.length; i++) {
-                    if (i != elem) {
-                        card.children[i].classList.add("flex_1");
-                        card.children[i].classList.remove("flex_0");
-                    }
+        function HigherSize() {
+            for (let i = 0; i < card.children.length; i++) {
+                if (i != elem) {
+                    card.children[i].classList.add("flex_0");
+                    card.children[i].classList.remove("flex_1");
                 }
             }
+        }
 
-            //augmente taille colonne
-            HigherSize();
+        //augmente taille colonne
+        HigherSize();
 
-            //affiche le contenu selon celle selectionnée
-            switch (elem) {
-                case 0:
-                    card.children[elem].innerHTML = `<div class="container">
-                    <button class="cross">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" id="cross">
-                            <path
-                                d="M83.9 17.1c-.9-.9-2.5-.9-3.4 0l-30 30-30-30c-.9-.9-2.5-.9-3.4 0s-.9 2.5 0 3.4l30 30-30 30c-.9.9-.9 2.5 0 3.4.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7l30-30 30 30c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4l-30-30 30-30c.9-.9.9-2.4 0-3.4z">
-                            </path>
-                        </svg>
-                    </button>
-                </div>`;
-                    break;
-                case 1:
-                    card.children[elem].innerHTML = `<div class="container">
-                    <button class="cross">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" id="cross">
-                            <path
-                                d="M83.9 17.1c-.9-.9-2.5-.9-3.4 0l-30 30-30-30c-.9-.9-2.5-.9-3.4 0s-.9 2.5 0 3.4l30 30-30 30c-.9.9-.9 2.5 0 3.4.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7l30-30 30 30c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4l-30-30 30-30c.9-.9.9-2.4 0-3.4z">
-                            </path>
-                        </svg>
-                    </button>
-                </div>`;
-                    break;
-                case 2:
-                    card.children[elem].innerHTML = `<div class="container">
-                    <button class="cross">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" id="cross">
-                            <path
-                                d="M83.9 17.1c-.9-.9-2.5-.9-3.4 0l-30 30-30-30c-.9-.9-2.5-.9-3.4 0s-.9 2.5 0 3.4l30 30-30 30c-.9.9-.9 2.5 0 3.4.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7l30-30 30 30c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4l-30-30 30-30c.9-.9.9-2.4 0-3.4z">
-                            </path>
-                        </svg>
-                    </button>
-                </div>`;
-                    break;
-            }
+        //affiche le contenu selon celle selectionnée
+        card.children[elem].children[0].classList.remove('opacity-0');
+        card.children[elem].children[0].classList.add('opacity-100');
+        card.children[elem].children[1].classList.remove('opacity-100');
+        card.children[elem].children[1].classList.add('opacity-0');
+    });
 
-            //reset les inscriptions avant l'ouverture des fenêtres
-            const cross = document.querySelector(".cross");
-            cross.addEventListener("click", () => {
-                setTimeout(LowerSize, 0);
+    cross[elem].addEventListener("click", () => {
 
-
-                function Resetcross() {
-                    switch (elem) {
-                        case 0:
-                            card.children[elem].innerHTML = `<span class="fs-2">STAGES</span>`;
-                            break;
-                        case 1:
-                            card.children[elem].innerHTML = `<span class="fs-2">PROFESSIONNEL</span>`;
-                            break;
-                        case 2:
-                            card.children[elem].innerHTML = `<span class="fs-2">PERSONNEL</span>`;
-                            break;
-                    }
-
+        function LowerSize() {
+            for (let i = 0; i < card.children.length; i++) {
+                if (i != elem) {
+                    card.children[i].classList.remove("flex_0");
+                    card.children[i].classList.add("flex_1");
                 }
+            }
+        }
+        LowerSize();
 
-                setTimeout(Resetcross, 0);
+        card.children[elem].children[1].classList.remove('opacity-0');
+        card.children[elem].children[1].classList.add('opacity-100');
+        card.children[elem].children[0].classList.remove('opacity-100');
+        card.children[elem].children[0].classList.add('opacity-0');
+    });
 
-            });
-        });
-    }
+
 }
+
 
 //Découvre le bandeau du parcours
 function SupprDecouvrir() {
@@ -130,16 +84,16 @@ function SupprDecouvrir() {
 //Apparition des bulles dans le parcours
 function ApparaitreSlides() {
     for (let elem = 0; elem < path_slides.length; elem++) {
-        if (path_slides[elem].children.length != 0) {
-            path_slides[elem].children[0].style.opacity = 1;
+        if (path_slides[elem].length != 0) {
+            path_slides[elem][0].style.opacity = 1;
         }
     }
 }
 //Disparition des bulles dans le parcours
 function DisparaitreSlides() {
     for (let elem = 0; elem < path_slides.length; elem++) {
-        if (path_slides[elem].children.length != 0) {
-            path_slides[elem].children[0].style.opacity = 0;
+        if (path_slides[elem].length != 0) {
+            path_slides[elem][0].style.opacity = 0;
         }
     }
 }
@@ -320,12 +274,8 @@ for (let elem = 0; elem < button.length; elem++) {
     })
 };
 
-//teste l'orientation du site
 
 
-
-//animation des colonnes pour les projets
-PrintContentProjects();
 
 
 

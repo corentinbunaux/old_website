@@ -10859,24 +10859,23 @@ body .competences .all_rows .row {
     width: auto; }
   body .competences .all_rows .row .progress .progress-bar {
     font-size: medium; }
-body .projects .card {
+body .projects .card_col {
   border-radius: 4px;
   background: transparent;
   display: flex;
   flex-direction: row;
   gap: 5px;
   padding: .4em; }
-  body .projects .card .flex_0 {
+  body .projects .card_col .flex_0 {
     flex: 0; }
-  body .projects .card .flex_1 {
+  body .projects .card_col .flex_1 {
     flex: 1; }
-  body .projects .card .stage,
-  body .projects .card .pro,
-  body .projects .card .perso {
+  body .projects .card_col .stage,
+  body .projects .card_col .pro,
+  body .projects .card_col .perso {
     position: relative;
     height: 100%;
     overflow: hidden;
-    cursor: pointer;
     border-radius: 2px;
     transition: all .5s;
     background: transparent;
@@ -10884,39 +10883,56 @@ body .projects .card {
     display: flex;
     justify-content: center;
     align-items: center; }
-    body .projects .card .stage:hover span,
-    body .projects .card .pro:hover span,
-    body .projects .card .perso:hover span {
-      transform: rotate(0); }
-    body .projects .card .stage span,
-    body .projects .card .pro span,
-    body .projects .card .perso span {
+    body .projects .card_col .stage .all_projects,
+    body .projects .card_col .pro .all_projects,
+    body .projects .card_col .perso .all_projects {
+      height: 90%; }
+      body .projects .card_col .stage .all_projects .img-test,
+      body .projects .card_col .pro .all_projects .img-test,
+      body .projects .card_col .perso .all_projects .img-test {
+        background-image: url(./../lune.jpg);
+        background-size: cover;
+        background-repeat: no-repeat; }
+    body .projects .card_col .stage .cross_bar,
+    body .projects .card_col .pro .cross_bar,
+    body .projects .card_col .perso .cross_bar {
+      height: 10%; }
+    body .projects .card_col .stage:hover .btn_activation,
+    body .projects .card_col .pro:hover .btn_activation,
+    body .projects .card_col .perso:hover .btn_activation {
+      transform: rotate(0);
+      border: solid 1px; }
+    body .projects .card_col .stage .btn_activation,
+    body .projects .card_col .pro .btn_activation,
+    body .projects .card_col .perso .btn_activation {
       min-width: 14em;
       padding: .5em;
       text-align: center;
       transform: rotate(-90deg);
       transition: all .5s;
       color: black;
-      letter-spacing: .1em; }
-    body .projects .card .stage .container,
-    body .projects .card .pro .container,
-    body .projects .card .perso .container {
+      letter-spacing: .1em;
+      background-color: transparent;
+      border: none; }
+    body .projects .card_col .stage .container,
+    body .projects .card_col .pro .container,
+    body .projects .card_col .perso .container {
       position: relative;
       height: 200px;
       width: 200px; }
-    body .projects .card .stage .container svg,
-    body .projects .card .pro .container svg,
-    body .projects .card .perso .container svg {
+    body .projects .card_col .stage .container svg,
+    body .projects .card_col .pro .container svg,
+    body .projects .card_col .perso .container svg {
       max-width: 100%;
       max-height: 100%; }
-    body .projects .card .stage .container button,
-    body .projects .card .pro .container button,
-    body .projects .card .perso .container button {
+    body .projects .card_col .stage .container button,
+    body .projects .card_col .pro .container button,
+    body .projects .card_col .perso .container button {
       height: 100%;
       width: 100%;
       background: transparent;
       border: none; }
-  body .projects .card:hover > div:not(:hover) {
+  body .projects .card_col:hover > div:not(:hover) {
     filter: blur(4px); }
 body .aboutme .apropos {
   font-size: 2rem; }
@@ -11077,6 +11093,23 @@ body footer {
             left: 5rem;
             right: 0rem; }
 
+  .projects .container {
+    flex-direction: column; }
+  .projects .col-h_PROJECTS {
+    height: 10%;
+    width: 100%; }
+    .projects .col-h_PROJECTS .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+  .projects .col-h_content {
+    height: 90%;
+    width: 100%; }
+  .projects .col-h .letter {
+    font-size: 2rem;
+    width: fit-content; }
+
   .aboutme .tennis_ball {
     height: 50%;
     top: 50%;
@@ -11156,6 +11189,15 @@ body footer {
             top: 100%;
             bottom: 0%; }
 
+  .projects .col-h_PROJECTS {
+    height: 75%;
+    width: 8.33%; }
+  .projects .col-h_content {
+    height: 75%;
+    width: 91.67%; }
+  .projects .col-h .letter {
+    font-size: 3rem; }
+
   .aboutme .tennis_ball {
     height: 100%; }
   .aboutme .col-h {
@@ -11220,6 +11262,15 @@ body footer {
           .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path::after {
             top: 100%;
             bottom: 0%; }
+
+  .projects .col-h_PROJECTS {
+    height: 75%;
+    width: 8.33%; }
+  .projects .col-h_content {
+    height: 75%;
+    width: 91.67%; }
+  .projects .col-h .letter {
+    font-size: 3rem; }
 
   .aboutme .tennis_ball {
     height: 100%; }
