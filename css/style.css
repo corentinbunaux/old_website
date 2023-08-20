@@ -10866,6 +10866,8 @@ body .projects .card_col {
   flex-direction: row;
   gap: 5px;
   padding: .4em; }
+  body .projects .card_col .bg_color {
+    background: var(--l_black); }
   body .projects .card_col .flex_0 {
     flex: 0; }
   body .projects .card_col .flex_1 {
@@ -10887,32 +10889,86 @@ body .projects .card_col {
     body .projects .card_col .pro .all_projects,
     body .projects .card_col .perso .all_projects {
       height: 90%; }
-      body .projects .card_col .stage .all_projects .img-test,
-      body .projects .card_col .pro .all_projects .img-test,
-      body .projects .card_col .perso .all_projects .img-test {
-        background-image: url(./../lune.jpg);
+      body .projects .card_col .stage .all_projects .writing,
+      body .projects .card_col .pro .all_projects .writing,
+      body .projects .card_col .perso .all_projects .writing {
+        background: #F1F3F2;
+        width: fit-content;
+        color: #272424;
+        padding: 0.5rem; }
+      body .projects .card_col .stage .all_projects .btn,
+      body .projects .card_col .pro .all_projects .btn,
+      body .projects .card_col .perso .all_projects .btn {
+        background: var(--l_white);
+        color: var(--l_black);
+        transition: all 0.3s ease-in-out;
+        height: fit-content;
+        width: fit-content; }
+        body .projects .card_col .stage .all_projects .btn:hover,
+        body .projects .card_col .pro .all_projects .btn:hover,
+        body .projects .card_col .perso .all_projects .btn:hover {
+          transform: scale(1.2);
+          background: var(--l_green);
+          color: var(--l_white); }
+      body .projects .card_col .stage .all_projects .img,
+      body .projects .card_col .pro .all_projects .img,
+      body .projects .card_col .perso .all_projects .img {
         background-size: cover;
         background-repeat: no-repeat; }
+        body .projects .card_col .stage .all_projects .img-KT,
+        body .projects .card_col .pro .all_projects .img-KT,
+        body .projects .card_col .perso .all_projects .img-KT {
+          background-image: url(./../KT.jpg); }
+        body .projects .card_col .stage .all_projects .img-2024,
+        body .projects .card_col .pro .all_projects .img-2024,
+        body .projects .card_col .perso .all_projects .img-2024 {
+          background-image: url(./../stage2024.jpg); }
+        body .projects .card_col .stage .all_projects .img-2025,
+        body .projects .card_col .pro .all_projects .img-2025,
+        body .projects .card_col .perso .all_projects .img-2025 {
+          background-image: url(./../stage2025.jpg); }
+        body .projects .card_col .stage .all_projects .img-AP,
+        body .projects .card_col .pro .all_projects .img-AP,
+        body .projects .card_col .perso .all_projects .img-AP {
+          background-image: url(./../AlgoProg.jpg); }
+        body .projects .card_col .stage .all_projects .img-PR,
+        body .projects .card_col .pro .all_projects .img-PR,
+        body .projects .card_col .perso .all_projects .img-PR {
+          background-image: url(./../Projet_Robot.jpg); }
+        body .projects .card_col .stage .all_projects .img-TIPE,
+        body .projects .card_col .pro .all_projects .img-TIPE,
+        body .projects .card_col .perso .all_projects .img-TIPE {
+          background-image: url(./../TIPE.jpg); }
+        body .projects .card_col .stage .all_projects .img-Portfolio,
+        body .projects .card_col .pro .all_projects .img-Portfolio,
+        body .projects .card_col .perso .all_projects .img-Portfolio {
+          background-image: url(./../Portfolio.jpg); }
     body .projects .card_col .stage .cross_bar,
     body .projects .card_col .pro .cross_bar,
     body .projects .card_col .perso .cross_bar {
       height: 10%; }
+      body .projects .card_col .stage .cross_bar .cross,
+      body .projects .card_col .pro .cross_bar .cross,
+      body .projects .card_col .perso .cross_bar .cross {
+        background: var(--l_white); }
     body .projects .card_col .stage:hover .btn_activation,
     body .projects .card_col .pro:hover .btn_activation,
     body .projects .card_col .perso:hover .btn_activation {
       transform: rotate(0);
-      border: solid 1px; }
+      border: solid 1px;
+      font-size: 1.5rem; }
     body .projects .card_col .stage .btn_activation,
     body .projects .card_col .pro .btn_activation,
     body .projects .card_col .perso .btn_activation {
+      font-size: 1rem;
       min-width: 14em;
       padding: .5em;
       text-align: center;
       transform: rotate(-90deg);
       transition: all .5s;
-      color: black;
+      color: var(--l_black);
       letter-spacing: .1em;
-      background-color: transparent;
+      background-color: var(--l_white);
       border: none; }
     body .projects .card_col .stage .container,
     body .projects .card_col .pro .container,
@@ -11026,6 +11082,10 @@ body footer {
   width: 100vw; }
 
 @media (max-width: 992px) and (orientation: portrait) {
+  .profile .langue {
+    font-size: 1.4rem; }
+  .profile .langue {
+    font-size: 2rem; }
   .profile .message {
     font-size: 3rem; }
   .profile .bonjour {
@@ -11121,6 +11181,8 @@ body footer {
     width: 44px;
     height: 44px; } }
 @media (max-width: 992px) and (orientation: landscape) {
+  .profile .langue {
+    font-size: 1.2rem; }
   .profile .message {
     font-size: 1.5rem; }
   .profile .bonjour {
@@ -11207,6 +11269,8 @@ body footer {
     width: 24px;
     height: 24px; } }
 @media (min-width: 992px) {
+  .profile .langue {
+    font-size: 1.2rem; }
   .profile .message {
     font-size: 1.5rem; }
   .profile .bonjour {

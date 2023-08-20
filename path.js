@@ -7,8 +7,6 @@ const path_slides = document.querySelectorAll(".slides");
 const btn_activation = document.querySelectorAll(".card_col .btn_activation");
 const card = document.querySelector(".card_col");
 const cross = document.querySelectorAll(".cross");
-console.log(card);
-
 const langue = document.querySelector("html").attributes.lang.value; //fr ou en
 
 var chargement_progress_bar = 0;
@@ -84,16 +82,16 @@ function SupprDecouvrir() {
 //Apparition des bulles dans le parcours
 function ApparaitreSlides() {
     for (let elem = 0; elem < path_slides.length; elem++) {
-        if (path_slides[elem].length != 0) {
-            path_slides[elem][0].style.opacity = 1;
+        if (path_slides[elem].childNodes.length) {
+            path_slides[elem].children[0].style.opacity = 1;
         }
     }
 }
 //Disparition des bulles dans le parcours
 function DisparaitreSlides() {
     for (let elem = 0; elem < path_slides.length; elem++) {
-        if (path_slides[elem].length != 0) {
-            path_slides[elem][0].style.opacity = 0;
+        if (path_slides[elem].childNodes.length) {
+            path_slides[elem].children[0].style.opacity = 0;
         }
     }
 }
