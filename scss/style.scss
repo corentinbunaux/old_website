@@ -1155,9 +1155,10 @@ body {
 
                 .container {
                     position: relative;
-                    height: 200px;
-                    width: 200px;
+                    height: 100%;
+                    width: 100%;
                 }
+
 
                 .container svg {
                     max-width: 100%;
@@ -1634,7 +1635,7 @@ body {
             }
 
             .letter {
-                font-size: 3rem;
+                font-size: 2rem;
             }
         }
     }

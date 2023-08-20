@@ -10974,8 +10974,8 @@ body .projects .card_col {
     body .projects .card_col .pro .container,
     body .projects .card_col .perso .container {
       position: relative;
-      height: 200px;
-      width: 200px; }
+      height: 100%;
+      width: 100%; }
     body .projects .card_col .stage .container svg,
     body .projects .card_col .pro .container svg,
     body .projects .card_col .perso .container svg {
@@ -11258,7 +11258,7 @@ body footer {
     height: 75%;
     width: 91.67%; }
   .projects .col-h .letter {
-    font-size: 3rem; }
+    font-size: 2rem; }
 
   .aboutme .tennis_ball {
     height: 100%; }
