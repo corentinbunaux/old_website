@@ -1623,6 +1623,14 @@ body {
     }
 
     .projects {
+
+        .stage,
+        .pro {
+            .p-2 {
+                height: 50%;
+            }
+        }
+
         .col-h {
             &_PROJECTS {
                 height: 75%;
