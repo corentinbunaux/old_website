@@ -1455,11 +1455,7 @@ body {
     .projects {
 
         .stage,
-        .pro {
-            .p-2 {
-                height: 10%;
-            }
-        }
+        .pro {}
 
         .container {
             flex-direction: column;
@@ -1631,14 +1627,6 @@ body {
     }
 
     .projects {
-
-        .stage,
-        .pro {
-            .p-2 {
-                height: 10%;
-            }
-        }
-
         .col-h {
             &_PROJECTS {
                 height: 75%;
