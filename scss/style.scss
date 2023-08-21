@@ -1064,10 +1064,6 @@ body {
                 justify-content: center;
                 align-items: center;
 
-                .p-2 {
-                    max-height: 50%;
-                }
-
                 .all_projects {
                     height: 90%;
 
@@ -1457,6 +1453,10 @@ body {
     }
 
     .projects {
+        .p-2 {
+            max-height: 50%;
+        }
+
         .container {
             flex-direction: column;
         }

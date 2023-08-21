@@ -10885,10 +10885,6 @@ body .projects .card_col {
     display: flex;
     justify-content: center;
     align-items: center; }
-    body .projects .card_col .stage .p-2,
-    body .projects .card_col .pro .p-2,
-    body .projects .card_col .perso .p-2 {
-      max-height: 50%; }
     body .projects .card_col .stage .all_projects,
     body .projects .card_col .pro .all_projects,
     body .projects .card_col .perso .all_projects {
@@ -11157,6 +11153,8 @@ body footer {
             left: 5rem;
             right: 0rem; }
 
+  .projects .p-2 {
+    max-height: 50%; }
   .projects .container {
     flex-direction: column; }
   .projects .col-h_PROJECTS {
