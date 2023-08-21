@@ -43,22 +43,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto d-flex align-items-center">
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
-                            <a class="nav-link" aria-current="page" href="#welcome">Accueil</a>
+                            <a class="nav-link" aria-current="page">Accueil</a>
                         </li>
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
-                            <a class="nav-link" aria-current="page" href="#profile">Profil</a>
+                            <a class="nav-link" aria-current="page">Profil</a>
                         </li>
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
-                            <a class="nav-link" href="#path">Parcours</a>
+                            <a class="nav-link">Parcours</a>
                         </li>
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
-                            <a class="nav-link" href="#competences">Compétences</a>
+                            <a class="nav-link">Compétences</a>
                         </li>
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
-                            <a class="nav-link" href="#projects">Projets</a>
+                            <a class="nav-link">Projets</a>
                         </li>
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3">
-                            <a class="nav-link" href="#aboutme">À propos</a>
+                            <a class="nav-link">À propos</a>
                         </li>
                         <li class="nav-item ms-lg-5 ms-md-4 ms-sm-3 dropdown">
                             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -76,7 +76,7 @@
         </nav>
     </header>
 
-    <section id="welcome" class="position-relative welcome">
+    <section id="welcome" class="position-relative welcome reveal">
         <img src="" alt="" class="position-absolute h-100 w-100">
         <div class="container-fluid position-absolute h-100 d-flex justify-content-center align-items-center">
             <div class="container">
@@ -114,7 +114,7 @@
         </div>
     </section>
 
-    <section id="profile" class="profile light__profile d-flex justify-content-center align-items-center">
+    <section id="profile" class="profile light__profile d-flex justify-content-center align-items-center reveal">
         <div class="container flux">
             <div class="row h-100">
                 <div class="col-lg-6 col-h d-flex justify-content-center align-items-center">
@@ -232,7 +232,7 @@
         </div>
     </section>
 
-    <section id="path" class="path light__path">
+    <section id="path" class="path light__path reveal">
         <div class="container-fluid">
             <div class="row h-100 contenu position-relative">
                 <div class="position-absolute h-100">
@@ -269,7 +269,8 @@
 
     </section>
 
-    <section id="competences" class="competences light__competences d-flex justify-content-center align-items-center">
+    <section id="competences"
+        class="competences light__competences d-flex justify-content-center align-items-center reveal">
         <div class="container h-100">
             <div class="row h-25 d-flex justify-content-center align-items-center fs-1 fw-bold"
                 style="text-decoration:underline;">Mes compétences</div>
@@ -439,7 +440,7 @@
             </div>
     </section>
 
-    <section id="projects" class="projects light__projects">
+    <section id="projects" class="projects light__projects reveal">
         <div class="container h-100 w-100 d-flex justify-content-center align-items-center">
             <div class="col-h col-h_PROJECTS">
                 <div class="row h-100 w-100">
@@ -494,16 +495,33 @@
 
                                                             <div class="offcanvas offcanvas-bottom h-75" tabindex="-1"
                                                                 id="offcanvasKT" aria-labelledby="offcanvasKTLabel">
-                                                                <div class="offcanvas-header">
+                                                                <div
+                                                                    class="offcanvas-header w-100 d-flex justify-content-center align-items-center">
                                                                     <h5 class="offcanvas-title" id="offcanvasKTLabel">
                                                                         Kusmi Tea ~ Informatique & automatisation</h5>
-                                                                    <button type="button" class="btn-close text-reset"
-                                                                        data-bs-dismiss="offcanvas"
-                                                                        aria-label="Close"></button>
                                                                 </div>
-                                                                <div class="offcanvas-body">
-                                                                    <div>
-                                                                        Blablabla
+                                                                <div
+                                                                    class="offcanvas-body d-flex justify-content-center">
+                                                                    <div class="container">
+                                                                        <div class="row">Dans le cadre de ma formation,
+                                                                            j'ai du faire un stage ouvrier d'un mois en
+                                                                            Janvier 2023. J'ai choisis de postuler dans
+                                                                            l'entreprise Orientis Gourmet, détenante de
+                                                                            Kusmi Tea, la marque du thé "premium" en
+                                                                            France. Mon stage s'est divisé en deux
+                                                                            parties : découverte des outils industriels
+                                                                            et conception d'un système automatisé en
+                                                                            production.</div>
+                                                                        <div class="row pt-3">
+                                                                            <div class="col border-end">
+                                                                                <div>TITRE</div>
+                                                                                <div>CONTENT</div>
+                                                                            </div>
+                                                                            <div class="col border-start">
+                                                                                <div>TITRE</div>
+                                                                                <div>CONTENT</div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -527,14 +545,13 @@
 
                                                             <div class="offcanvas offcanvas-bottom h-75" tabindex="-1"
                                                                 id="offcanvas2024" aria-labelledby="offcanvas2024Label">
-                                                                <div class="offcanvas-header">
+                                                                <div
+                                                                    class="offcanvas-header d-flex justify-content-center align-items-center">
                                                                     <h5 class="offcanvas-title" id="offcanvas2024Label">
                                                                         Stage 2024</h5>
-                                                                    <button type="button" class="btn-close text-reset"
-                                                                        data-bs-dismiss="offcanvas"
-                                                                        aria-label="Close"></button>
                                                                 </div>
-                                                                <div class="offcanvas-body">
+                                                                <div
+                                                                    class="offcanvas-body d-flex justify-content-center">
                                                                     <div>
                                                                         Je suis en recherche de stage sur la période
                                                                         d'avril 2024 à août 2024. N'hésitez pas à me
@@ -559,14 +576,13 @@
 
                                                             <div class="offcanvas offcanvas-bottom h-75" tabindex="-1"
                                                                 id="offcanvas2025" aria-labelledby="offcanvas2025Label">
-                                                                <div class="offcanvas-header">
+                                                                <div
+                                                                    class="offcanvas-header d-flex justify-content-center align-items-center">
                                                                     <h5 class="offcanvas-title" id="offcanvas2025Label">
                                                                         Stage 2025</h5>
-                                                                    <button type="button" class="btn-close text-reset"
-                                                                        data-bs-dismiss="offcanvas"
-                                                                        aria-label="Close"></button>
                                                                 </div>
-                                                                <div class="offcanvas-body">
+                                                                <div
+                                                                    class="offcanvas-body d-flex justify-content-center">
                                                                     <div>
                                                                         Je serai en recherche de stage sur la période
                                                                         de janvier à août 2025. N'hésitez pas à me
@@ -625,17 +641,19 @@
 
                                                             <div class="offcanvas offcanvas-bottom h-75" tabindex="-1"
                                                                 id="offcanvasAP" aria-labelledby="offcanvasAPLabel">
-                                                                <div class="offcanvas-header">
+                                                                <div
+                                                                    class="offcanvas-header d-flex justify-content-center align-items-center">
                                                                     <h5 class="offcanvas-title" id="offcanvasAPLabel">
                                                                         Algorithmique & Programmation ~ Mines de
                                                                         Saint-Etienne</h5>
-                                                                    <button type="button" class="btn-close text-reset"
-                                                                        data-bs-dismiss="offcanvas"
-                                                                        aria-label="Close"></button>
                                                                 </div>
-                                                                <div class="offcanvas-body">
+                                                                <div
+                                                                    class="offcanvas-body d-flex justify-content-center">
                                                                     <div>
-                                                                        Blablabla
+                                                                        Projets : Challenge optimisation // Traitement
+                                                                        de données CSV (?) dans le cadre d'une analyse
+                                                                        statistique // Dictionnaire de prédiction //
+                                                                        Application multithread dactylo_race
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -656,16 +674,18 @@
 
                                                             <div class="offcanvas offcanvas-bottom h-75" tabindex="-1"
                                                                 id="offcanvasPR" aria-labelledby="offcanvasPRLabel">
-                                                                <div class="offcanvas-header">
+                                                                <div
+                                                                    class="offcanvas-header d-flex justify-content-center align-items-center">
                                                                     <h5 class="offcanvas-title" id="offcanvasPRLabel">
                                                                         Systèmes Embarqués ~ Projet Robot</h5>
-                                                                    <button type="button" class="btn-close text-reset"
-                                                                        data-bs-dismiss="offcanvas"
-                                                                        aria-label="Close"></button>
                                                                 </div>
-                                                                <div class="offcanvas-body">
+                                                                <div
+                                                                    class="offcanvas-body d-flex justify-content-center">
                                                                     <div>
-                                                                        Blablabla
+                                                                        Projet Robot : création et tests de la carte
+                                                                        électronique, programmation en C embarqué pour
+                                                                        un comportement de balayage et détéction d'un
+                                                                        objet
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -686,16 +706,22 @@
 
                                                             <div class="offcanvas offcanvas-bottom h-75" tabindex="-1"
                                                                 id="offcanvasTIPE" aria-labelledby="offcanvasTIPELabel">
-                                                                <div class="offcanvas-header">
+                                                                <div
+                                                                    class="offcanvas-header d-flex justify-content-center align-items-center">
                                                                     <h5 class="offcanvas-title" id="offcanvasTIPELabel">
                                                                         Robotique ~ Exosquelette</h5>
-                                                                    <button type="button" class="btn-close text-reset"
-                                                                        data-bs-dismiss="offcanvas"
-                                                                        aria-label="Close"></button>
                                                                 </div>
-                                                                <div class="offcanvas-body">
+                                                                <div
+                                                                    class="offcanvas-body d-flex justify-content-center">
                                                                     <div>
-                                                                        Blablabla
+                                                                        Classes prépas : Travaux d'Initiative
+                                                                        Personnelle et
+                                                                        Encadrée, découverte de l'électronique de
+                                                                        commande,
+                                                                        achat d'une attèle articulée, conception 3D de
+                                                                        pièces plastiques (pour supporter le moteur),
+                                                                        programmation du comportement du moteur via une
+                                                                        Arduino UNO
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -750,17 +776,19 @@
                                                             <div class="offcanvas offcanvas-bottom h-75" tabindex="-1"
                                                                 id="offcanvasPortfolio"
                                                                 aria-labelledby="offcanvasPortfolioLabel">
-                                                                <div class="offcanvas-header">
-                                                                    <h5 class="offcanvas-title"
+                                                                <div
+                                                                    class="offcanvas-header d-flex justify-content-center align-items-center">
+                                                                    <h5 class="offcanvas-title "
                                                                         id="offcanvasPortfolioLabel">
                                                                         Développement Web ~ Portfolio</h5>
-                                                                    <button type="button" class="btn-close text-reset"
-                                                                        data-bs-dismiss="offcanvas"
-                                                                        aria-label="Close"></button>
                                                                 </div>
-                                                                <div class="offcanvas-body">
+                                                                <div
+                                                                    class="offcanvas-body d-flex justify-content-center">
                                                                     <div>
-                                                                        Blablabla
+                                                                        Création d'un site portfolio en prévision des
+                                                                        stages à venir, découverte du développement
+                                                                        front end, notamment des animation web (CSS et
+                                                                        JS).
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -781,7 +809,7 @@
             </div>
     </section>
 
-    <section id="aboutme" class="aboutme light__aboutme d-flex justify-content-center align-items-center">
+    <section id="aboutme" class="aboutme light__aboutme d-flex justify-content-center align-items-center reveal">
         <div class="container h-75">
             <div class="row h-100 position-relative d-flex" style="max-height: 100%;">
                 <div class="tennis_ball position-absolute w-100"></div>
@@ -913,7 +941,7 @@
         </div>
     </section>
 
-    <footer class="light__footer">
+    <footer class="light__footer reveal">
         <div class="container-fluid shadow-lg">
             <div class="row pt-3 pb-3">
                 <div class="col d-flex justify-content-center mb-2">

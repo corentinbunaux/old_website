@@ -284,3 +284,40 @@ tennis.addEventListener("click", function () {
     <div class="ball border border-3 border-dark"></div>
 </div>`;
 });
+
+
+//déroulement progressif
+const ratio = .3
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: ratio
+}
+
+const handleIntersect = function (entries, observer) {
+    entries.forEach(function (entry) {
+        if (entry.intersectionRatio > ratio) {
+            entry.target.classList.add('reveal-visible')
+            observer.unobserve(entry.target)
+        }
+    });
+}
+
+const observer = new IntersectionObserver(handleIntersect, options)
+document.querySelectorAll(".reveal").forEach(function (r) {
+    observer.observe(r)
+})
+
+//scroll ajusté 
+const sections = document.querySelectorAll("section")
+const nav_link = document.querySelectorAll(".nav-link")
+for (let elem = 0; elem < nav_link.length; elem++) {
+    nav_link[elem].addEventListener("click", () => {
+        window.scroll({
+            top: sections[elem].offsetTop - document.querySelector("nav").offsetHeight,
+            left: sections[elem].offsetLeft,
+            behavior: "smooth",
+        });
+    })
+}
+

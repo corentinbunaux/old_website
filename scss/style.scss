@@ -594,6 +594,17 @@
     }
 }
 
+.reveal {
+    opacity: 0;
+    transform: translate(-30px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translate(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
 body {
     header {
         width: 100vw;
@@ -607,6 +618,10 @@ body {
                 color: (var(--l_green));
                 border: transparent;
             }
+        }
+
+        .nav-link {
+            cursor: pointer;
         }
 
         .dropdown-menu {
@@ -624,7 +639,7 @@ body {
 
         }
 
-        /* The switch - the box around the slider */
+        /*
         #theme-toggle-button {
             font-size: xx-small;
             position: relative;
@@ -633,7 +648,6 @@ body {
             cursor: pointer;
         }
 
-        /* Hide default HTML checkbox */
         #toggle {
             opacity: 0;
             width: 0;
@@ -652,17 +666,14 @@ body {
             transition-duration: 0.25s;
         }
 
-        /* night sky background */
         #toggle:checked+svg #container {
             fill: #2b4360;
         }
 
-        /* move button to right when checked */
         #toggle:checked+svg #button {
             transform: translate(28px, 2.333px);
         }
 
-        /* show/hide sun and moon based on checkbox state */
         #sun {
             opacity: 1;
         }
@@ -679,7 +690,6 @@ body {
             opacity: 1;
         }
 
-        /* show or hide background items on checkbox state */
         #cloud {
             opacity: 1;
         }
@@ -695,7 +705,7 @@ body {
         #toggle:checked+svg #stars {
             opacity: 1;
         }
-
+        */
     }
 
     section {

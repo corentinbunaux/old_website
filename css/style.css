@@ -10597,14 +10597,84 @@ textarea.form-control-lg {
 .light__footer {
   background-color: var(--l_blue); }
 
+.reveal {
+  opacity: 0;
+  transform: translate(-30px); }
+
+.reveal-visible {
+  opacity: 1;
+  transform: translate(0);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1); }
+
 body header {
   width: 100vw;
-  /* The switch - the box around the slider */
-  /* Hide default HTML checkbox */
-  /* night sky background */
-  /* move button to right when checked */
-  /* show/hide sun and moon based on checkbox state */
-  /* show or hide background items on checkbox state */ }
+        /*
+        #theme-toggle-button {
+            font-size: xx-small;
+            position: relative;
+            display: inline-block;
+            width: 7em;
+            cursor: pointer;
+        }
+
+        #toggle {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        #container,
+        #patches,
+        #stars,
+        #button,
+        #sun,
+        #moon,
+        #cloud {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 0.25s;
+        }
+
+        #toggle:checked+svg #container {
+            fill: #2b4360;
+        }
+
+        #toggle:checked+svg #button {
+            transform: translate(28px, 2.333px);
+        }
+
+        #sun {
+            opacity: 1;
+        }
+
+        #toggle:checked+svg #sun {
+            opacity: 0;
+        }
+
+        #moon {
+            opacity: 0;
+        }
+
+        #toggle:checked+svg #moon {
+            opacity: 1;
+        }
+
+        #cloud {
+            opacity: 1;
+        }
+
+        #toggle:checked+svg #cloud {
+            opacity: 0;
+        }
+
+        #stars {
+            opacity: 0;
+        }
+
+        #toggle:checked+svg #stars {
+            opacity: 1;
+        }
+        */ }
   body header .nav-link,
   body header .btn {
     transition: transform 0.2s ease-out; }
@@ -10613,6 +10683,8 @@ body header {
       transform: scale(1.2);
       color: var(--l_green);
       border: transparent; }
+  body header .nav-link {
+    cursor: pointer; }
   body header .dropdown-menu {
     background: var(--l_white); }
     body header .dropdown-menu .dropdown-item {
@@ -10621,46 +10693,6 @@ body header {
         background: var(--l_blue);
         color: var(--l_black);
         font-size: larger; }
-  body header #theme-toggle-button {
-    font-size: xx-small;
-    position: relative;
-    display: inline-block;
-    width: 7em;
-    cursor: pointer; }
-  body header #toggle {
-    opacity: 0;
-    width: 0;
-    height: 0; }
-  body header #container,
-  body header #patches,
-  body header #stars,
-  body header #button,
-  body header #sun,
-  body header #moon,
-  body header #cloud {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 0.25s; }
-  body header #toggle:checked + svg #container {
-    fill: #2b4360; }
-  body header #toggle:checked + svg #button {
-    transform: translate(28px, 2.333px); }
-  body header #sun {
-    opacity: 1; }
-  body header #toggle:checked + svg #sun {
-    opacity: 0; }
-  body header #moon {
-    opacity: 0; }
-  body header #toggle:checked + svg #moon {
-    opacity: 1; }
-  body header #cloud {
-    opacity: 1; }
-  body header #toggle:checked + svg #cloud {
-    opacity: 0; }
-  body header #stars {
-    opacity: 0; }
-  body header #toggle:checked + svg #stars {
-    opacity: 1; }
 body section {
   height: 95vh;
   width: 100vw; }
