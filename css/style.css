@@ -11155,7 +11155,7 @@ body footer {
 
   .projects .stage .p-2,
   .projects .pro .p-2 {
-    height: 40%; }
+    height: 10%; }
   .projects .container {
     flex-direction: column; }
   .projects .col-h_PROJECTS {
@@ -11256,7 +11256,7 @@ body footer {
 
   .projects .stage .p-2,
   .projects .pro .p-2 {
-    height: 40%; }
+    height: 10%; }
   .projects .col-h_PROJECTS {
     height: 75%;
     width: 8.33%; }
