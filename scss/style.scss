@@ -1064,6 +1064,10 @@ body {
                 justify-content: center;
                 align-items: center;
 
+                .p-2 {
+                    max-height: 50%;
+                }
+
                 .all_projects {
                     height: 90%;
 
@@ -1453,16 +1457,6 @@ body {
     }
 
     .projects {
-        .all_projects {
-
-            .stage,
-            .pro {
-                .p-2 {
-                    height: 75%;
-                }
-            }
-        }
-
         .container {
             flex-direction: column;
         }
@@ -1646,16 +1640,6 @@ body {
 
             .letter {
                 font-size: 2rem;
-            }
-        }
-
-        .all_projects {
-
-            .stage,
-            .pro {
-                .p-2 {
-                    height: 75%;
-                }
             }
         }
     }
