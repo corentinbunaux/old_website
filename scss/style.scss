@@ -1453,6 +1453,16 @@ body {
     }
 
     .projects {
+        .all_projects {
+
+            .stage,
+            .pro {
+                .p-2 {
+                    height: 75%;
+                }
+            }
+        }
+
         .container {
             flex-direction: column;
         }
@@ -1636,6 +1646,16 @@ body {
 
             .letter {
                 font-size: 2rem;
+            }
+        }
+
+        .all_projects {
+
+            .stage,
+            .pro {
+                .p-2 {
+                    height: 75%;
+                }
             }
         }
     }

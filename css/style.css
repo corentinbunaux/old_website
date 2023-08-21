@@ -11153,6 +11153,9 @@ body footer {
             left: 5rem;
             right: 0rem; }
 
+  .projects .all_projects .stage .p-2,
+  .projects .all_projects .pro .p-2 {
+    height: 75%; }
   .projects .container {
     flex-direction: column; }
   .projects .col-h_PROJECTS {
@@ -11259,6 +11262,9 @@ body footer {
     width: 91.67%; }
   .projects .col-h .letter {
     font-size: 2rem; }
+  .projects .all_projects .stage .p-2,
+  .projects .all_projects .pro .p-2 {
+    height: 75%; }
 
   .aboutme .tennis_ball {
     height: 100%; }
