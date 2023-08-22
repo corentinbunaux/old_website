@@ -622,6 +622,7 @@ body {
 
         .nav-link {
             cursor: pointer;
+            font-size: 1.2rem;
         }
 
         .dropdown-menu {
@@ -856,6 +857,7 @@ body {
                     border-radius: 1rem;
                     opacity: 0;
                     transition: opacity 0.3s ease-in-out;
+                    font-size: 1.2rem;
 
                     .cta {
                         position: relative;
@@ -1032,7 +1034,7 @@ body {
 
                 .progress {
                     .progress-bar {
-                        font-size: medium;
+                        font-size: 1.2rem;
                     }
                 }
             }
