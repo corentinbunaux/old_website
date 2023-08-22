@@ -10838,6 +10838,14 @@ body .path .contenu .progress_bar {
       padding: 1rem;
       transition: transform 0.3s ease-in-out;
       font-size: 1.5rem; }
+    body .path .contenu .progress_bar .btn_path_1::after {
+      content: '2025-2023'; }
+    body .path .contenu .progress_bar .btn_path_2::after {
+      content: '2023-2022'; }
+    body .path .contenu .progress_bar .btn_path_3::after {
+      content: '2022-2021'; }
+    body .path .contenu .progress_bar .btn_path_4::after {
+      content: '2021-2018'; }
     body .path .contenu .progress_bar .btn_path:hover {
       transform: scale(1.2); }
       body .path .contenu .progress_bar .btn_path:hover::after {
@@ -11205,9 +11213,18 @@ body footer {
         .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path {
           height: 4rem;
           width: 4rem; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path::after {
-            left: 5rem;
-            right: 0rem; }
+          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_1::after {
+            top: 23%;
+            right: 70%; }
+          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_2::after {
+            top: 48%;
+            right: 70%; }
+          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_3::after {
+            top: 73%;
+            right: 70%; }
+          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_4::after {
+            top: 102%;
+            right: 70%; }
 
   .projects .container {
     flex-direction: column; }
@@ -11303,9 +11320,14 @@ body footer {
         .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path {
           height: 2rem;
           width: 2rem; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path::after {
-            top: 100%;
-            bottom: 0%; }
+          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_1::after {
+            top: 100%; }
+          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_2::after {
+            bottom: 500%; }
+          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_3::after {
+            top: 100%; }
+          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_4::after {
+            bottom: 500%; }
 
   .projects .col-h_PROJECTS {
     height: 75%;
@@ -11353,11 +11375,11 @@ body footer {
           top: 15%;
           left: 25%; }
         .path .contenu .ensemble .slides .formation_f1 {
-          top: 30%;
+          top: 10%;
           left: 55%; }
         .path .contenu .ensemble .slides .formation_glc {
-          top: 25%;
-          left: 75%; }
+          top: 20%;
+          left: 70%; }
     .path .contenu .ensemble .progress_bar_placement {
       height: 5vh;
       width: 98.5vw;
@@ -11379,9 +11401,14 @@ body footer {
         .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path {
           height: 2rem;
           width: 2rem; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path::after {
-            top: 100%;
-            bottom: 0%; }
+          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_1::after {
+            top: 100%; }
+          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_2::after {
+            top: 100%; }
+          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_3::after {
+            top: 100%; }
+          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_4::after {
+            top: 100%; }
 
   .projects .col-h_PROJECTS {
     height: 75%;

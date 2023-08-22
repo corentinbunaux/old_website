@@ -73,7 +73,6 @@ for (let elem = 0; elem < btn_activation.length; elem++) {
 
 }
 
-
 //Découvre le bandeau du parcours
 function SupprDecouvrir() {
     decouvrir.style.zIndex = -1;
@@ -373,10 +372,6 @@ for (let elem = 0; elem < button.length; elem++) {
         }
     })
 };
-
-
-
-
 
 
 //animation balle de tennis
