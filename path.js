@@ -109,28 +109,51 @@ function GenereProgression() {
 
     decouvrir.style.opacity = 0;
     setTimeout(SupprDecouvrir, 500);
-
-    path_slides[1].innerHTML = '';
-    path_slides[0].innerHTML = `<div class="position-absolute formation formation_mse">
-    <h3>École des Mines de Saint-Étienne</h3>
+    if (langue == 'fr') {
+        path_slides[1].innerHTML = '';
+        path_slides[0].innerHTML = `<div class="position-absolute formation formation_mse">
+        <h3>École des Mines de Saint-Étienne</h3>
+            <p>
+                <strong>I</strong><span>ngénieur</span>
+                <strong>S</strong><span>pécialité</span>
+                <strong>M</strong><span>icroélectronique et</span>
+                <strong>In</strong>formatique<span></span>
+            </p>
+            <p>
+                <span>Rang français :</span> <strong>11e</strong><span>.</span> <span>Rang
+                    mondial :</span> <strong>Top 501-600</strong><span>.</span>
+            </p>
+            <button class="cta">
+                <span>En savoir plus</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
+    </div>`;
+    }
+    else {
+        path_slides[1].innerHTML = '';
+        path_slides[0].innerHTML = `<div class="position-absolute formation formation_mse">
+        <h3>Mines Saint-Etienne Engineering</h3>
         <p>
-            <strong>I</strong><span>ngénieur</span>
-            <strong>S</strong><span>pécialité</span>
-            <strong>M</strong><span>icroélectronique et</span>
-            <strong>In</strong>formatique<span></span>
+            INSMIN's program : "Engineer Specialized in Microelectronics and Computer Science"
         </p>
+        <p>Equivalent to a <strong>Master's degree</strong></p>
         <p>
-            <span>Rang français :</span> <strong>11e</strong><span>.</span> <span>Rang
-                mondial :</span> <strong>Top 501-600</strong><span>.</span>
+            <span>French Ranking:</span> <strong>11th</strong><span>.</span> <span>World Ranking:</span>
+            <strong>Top 501-600</strong><span>.</span>
         </p>
         <button class="cta">
-            <span>En savoir plus</span>
+            <span>Learn more</span>
             <svg viewBox="0 0 13 10" height="10px" width="15px">
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>
             </svg>
         </button>
-</div>`;
+    </div>
+    `;
+    }
 
     setTimeout(ApparaitreSlides, 300);
 
@@ -170,28 +193,52 @@ for (let elem = 0; elem < button.length; elem++) {
                 chargement_progress_bar = 13;
                 DisparaitreSlides;
 
-                path_slides[1].innerHTML = '';
-                path_slides[0].innerHTML = `<div class="position-absolute formation formation_mse">
-    <h3>École des Mines de Saint-Étienne</h1>
-        <p>
-            <strong>I</strong><span>ngénieur</span>
-            <strong>S</strong><span>pécialité</span>
-            <strong>M</strong><span>icroélectronique et</span>
-            <strong>In</strong>formatique<span></span>
-        </p>
-        <p>
-            <span>Rang français :</span> <strong>11e</strong><span>.</span> <span>Rang
-                mondial :</span> <strong>Top 501-600</strong><span>.</span>
-        </p>
-        <button class="cta">
-            <span>En savoir plus</span>
-            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
-        </button>
-</div>`;
+                if (langue == 'fr') {
+                    path_slides[1].innerHTML = '';
+                    path_slides[0].innerHTML = `<div class="position-absolute formation formation_mse">
+        <h3>École des Mines de Saint-Étienne</h1>
+            <p>
+                <strong>I</strong><span>ngénieur</span>
+                <strong>S</strong><span>pécialité</span>
+                <strong>M</strong><span>icroélectronique et</span>
+                <strong>In</strong>formatique<span></span>
+            </p>
+            <p>
+                <span>Rang français :</span> <strong>11e</strong><span>.</span> <span>Rang
+                    mondial :</span> <strong>Top 501-600</strong><span>.</span>
+            </p>
+            <button class="cta">
+                <span>En savoir plus</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
+    </div>`;
 
+                }
+                else {
+                    path_slides[1].innerHTML = '';
+                    path_slides[0].innerHTML = `<div class="position-absolute formation formation_mse">
+                    <h3>Mines Saint-Etienne Engineering</h3>
+                    <p>
+                        INSMIN's program : "Engineer Specialized in Microelectronics and Computer Science"
+                    </p>
+                    <p>Equivalent to a <strong>Master's degree</strong></p>
+                    <p>
+                        <span>French Ranking:</span> <strong>11th</strong><span>.</span> <span>World Ranking:</span>
+                        <strong>Top 501-600</strong><span>.</span>
+                    </p>
+                    <button class="cta">
+                        <span>Learn more</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                `;
+                }
                 setTimeout(ApparaitreSlides, 100);
 
                 const cta = document.querySelector(".cta");
@@ -204,61 +251,116 @@ for (let elem = 0; elem < button.length; elem++) {
             case 1:
                 chargement_progress_bar = 38;
                 DisparaitreSlides;
-                path_slides[1].innerHTML = `<div class="position-absolute formation formation_vh">
-                <h3>CPGE - Lycée Victor Hugo</h3>
-                <h5>Caen</h5>
-                    <p>
-                        <strong>P</strong><span>hysique &</span>
-                        <strong>S</strong><span>ciences</span>
-                        <strong>I</strong><span>ndustrielles</span>
-                    </p>
-                    <p>
-                        <span>Admission</span> <span>concours</span>
-                        <strong>Mines-Telecom</strong><span>.</span>
-                    </p>
-            </div>`;
-                path_slides[0].innerHTML = '';
+                if (langue == 'fr') {
+                    path_slides[1].innerHTML = `<div class="position-absolute formation formation_vh">
+                    <h3>CPGE - Lycée Victor Hugo</h3>
+                    <h5>Caen</h5>
+                        <p>
+                            <strong>P</strong><span>hysique &</span>
+                            <strong>S</strong><span>ciences</span>
+                            <strong>I</strong><span>ndustrielles</span>
+                        </p>
+                        <p>
+                            <span>Admission</span> <span>concours</span>
+                            <strong>Mines-Telecom</strong><span>.</span>
+                        </p>
+                </div>`;
+                    path_slides[0].innerHTML = '';
+                }
+                else {
+                    path_slides[1].innerHTML = `<div class="position-absolute formation formation_vh">
+                    <h3>CPGE - Victor Hugo's High School</h3>
+                    <h5>Caen</h5>
+                        <p>
+                            <strong>P</strong><span>hysics &</span>
+                            <strong>S</strong><span>ciences of the</span>
+                            <strong>I</strong><span>ndutry</span>
+                        </p>
+                        <p>
+                            <span>Admission</span> <span>competition</span>
+                            <strong>Mines-Telecom</strong><span>.</span>
+                        </p>
+                </div>`;
+                    path_slides[0].innerHTML = '';
+                }
+
                 setTimeout(ApparaitreSlides, 100);
                 break;
 
             case 2:
                 chargement_progress_bar = 63;
                 DisparaitreSlides;
-                path_slides[1].innerHTML = '';
-                path_slides[0].innerHTML = `                            <div class="position-absolute formation formation_f1">
-                <h3>CPGE - Lycée François 1er</h3>
-                <h5>Le Havre</h5>
-                <p>
-                <strong>C</strong><span>lasses</span>
-                <strong>P</strong><span>réparatoires aux</span>
-                <strong>G</strong><span>randes</span>
-                <strong>E</strong><span>coles</span>
-                </p>
-                <p>
-                    <strong>P</strong><span>hysique</span>
-                    <strong>C</strong><span>himie &</span>
-                    <strong>S</strong><span>ciences</span>
-                    <strong>I</strong><span>ndustrielles</span>
-                </p>
-            </div>`;
+                if (langue == 'fr') {
+                    path_slides[1].innerHTML = '';
+                    path_slides[0].innerHTML = `                            <div class="position-absolute formation formation_f1">
+                    <h3>CPGE - Lycée François 1er</h3>
+                    <h5>Le Havre</h5>
+                    <p>
+                    <strong>C</strong><span>lasses</span>
+                    <strong>P</strong><span>réparatoires aux</span>
+                    <strong>G</strong><span>randes</span>
+                    <strong>E</strong><span>coles</span>
+                    </p>
+                    <p>
+                        <strong>P</strong><span>hysique</span>
+                        <strong>C</strong><span>himie &</span>
+                        <strong>S</strong><span>ciences</span>
+                        <strong>I</strong><span>ndustrielles</span>
+                    </p>
+                </div>`;
+                }
+                else {
+                    path_slides[1].innerHTML = '';
+                    path_slides[0].innerHTML = `                            <div class="position-absolute formation formation_f1">
+                    <h3>CPGE - François 1st's High School</h3>
+                    <h5>Le Havre</h5>
+                    <p>
+                    <strong>CPGE</strong> are a two-year undergraduate intensive course in mathematics and physics to prepare for the competitive entrance exams to the French "Grandes Ecoles" (high level graduate engineering /business school).
+                    </p>
+                    <p>
+                        <strong>P</strong><span>hysics,</span>
+                        <strong>C</strong><span>hemistry &</span>
+                        <strong>S</strong><span>ciences of the</span>
+                        <strong>I</strong><span>ndutry</span>
+                    </p>
+                </div>`;
+                }
+
                 setTimeout(ApparaitreSlides, 100);
                 break;
 
             case 3:
                 chargement_progress_bar = 95;
                 DisparaitreSlides;
-                path_slides[1].innerHTML = `<div class="position-absolute formation formation_glc">
-                <h3>Lycée Guillaume Le Conquérant</h3>
-                <h5>Lillebonne</h5>
-                <p>
-                    <span>Baccalauréat série</span> <strong>S</strong><span>cientifique</span> <span>-
-                        option SVT,</span>
-                </p>
-                <p>
-                    <span>Admis mention</span> <strong>Très Bien</strong>
-                </p>
-            </div>`;
-                path_slides[0].innerHTML = '';
+                if (langue == 'fr') {
+                    path_slides[1].innerHTML = `<div class="position-absolute formation formation_glc">
+                    <h3>Lycée Guillaume Le Conquérant</h3>
+                    <h5>Lillebonne</h5>
+                    <p>
+                        <span>Baccalauréat série</span> <strong>S</strong><span>cientifique</span> <span>-
+                            option SVT,</span>
+                    </p>
+                    <p>
+                        <span>Admis mention</span> <strong>Très Bien</strong>
+                    </p>
+                </div>`;
+                    path_slides[0].innerHTML = '';
+                }
+                else {
+                    path_slides[1].innerHTML = `<div class="position-absolute formation formation_glc">
+                    <h3>William The Conqueror's High School</h3>
+                    <h5>Lillebonne</h5>
+                    <p>
+                        <span>Baccalauréat with major in</span> <strong>Sciences</strong><span></span> <span>-
+                            biology option</span>
+                    </p>
+                    <p>
+                        <strong>First class honors</strong>
+                    </p>
+                </div>`;
+                    path_slides[0].innerHTML = '';
+                }
+
                 setTimeout(ApparaitreSlides, 100);
                 break;
         }
