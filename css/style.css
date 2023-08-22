@@ -10921,6 +10921,28 @@ body .projects .card_col {
     body .projects .card_col .pro .all_projects,
     body .projects .card_col .perso .all_projects {
       height: 90%; }
+      body .projects .card_col .stage .all_projects .offcanvas,
+      body .projects .card_col .pro .all_projects .offcanvas,
+      body .projects .card_col .perso .all_projects .offcanvas {
+        height: 80%; }
+      body .projects .card_col .stage .all_projects h5, body .projects .card_col .stage .all_projects .h5,
+      body .projects .card_col .pro .all_projects h5,
+      body .projects .card_col .pro .all_projects .h5,
+      body .projects .card_col .perso .all_projects h5,
+      body .projects .card_col .perso .all_projects .h5 {
+        font-size: 2rem; }
+      body .projects .card_col .stage .all_projects .content,
+      body .projects .card_col .pro .all_projects .content,
+      body .projects .card_col .perso .all_projects .content {
+        font-size: 1.2rem;
+        text-align: justify; }
+      body .projects .card_col .stage .all_projects .title,
+      body .projects .card_col .pro .all_projects .title,
+      body .projects .card_col .perso .all_projects .title {
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
       body .projects .card_col .stage .all_projects .writing,
       body .projects .card_col .pro .all_projects .writing,
       body .projects .card_col .perso .all_projects .writing {

@@ -1077,6 +1077,26 @@ body {
                 .all_projects {
                     height: 90%;
 
+                    .offcanvas {
+                        height: 80%;
+                    }
+
+                    h5 {
+                        font-size: 2rem;
+                    }
+
+                    .content {
+                        font-size: 1.2rem;
+                        text-align: justify;
+                    }
+
+                    .title {
+                        font-size: 1.6rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
                     .writing {
                         background: #F1F3F2;
                         width: fit-content;
