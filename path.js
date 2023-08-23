@@ -418,3 +418,172 @@ for (let elem = 0; elem < nav_link.length; elem++) {
     })
 }
 
+
+
+//DARKMODE
+const body = document.querySelector("body")
+const header = document.querySelector("header")
+const translation = document.querySelector("#dropdownMenuButton")
+const profile = document.querySelector(".profile")
+const path = document.querySelector(".path")
+const competences = document.querySelector(".competences")
+const projects = document.querySelector(".projects")
+const aboutme = document.querySelector(".aboutme")
+const footer = document.querySelector("footer")
+const svg = document.querySelectorAll("svg")
+/*recuère l'ensemble du document*/
+let checkbox = document.querySelector("header input")
+let checked = checkbox.checked
+/*recupère le toggle*/
+GenereTheme(checked)
+ChangeColorSVG(checked)
+
+checkbox.addEventListener("change", () => {
+    checked = checkbox.checked
+    GenereTheme(checked)
+});
+
+function GenereLight() {
+    body.classList.add("bg-light");
+    header.classList.add("light__header")
+    header.children[0].classList.add("navbar-light")
+    translation.innerHTML = `<img src="language.png" alt="Language" style="height: 2.4rem;">`
+    profile.classList.add("light__profile")
+    path.classList.add("light__path")
+    competences.classList.add("light__competences")
+    projects.classList.add("light__projects")
+    aboutme.classList.add("light__aboutme")
+    footer.classList.add("light__footer")
+
+    body.classList.remove("bg-dark");
+    header.classList.remove("dark__header")
+    header.children[0].classList.remove("navbar-dark")
+    profile.classList.remove("dark__profile")
+    path.classList.remove("dark__path")
+    competences.classList.remove("dark__competences")
+    projects.classList.remove("dark__projects")
+    aboutme.classList.remove("dark__aboutme")
+    footer.classList.remove("dark__footer")
+}
+
+function GenereDark() {
+    body.classList.remove("bg-light");
+    header.classList.remove("light__header")
+    header.children[0].classList.remove("navbar-light")
+    profile.classList.remove("light__profile")
+    path.classList.remove("light__path")
+    competences.classList.remove("light__competences")
+    projects.classList.remove("light__projects")
+    aboutme.classList.remove("light__aboutme")
+    footer.classList.remove("light__footer")
+
+    body.classList.add("bg-dark");
+    header.classList.add("dark__header")
+    header.children[0].classList.add("navbar-dark")
+    translation.innerHTML = `<img src="language_dark.png" alt="Language" style="height: 2.4rem;">`
+    profile.classList.add("dark__profile")
+    path.classList.add("dark__path")
+    competences.classList.add("dark__competences")
+    projects.classList.add("dark__projects")
+    aboutme.classList.add("dark__aboutme")
+    footer.classList.add("dark__footer")
+}
+
+function GenereTheme(checked) {
+    if (checked) {
+        GenereDark()
+    }
+    else {
+        GenereLight()
+    }
+    ChangeColorSVG(checked)
+}
+
+function ChangeColorSVG(checked) {
+    if (checked) {
+        for (let elem in svg) {
+            if (svg[elem].id == 'linkedin' || svg[elem].id == 'github' || svg[elem].id == 'mail') {
+                svg[elem].style.fill = "#e8e8e8"
+            }
+            else if (svg[elem].id == 'html5') {
+                svg[elem].children[0].style.fill = "#8D9EA5"
+                svg[elem].children[1].style.fill = "#2A465C"
+                svg[elem].children[2].style.fill = "#e8e8e8"
+                svg[elem].children[3].style.fill = "#e8e8e8"
+            }
+            else if (svg[elem].id == 'css3') {
+                svg[elem].children[0].style.fill = "#8D9EA5"
+                svg[elem].children[1].style.fill = "#2A465C"
+                svg[elem].children[2].style.fill = "#e8e8e8"
+                svg[elem].children[3].style.fill = "#e8e8e8"
+                svg[elem].children[4].style.fill = "#e8e8e8"
+                svg[elem].children[5].style.fill = "#e8e8e8"
+            }
+            else if (svg[elem].id == 'javascript') {
+                svg[elem].children[0].style.fill = "#8D9EA5"
+                svg[elem].children[1].style.fill = "#e8e8e8"
+            }
+            else if (svg[elem].id == 'c') {
+                svg[elem].children[0].style.fill = "#8D9EA5"
+                svg[elem].children[1].style.fill = "#2A465C"
+                svg[elem].children[2].style.fill = "#e8e8e8"
+            }
+            else if (svg[elem].id == 'c++') {
+                svg[elem].children[0].style.fill = "#8D9EA5"
+                svg[elem].children[1].style.fill = "#2A465C"
+                svg[elem].children[2].style.fill = "#2A465C"
+                svg[elem].children[3].style.fill = "#2A465C"
+                svg[elem].children[4].style.fill = "#e8e8e8"
+                svg[elem].children[5].style.fill = "#e8e8e8"
+            }
+            else if (svg[elem].id == 'python') {
+                svg[elem].children[0].style.fill = "#e8e8e8"
+                svg[elem].children[1].style.fill = "#e8e8e8"
+                svg[elem].children[2].style.fill = "#8D9EA5"
+            }
+        }
+    }
+    else {
+        for (let elem in svg) {
+            if (svg[elem].id == 'linkedin' || svg[elem].id == 'github' || svg[elem].id == 'mail') {
+                svg[elem].style.fill = "#272424"
+            }
+            else if (svg[elem].id == 'html5') {
+                svg[elem].children[0].style.fill = "#272424"
+                svg[elem].children[1].style.fill = "#585A56"
+                svg[elem].children[2].style.fill = "#F1F3F2"
+                svg[elem].children[3].style.fill = "#F1F3F2"
+            }
+            else if (svg[elem].id == 'css3') {
+                svg[elem].children[0].style.fill = "#272424"
+                svg[elem].children[1].style.fill = "#585A56"
+                svg[elem].children[2].style.fill = "#F1F3F2"
+                svg[elem].children[3].style.fill = "#F1F3F2"
+                svg[elem].children[4].style.fill = "#F1F3F2"
+                svg[elem].children[5].style.fill = "#F1F3F2"
+            }
+            else if (svg[elem].id == 'javascript') {
+                svg[elem].children[0].style.fill = "#272424"
+                svg[elem].children[1].style.fill = "#F1F3F2"
+            }
+            else if (svg[elem].id == 'c') {
+                svg[elem].children[0].style.fill = "#585A56"
+                svg[elem].children[1].style.fill = "#272424"
+                svg[elem].children[2].style.fill = "#F1F3F2"
+            }
+            else if (svg[elem].id == 'c++') {
+                svg[elem].children[0].style.fill = "#585A56"
+                svg[elem].children[1].style.fill = "#272424"
+                svg[elem].children[2].style.fill = "#272424"
+                svg[elem].children[3].style.fill = "#272424"
+                svg[elem].children[4].style.fill = "#F1F3F2"
+                svg[elem].children[5].style.fill = "#F1F3F2"
+            }
+            else if (svg[elem].id == 'python') {
+                svg[elem].children[0].style.fill = "#272424"
+                svg[elem].children[1].style.fill = "#272424"
+                svg[elem].children[2].style.fill = "#585A56"
+            }
+        }
+    }
+}
