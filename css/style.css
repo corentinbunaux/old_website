@@ -10698,7 +10698,7 @@ body section {
   height: 95vh;
   width: 100vw; }
 body .welcome img {
-  background: url(./../welcome.jpg) 50% 40%;
+  background: url(./../photos_compress/welcome.jpg) 50% 40%;
   background-size: cover;
   background-repeat: no-repeat; }
 body .welcome .message {
@@ -10930,41 +10930,7 @@ body .projects .card_col {
     body .projects .card_col .stage .all_projects,
     body .projects .card_col .pro .all_projects,
     body .projects .card_col .perso .all_projects {
-      height: 90%;
-                    /*
-                    .img {
-                        background-size: cover;
-                        background-repeat: no-repeat;
-
-                        &-KT {
-                            background-image: url(./../KT.jpg);
-                        }
-
-                        &-2024 {
-                            background-image: url(./../stage2024.jpg);
-                        }
-
-                        &-2025 {
-                            background-image: url(./../stage2025.jpg);
-                        }
-
-                        &-AP {
-                            background-image: url(./../AlgoProg.jpg);
-                        }
-
-                        &-PR {
-                            background-image: url(./../Projet_Robot.jpg);
-                        }
-
-                        &-TIPE {
-                            background-image: url(./../TIPE.jpg);
-                        }
-
-                        &-Portfolio {
-                            background-image: url(./../Portfolio.jpg);
-                        }
-
-                    }*/ }
+      height: 90%; }
       body .projects .card_col .stage .all_projects .offcanvas,
       body .projects .card_col .pro .all_projects .offcanvas,
       body .projects .card_col .perso .all_projects .offcanvas {
@@ -11008,6 +10974,39 @@ body .projects .card_col {
           transform: scale(1.2);
           background: var(--l_green);
           color: var(--l_white); }
+      body .projects .card_col .stage .all_projects .img,
+      body .projects .card_col .pro .all_projects .img,
+      body .projects .card_col .perso .all_projects .img {
+        background-size: cover;
+        background-repeat: no-repeat; }
+        body .projects .card_col .stage .all_projects .img-KT,
+        body .projects .card_col .pro .all_projects .img-KT,
+        body .projects .card_col .perso .all_projects .img-KT {
+          background-image: url(./../photos_compress/KT.jpg); }
+        body .projects .card_col .stage .all_projects .img-2024,
+        body .projects .card_col .pro .all_projects .img-2024,
+        body .projects .card_col .perso .all_projects .img-2024 {
+          background-image: url(./../photos_compress/stage2024.jpg); }
+        body .projects .card_col .stage .all_projects .img-2025,
+        body .projects .card_col .pro .all_projects .img-2025,
+        body .projects .card_col .perso .all_projects .img-2025 {
+          background-image: url(./../photos_compress/stage2025.jpg); }
+        body .projects .card_col .stage .all_projects .img-AP,
+        body .projects .card_col .pro .all_projects .img-AP,
+        body .projects .card_col .perso .all_projects .img-AP {
+          background-image: url(./../photos_compress/AlgoProg.jpg); }
+        body .projects .card_col .stage .all_projects .img-PR,
+        body .projects .card_col .pro .all_projects .img-PR,
+        body .projects .card_col .perso .all_projects .img-PR {
+          background-image: url(./../photos_compress/Projet_Robot.jpg); }
+        body .projects .card_col .stage .all_projects .img-TIPE,
+        body .projects .card_col .pro .all_projects .img-TIPE,
+        body .projects .card_col .perso .all_projects .img-TIPE {
+          background-image: url(./../photos_compress/TIPE.jpg); }
+        body .projects .card_col .stage .all_projects .img-Portfolio,
+        body .projects .card_col .pro .all_projects .img-Portfolio,
+        body .projects .card_col .perso .all_projects .img-Portfolio {
+          background-image: url(./../photos_compress/Portfolio.jpg); }
     body .projects .card_col .stage .cross_bar,
     body .projects .card_col .pro .cross_bar,
     body .projects .card_col .perso .cross_bar {
