@@ -10939,13 +10939,13 @@ body .path .contenu .progress_bar {
     position: absolute;
     border-radius: 4rem; }
   body .path .contenu .progress_bar .checked_0::after {
-    content: '2025-2023'; }
+    content: '2025-2022'; }
   body .path .contenu .progress_bar .checked_1::after {
-    content: '2023-2022'; }
-  body .path .contenu .progress_bar .checked_2::after {
     content: '2022-2021'; }
+  body .path .contenu .progress_bar .checked_2::after {
+    content: '2021-2020'; }
   body .path .contenu .progress_bar .checked_3::after {
-    content: '2021-2018'; }
+    content: '2020-2017'; }
   body .path .contenu .progress_bar .btn_path {
     z-index: 2;
     opacity: 0;
