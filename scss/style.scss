@@ -504,6 +504,41 @@
 
     &__projects {
         background: var(--l_blue);
+        color: var(--l_black);
+
+
+
+        .all_projects {
+            .offcanvas {
+                background: var(--l_white);
+                color: var(--l_black);
+            }
+
+            .writing {
+                background: var(--l_white);
+                color: var(--l_black);
+            }
+
+            .btn {
+                background: var(--l_white) !important;
+                color: var(--l_black);
+
+                &:hover {
+                    background-color: var(--l_green);
+                    color: var(--l_white);
+                }
+            }
+        }
+
+
+        .bg_color {
+            background: var(--l_black);
+        }
+
+        .btn_activation {
+            color: var(--l_black);
+            background-color: var(--l_white);
+        }
     }
 
     &__path {
@@ -566,10 +601,6 @@
                             background-color: var(--l_blue);
                             border: solid 1px var(--l_black);
                         }
-
-                        &::after {
-                            color: var(--l_black);
-                        }
                     }
 
                     #charging {
@@ -579,6 +610,12 @@
 
                     .checked {
                         background-color: var(--l_blue);
+
+                        &::after {
+                            color: var(--l_black);
+                            border: solid 1px var(--l_black);
+                            background: var(--l_blue);
+                        }
                     }
                 }
             }
@@ -679,6 +716,36 @@
     &__projects {
         background: var(--d_grey);
         color: var(--d_white);
+
+        .all_projects {
+            .offcanvas {
+                background: var(--d_black);
+                color: var(--d_white);
+            }
+
+            .writing {
+                background: var(--d_black);
+                color: var(--d_white);
+            }
+
+            .btn {
+                background: var(--d_black) !important;
+                color: var(--d_white);
+
+                &:hover {
+                    background-color: var(--d_duck) !important;
+                }
+            }
+        }
+
+        .bg_color {
+            background: var(--d_black);
+        }
+
+        .btn_activation {
+            color: var(--d_black);
+            background-color: var(--d_white);
+        }
     }
 
     &__path {
@@ -697,13 +764,13 @@
 
             .slides {
                 .formation {
-                    background: var(--d_grey);
+                    background: var(--d_white);
                     border: solid 1px var(--d_white);
                 }
 
 
                 .cta:before {
-                    background: var(--d_white);
+                    background: var(--d_grey);
                 }
 
                 .cta span {
@@ -715,7 +782,7 @@
                 }
 
                 .cta:hover:before {
-                    background: var(--d_white);
+                    background: var(--d_grey);
                 }
             }
 
@@ -749,6 +816,12 @@
 
                     .checked {
                         background-color: var(--d_grey);
+
+                        &::after {
+                            color: var(--d_black);
+                            border: solid 1px var(--d_white);
+                            background: var(--d_white);
+                        }
                     }
                 }
             }
@@ -1131,63 +1204,41 @@ body {
                     z-index: 0;
                 }
 
-                .btn_path {
-                    z-index: 2;
-                    opacity: 0;
-                    transition: all 0.3s ease-in-out;
-
-
+                .checked {
                     &::after {
-                        content: '';
                         position: absolute;
-                        max-height: 100%;
-                        width: 6vw;
-                        padding: 1rem;
-                        transition: transform 0.3s ease-in-out;
-                        font-size: 1.5rem;
+                        border-radius: 4rem;
                     }
 
-                    &_1 {
+                    &_0 {
                         &::after {
                             content: '2025-2023';
                         }
                     }
 
-                    &_2 {
+                    &_1 {
                         &::after {
                             content: '2023-2022';
                         }
                     }
 
-                    &_3 {
+                    &_2 {
                         &::after {
                             content: '2022-2021';
                         }
                     }
 
-                    &_4 {
+                    &_3 {
                         &::after {
                             content: '2021-2018';
                         }
                     }
+                }
 
-                    &:hover {
-                        transform: scale(1.2);
-
-                        &::after {
-                            transform: scale(1.2);
-                        }
-                    }
-
-                    &:active {
-                        transform: scale(0.5);
-
-                        &::after {
-                            transform: scale(0.5);
-                        }
-                    }
-
-
+                .btn_path {
+                    z-index: 2;
+                    opacity: 0;
+                    transition: all 0.3s ease-in-out;
                 }
 
                 #charging {
@@ -1270,10 +1321,6 @@ body {
             gap: 5px;
             padding: .4em;
 
-            .bg_color {
-                background: var(--l_black);
-            }
-
             .flex_0 {
                 flex: 0;
             }
@@ -1320,23 +1367,17 @@ body {
                     }
 
                     .writing {
-                        background: #F1F3F2;
                         width: fit-content;
-                        color: #272424;
                         padding: 0.5rem
                     }
 
                     .btn {
-                        background: var(--l_white);
-                        color: var(--l_black);
                         transition: all 0.3s ease-in-out;
                         height: fit-content;
                         width: fit-content;
 
                         &:hover {
                             transform: scale(1.2);
-                            background: var(--l_green);
-                            color: var(--l_white);
                         }
                     }
 
@@ -1380,7 +1421,7 @@ body {
                     height: 10%;
 
                     .cross {
-                        background: var(--l_white);
+                        background: var(--d_white);
                     }
                 }
 
@@ -1400,9 +1441,7 @@ body {
                     text-align: center;
                     transform: rotate(-90deg);
                     transition: transform .5s, font-size .5s, border .5s;
-                    color: var(--l_black);
                     letter-spacing: .1em;
-                    background-color: var(--l_white);
                     border: none;
                 }
 
@@ -1689,37 +1728,45 @@ body {
                             height: 100%;
                         }
 
-                        .btn_path {
-                            height: 4rem;
-                            width: 4rem;
+                        .checked {
+                            &::after {
+                                font-size: 3rem;
+                                font-weight: bold;
+                                padding: 0.5rem;
+                            }
+
+                            &_0 {
+                                &::after {
+                                    bottom: 102%;
+                                    right: 1rem;
+                                }
+                            }
 
                             &_1 {
                                 &::after {
-                                    top: 23%;
-                                    right: 70%;
+                                    bottom: 77%;
+                                    left: 1rem
                                 }
                             }
 
                             &_2 {
                                 &::after {
-                                    top: 48%;
-                                    right: 70%;
+                                    bottom: 52%;
+                                    right: 1rem;
                                 }
                             }
 
                             &_3 {
                                 &::after {
-                                    top: 73%;
-                                    right: 70%;
+                                    bottom: 27%;
+                                    left: 1rem;
                                 }
                             }
+                        }
 
-                            &_4 {
-                                &::after {
-                                    top: 102%;
-                                    right: 70%;
-                                }
-                            }
+                        .btn_path {
+                            height: 4rem;
+                            width: 4rem;
                         }
                     }
                 }
@@ -1882,38 +1929,56 @@ body {
                             height: 50%;
                         }
 
-                        .btn_path {
-                            height: 2rem;
-                            width: 2rem;
+                        .checked {
+                            &::after {
+                                font-size: 1rem;
+                                font-weight: bold;
+                                padding: 0.5rem;
+                            }
+
+                            &_0 {
+                                &::after {
+                                    top: 400%;
+                                    right: 81%;
+                                }
+                            }
 
                             &_1 {
                                 &::after {
-                                    top: 100%;
+                                    bottom: 400%;
+                                    right: 56%;
                                 }
                             }
 
                             &_2 {
                                 &::after {
-                                    bottom: 500%;
+                                    top: 400%;
+                                    right: 31%;
                                 }
                             }
 
                             &_3 {
                                 &::after {
-                                    top: 100%;
+                                    bottom: 400%;
+                                    right: 6%;
                                 }
                             }
+                        }
 
-                            &_4 {
-                                &::after {
-                                    bottom: 500%;
-                                }
-                            }
+                        .btn_path {
+                            height: 2rem;
+                            width: 2rem;
                         }
                     }
                 }
             }
 
+        }
+    }
+
+    .competences {
+        .progress-bar {
+            padding: .1rem;
         }
     }
 
@@ -2002,12 +2067,12 @@ body {
                         }
 
                         &_f1 {
-                            top: 10%;
+                            top: 20%;
                             left: 55%;
                         }
 
                         &_glc {
-                            top: 20%;
+                            top: 15%;
                             left: 70%;
                         }
                     }
@@ -2038,33 +2103,45 @@ body {
                             height: 50%;
                         }
 
-                        .btn_path {
-                            height: 2rem;
-                            width: 2rem;
+                        .checked {
+                            &::after {
+                                font-size: 1.5rem;
+                                font-weight: bold;
+                                padding: 1rem;
+                            }
+
+                            &_0 {
+                                &::after {
+                                    top: 200%;
+                                    right: 82%;
+                                }
+                            }
 
                             &_1 {
                                 &::after {
-                                    top: 100%;
+                                    bottom: 200%;
+                                    right: 57%;
                                 }
                             }
 
                             &_2 {
                                 &::after {
-                                    top: 100%;
+                                    top: 200%;
+                                    right: 32%;
                                 }
                             }
 
                             &_3 {
                                 &::after {
-                                    top: 100%;
+                                    bottom: 200%;
+                                    right: 7%;
                                 }
                             }
+                        }
 
-                            &_4 {
-                                &::after {
-                                    top: 100%;
-                                }
-                            }
+                        .btn_path {
+                            height: 3rem;
+                            width: 3rem;
                         }
                     }
                 }

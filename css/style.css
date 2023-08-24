@@ -10559,7 +10559,25 @@ textarea.form-control-lg {
       background: var(--l_black);
       color: var(--l_white); }
 .light__projects {
-  background: var(--l_blue); }
+  background: var(--l_blue);
+  color: var(--l_black); }
+  .light__projects .all_projects .offcanvas {
+    background: var(--l_white);
+    color: var(--l_black); }
+  .light__projects .all_projects .writing {
+    background: var(--l_white);
+    color: var(--l_black); }
+  .light__projects .all_projects .btn {
+    background: var(--l_white) !important;
+    color: var(--l_black); }
+    .light__projects .all_projects .btn:hover {
+      background-color: var(--l_green);
+      color: var(--l_white); }
+  .light__projects .bg_color {
+    background: var(--l_black); }
+  .light__projects .btn_activation {
+    color: var(--l_black);
+    background-color: var(--l_white); }
 .light__path {
   background-color: var(--l_green); }
   .light__path .contenu .button {
@@ -10590,13 +10608,15 @@ textarea.form-control-lg {
     .light__path .contenu .progress_bar_placement .progress_bar .btn_path:hover {
       background-color: var(--l_blue);
       border: solid 1px var(--l_black); }
-    .light__path .contenu .progress_bar_placement .progress_bar .btn_path::after {
-      color: var(--l_black); }
   .light__path .contenu .progress_bar_placement .progress_bar #charging {
     background-color: var(--l_blue);
     border: solid 1px var(--l_black); }
   .light__path .contenu .progress_bar_placement .progress_bar .checked {
     background-color: var(--l_blue); }
+    .light__path .contenu .progress_bar_placement .progress_bar .checked::after {
+      color: var(--l_black);
+      border: solid 1px var(--l_black);
+      background: var(--l_blue); }
 .light__aboutme {
   background: var(--l_white); }
   .light__aboutme .button {
@@ -10638,6 +10658,22 @@ textarea.form-control-lg {
 .dark__projects {
   background: var(--d_grey);
   color: var(--d_white); }
+  .dark__projects .all_projects .offcanvas {
+    background: var(--d_black);
+    color: var(--d_white); }
+  .dark__projects .all_projects .writing {
+    background: var(--d_black);
+    color: var(--d_white); }
+  .dark__projects .all_projects .btn {
+    background: var(--d_black) !important;
+    color: var(--d_white); }
+    .dark__projects .all_projects .btn:hover {
+      background-color: var(--d_duck) !important; }
+  .dark__projects .bg_color {
+    background: var(--d_black); }
+  .dark__projects .btn_activation {
+    color: var(--d_black);
+    background-color: var(--d_white); }
 .dark__path {
   background-color: var(--d_duck); }
   .dark__path .contenu .button {
@@ -10647,16 +10683,16 @@ textarea.form-control-lg {
     background: var(--d_black);
     color: var(--d_white); }
   .dark__path .contenu .slides .formation {
-    background: var(--d_grey);
+    background: var(--d_white);
     border: solid 1px var(--d_white); }
   .dark__path .contenu .slides .cta:before {
-    background: var(--d_white); }
+    background: var(--d_grey); }
   .dark__path .contenu .slides .cta span {
     color: var(--d_black); }
   .dark__path .contenu .slides .cta svg {
     stroke: var(--d_black); }
   .dark__path .contenu .slides .cta:hover:before {
-    background: var(--d_white); }
+    background: var(--d_grey); }
   .dark__path .contenu .progress_bar_placement .progress_bar::after {
     border: solid 1px var(--d_white);
     background-color: var(--d_white); }
@@ -10673,6 +10709,10 @@ textarea.form-control-lg {
     border: solid 1px var(--d_white); }
   .dark__path .contenu .progress_bar_placement .progress_bar .checked {
     background-color: var(--d_grey); }
+    .dark__path .contenu .progress_bar_placement .progress_bar .checked::after {
+      color: var(--d_black);
+      border: solid 1px var(--d_white);
+      background: var(--d_white); }
 .dark__aboutme {
   background: var(--d_navy);
   color: var(--d_white); }
@@ -10895,34 +10935,21 @@ body .path .contenu .progress_bar {
     position: absolute;
     border-radius: 2rem;
     z-index: 0; }
+  body .path .contenu .progress_bar .checked::after {
+    position: absolute;
+    border-radius: 4rem; }
+  body .path .contenu .progress_bar .checked_0::after {
+    content: '2025-2023'; }
+  body .path .contenu .progress_bar .checked_1::after {
+    content: '2023-2022'; }
+  body .path .contenu .progress_bar .checked_2::after {
+    content: '2022-2021'; }
+  body .path .contenu .progress_bar .checked_3::after {
+    content: '2021-2018'; }
   body .path .contenu .progress_bar .btn_path {
     z-index: 2;
     opacity: 0;
     transition: all 0.3s ease-in-out; }
-    body .path .contenu .progress_bar .btn_path::after {
-      content: '';
-      position: absolute;
-      max-height: 100%;
-      width: 6vw;
-      padding: 1rem;
-      transition: transform 0.3s ease-in-out;
-      font-size: 1.5rem; }
-    body .path .contenu .progress_bar .btn_path_1::after {
-      content: '2025-2023'; }
-    body .path .contenu .progress_bar .btn_path_2::after {
-      content: '2023-2022'; }
-    body .path .contenu .progress_bar .btn_path_3::after {
-      content: '2022-2021'; }
-    body .path .contenu .progress_bar .btn_path_4::after {
-      content: '2021-2018'; }
-    body .path .contenu .progress_bar .btn_path:hover {
-      transform: scale(1.2); }
-      body .path .contenu .progress_bar .btn_path:hover::after {
-        transform: scale(1.2); }
-    body .path .contenu .progress_bar .btn_path:active {
-      transform: scale(0.5); }
-      body .path .contenu .progress_bar .btn_path:active::after {
-        transform: scale(0.5); }
   body .path .contenu .progress_bar #charging {
     position: absolute;
     width: 0%;
@@ -10977,8 +11004,6 @@ body .projects .card_col {
   flex-direction: row;
   gap: 5px;
   padding: .4em; }
-  body .projects .card_col .bg_color {
-    background: var(--l_black); }
   body .projects .card_col .flex_0 {
     flex: 0; }
   body .projects .card_col .flex_1 {
@@ -11025,24 +11050,18 @@ body .projects .card_col {
       body .projects .card_col .stage .all_projects .writing,
       body .projects .card_col .pro .all_projects .writing,
       body .projects .card_col .perso .all_projects .writing {
-        background: #F1F3F2;
         width: fit-content;
-        color: #272424;
         padding: 0.5rem; }
       body .projects .card_col .stage .all_projects .btn,
       body .projects .card_col .pro .all_projects .btn,
       body .projects .card_col .perso .all_projects .btn {
-        background: var(--l_white);
-        color: var(--l_black);
         transition: all 0.3s ease-in-out;
         height: fit-content;
         width: fit-content; }
         body .projects .card_col .stage .all_projects .btn:hover,
         body .projects .card_col .pro .all_projects .btn:hover,
         body .projects .card_col .perso .all_projects .btn:hover {
-          transform: scale(1.2);
-          background: var(--l_green);
-          color: var(--l_white); }
+          transform: scale(1.2); }
       body .projects .card_col .stage .all_projects .img,
       body .projects .card_col .pro .all_projects .img,
       body .projects .card_col .perso .all_projects .img {
@@ -11083,7 +11102,7 @@ body .projects .card_col {
       body .projects .card_col .stage .cross_bar .cross,
       body .projects .card_col .pro .cross_bar .cross,
       body .projects .card_col .perso .cross_bar .cross {
-        background: var(--l_white); }
+        background: var(--d_white); }
     body .projects .card_col .stage:hover .btn_activation,
     body .projects .card_col .pro:hover .btn_activation,
     body .projects .card_col .perso:hover .btn_activation {
@@ -11099,9 +11118,7 @@ body .projects .card_col {
       text-align: center;
       transform: rotate(-90deg);
       transition: transform .5s, font-size .5s, border .5s;
-      color: var(--l_black);
       letter-spacing: .1em;
-      background-color: var(--l_white);
       border: none; }
     body .projects .card_col .stage .container,
     body .projects .card_col .pro .container,
@@ -11279,21 +11296,25 @@ body footer {
         .path .contenu .ensemble .progress_bar_placement .progress_bar::after {
           width: 100%;
           height: 100%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked::after {
+          font-size: 3rem;
+          font-weight: bold;
+          padding: 0.5rem; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_0::after {
+          bottom: 102%;
+          right: 1rem; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_1::after {
+          bottom: 77%;
+          left: 1rem; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_2::after {
+          bottom: 52%;
+          right: 1rem; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_3::after {
+          bottom: 27%;
+          left: 1rem; }
         .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path {
           height: 4rem;
           width: 4rem; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_1::after {
-            top: 23%;
-            right: 70%; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_2::after {
-            top: 48%;
-            right: 70%; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_3::after {
-            top: 73%;
-            right: 70%; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_4::after {
-            top: 102%;
-            right: 70%; }
 
   .projects .container {
     flex-direction: column; }
@@ -11386,17 +11407,28 @@ body footer {
         .path .contenu .ensemble .progress_bar_placement .progress_bar::after {
           width: 100%;
           height: 50%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked::after {
+          font-size: 1rem;
+          font-weight: bold;
+          padding: 0.5rem; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_0::after {
+          top: 400%;
+          right: 81%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_1::after {
+          bottom: 400%;
+          right: 56%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_2::after {
+          top: 400%;
+          right: 31%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_3::after {
+          bottom: 400%;
+          right: 6%; }
         .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path {
           height: 2rem;
           width: 2rem; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_1::after {
-            top: 100%; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_2::after {
-            bottom: 500%; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_3::after {
-            top: 100%; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_4::after {
-            bottom: 500%; }
+
+  .competences .progress-bar {
+    padding: .1rem; }
 
   .projects .col-h_PROJECTS {
     height: 75%;
@@ -11444,10 +11476,10 @@ body footer {
           top: 15%;
           left: 25%; }
         .path .contenu .ensemble .slides .formation_f1 {
-          top: 10%;
+          top: 20%;
           left: 55%; }
         .path .contenu .ensemble .slides .formation_glc {
-          top: 20%;
+          top: 15%;
           left: 70%; }
     .path .contenu .ensemble .progress_bar_placement {
       height: 5vh;
@@ -11467,17 +11499,25 @@ body footer {
         .path .contenu .ensemble .progress_bar_placement .progress_bar::after {
           width: 100%;
           height: 50%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked::after {
+          font-size: 1.5rem;
+          font-weight: bold;
+          padding: 1rem; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_0::after {
+          top: 200%;
+          right: 82%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_1::after {
+          bottom: 200%;
+          right: 57%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_2::after {
+          top: 200%;
+          right: 32%; }
+        .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_3::after {
+          bottom: 200%;
+          right: 7%; }
         .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path {
-          height: 2rem;
-          width: 2rem; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_1::after {
-            top: 100%; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_2::after {
-            top: 100%; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_3::after {
-            top: 100%; }
-          .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path_4::after {
-            top: 100%; }
+          height: 3rem;
+          width: 3rem; }
 
   .projects .col-h_PROJECTS {
     height: 75%;

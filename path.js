@@ -21,11 +21,15 @@ function PrintOrientationChange() {//met à jour l'orientation du site
         orientation = 'portrait';
         charging.style.height = chargement_progress_bar + '%';
         charging.style.width = 100 + '%';
+        document.querySelector(".navbar-toggler-icon").style.height = '5rem'
+        document.querySelector(".navbar-toggler-icon").style.width = '5rem'
 
     } else {
         orientation = 'paysage';
         charging.style.height = 50 + '%';
         charging.style.width = chargement_progress_bar + '%';
+        document.querySelector(".navbar-toggler-icon").style.height = ''
+        document.querySelector(".navbar-toggler-icon").style.width = ''
     }
 }
 
@@ -130,6 +134,11 @@ function GenereProgression() {
                 </svg>
             </button>
     </div>`;
+        const cta = document.querySelector(".cta");
+
+        cta.addEventListener("click", function () {
+            window.open("https://www.mines-stetienne.fr/formation/ismin/");
+        });
     }
     else {
         path_slides[1].innerHTML = '';
@@ -152,15 +161,14 @@ function GenereProgression() {
         </button>
     </div>
     `;
+        const cta = document.querySelector(".cta");
+
+        cta.addEventListener("click", function () {
+            window.open("https://www.mines-stetienne.fr/en/academic/ismin-masters-degree-in-microelectronics-and-computer-science/");
+        });
     }
 
     setTimeout(ApparaitreSlides, 300);
-
-    const cta = document.querySelector(".cta");
-
-    cta.addEventListener("click", function () {
-        window.open("https://www.mines-stetienne.fr/formation/ismin/");
-    });
 }
 
 //animation du bandeau pour parcours
@@ -175,12 +183,14 @@ for (let elem = 0; elem < button.length; elem++) {
         //anime les boutons selon celui activé
         for (let i = 0; i <= elem; i++) {
             button[i].classList.add('checked');
+            button[i].classList.add('checked_' + i);
             if (i != button.length - 1) {
                 button[i + 1].classList.add('opacity-100');
             }
         }
         for (let i = button.length - 1; i > elem; i--) {
             button[i].classList.remove('checked');
+            button[i].classList.remove('checked_' + i);
         }
         for (let i = button.length - 1; i > elem + 1; i--) {
             button[i].classList.remove('opacity-100');
@@ -214,6 +224,11 @@ for (let elem = 0; elem < button.length; elem++) {
                 </svg>
             </button>
     </div>`;
+                    const cta = document.querySelector(".cta");
+
+                    cta.addEventListener("click", function () {
+                        window.open("https://www.mines-stetienne.fr/formation/ismin/");
+                    });
 
                 }
                 else {
@@ -237,14 +252,13 @@ for (let elem = 0; elem < button.length; elem++) {
                     </button>
                 </div>
                 `;
+                    const cta = document.querySelector(".cta");
+
+                    cta.addEventListener("click", function () {
+                        window.open("https://www.mines-stetienne.fr/en/academic/ismin-masters-degree-in-microelectronics-and-computer-science/");
+                    });
                 }
                 setTimeout(ApparaitreSlides, 100);
-
-                const cta = document.querySelector(".cta");
-
-                cta.addEventListener("click", function () {
-                    window.open("https://www.mines-stetienne.fr/formation/ismin/");
-                });
                 break;
 
             case 1:
