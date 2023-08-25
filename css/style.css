@@ -11304,16 +11304,16 @@ body footer {
           width: 18rem; }
         .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_0::after {
           bottom: 102%;
-          right: 1rem; }
+          right: 4rem; }
         .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_1::after {
           bottom: 77%;
-          left: 1rem; }
+          left: 4rem; }
         .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_2::after {
           bottom: 52%;
-          right: 1rem; }
+          right: 4rem; }
         .path .contenu .ensemble .progress_bar_placement .progress_bar .checked_3::after {
           bottom: 27%;
-          left: 1rem; }
+          left: 4rem; }
         .path .contenu .ensemble .progress_bar_placement .progress_bar .btn_path {
           height: 4rem;
           width: 4rem; }
