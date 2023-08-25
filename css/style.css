@@ -10937,16 +10937,23 @@ body .path .contenu .progress_bar {
     z-index: 0; }
   body .path .contenu .progress_bar .checked::after {
     position: absolute;
-    border-radius: 4rem;
-    height: fit-content; }
+    border-radius: 0rem; }
   body .path .contenu .progress_bar .checked_0::after {
-    content: '2025-2022'; }
+    content: '2025-2022';
+    height: 4rem;
+    width: 10rem; }
   body .path .contenu .progress_bar .checked_1::after {
-    content: '2022-2021'; }
+    content: '2022-2021';
+    height: 4rem;
+    width: 12rem; }
   body .path .contenu .progress_bar .checked_2::after {
-    content: '2021-2020'; }
+    content: '2021-2020';
+    height: 3rem;
+    width: 10rem; }
   body .path .contenu .progress_bar .checked_3::after {
-    content: '2020-2017'; }
+    content: '2020-2017';
+    height: 4rem;
+    width: 8rem; }
   body .path .contenu .progress_bar .btn_path {
     z-index: 2;
     opacity: 0;
