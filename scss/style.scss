@@ -1207,9 +1207,8 @@ body {
                 .checked {
                     &::after {
                         position: absolute;
-                        border-radius: 0rem;
-                        width: fit-content;
-                        height: 4rem;
+                        border-radius: 4rem;
+                        height: fit-content;
                     }
 
                     &_0 {
