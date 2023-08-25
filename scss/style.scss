@@ -1208,8 +1208,6 @@ body {
                     &::after {
                         position: absolute;
                         border-radius: 4rem;
-                        height: fit-content;
-                        width: 18rem;
                     }
 
                     &_0 {
@@ -1734,7 +1732,9 @@ body {
                             &::after {
                                 font-size: 3rem;
                                 font-weight: bold;
-                                padding: 0.5rem;
+                                padding: 0.7rem;
+                                height: fit-content;
+                                width: 18rem;
                             }
 
                             &_0 {
