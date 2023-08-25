@@ -10937,7 +10937,7 @@ body .path .contenu .progress_bar {
     z-index: 0; }
   body .path .contenu .progress_bar .checked::after {
     position: absolute;
-    border-radius: 4rem;
+    border-radius: 0rem;
     width: fit-content;
     height: 4rem; }
   body .path .contenu .progress_bar .checked_0::after {
