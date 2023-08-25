@@ -10937,7 +10937,9 @@ body .path .contenu .progress_bar {
     z-index: 0; }
   body .path .contenu .progress_bar .checked::after {
     position: absolute;
-    border-radius: 4rem; }
+    border-radius: 4rem;
+    width: fit-content;
+    height: 4rem; }
   body .path .contenu .progress_bar .checked_0::after {
     content: '2025-2022'; }
   body .path .contenu .progress_bar .checked_1::after {

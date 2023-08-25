@@ -1208,6 +1208,8 @@ body {
                     &::after {
                         position: absolute;
                         border-radius: 4rem;
+                        width: fit-content;
+                        height: 4rem;
                     }
 
                     &_0 {
