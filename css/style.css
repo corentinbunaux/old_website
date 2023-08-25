@@ -10939,7 +10939,7 @@ body .path .contenu .progress_bar {
     position: absolute;
     border-radius: 4rem;
     height: fit-content;
-    width: 15rem; }
+    width: 18rem; }
   body .path .contenu .progress_bar .checked_0::after {
     content: '2025-2022'; }
   body .path .contenu .progress_bar .checked_1::after {
