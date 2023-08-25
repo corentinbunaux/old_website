@@ -10940,8 +10940,8 @@ body .path .contenu .progress_bar {
     border-radius: 0rem; }
   body .path .contenu .progress_bar .checked_0::after {
     content: '2025-2022';
-    height: 4rem;
-    width: 10rem; }
+    height: 10rem;
+    width: 20rem; }
   body .path .contenu .progress_bar .checked_1::after {
     content: '2022-2021';
     height: 4rem;
