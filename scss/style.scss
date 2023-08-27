@@ -524,7 +524,7 @@
                 color: var(--l_black);
 
                 &:hover {
-                    background-color: var(--l_green);
+                    background-color: var(--l_green) !important;
                     color: var(--l_white);
                 }
             }

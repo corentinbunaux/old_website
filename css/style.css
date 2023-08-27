@@ -10571,7 +10571,7 @@ textarea.form-control-lg {
     background: var(--l_white) !important;
     color: var(--l_black); }
     .light__projects .all_projects .btn:hover {
-      background-color: var(--l_green);
+      background-color: var(--l_green) !important;
       color: var(--l_white); }
   .light__projects .bg_color {
     background: var(--l_black); }
