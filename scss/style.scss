@@ -1622,6 +1622,12 @@ body {
 
 //téléphone en mode portrait
 @media (max-width:992px) and (orientation:portrait) {
+    header {
+        .nav-link {
+            font-size: 1.5rem;
+        }
+    }
+
     .profile {
         .langue {
             font-size: 1.4rem;
@@ -1828,6 +1834,12 @@ body {
 
 //téléphone en mode paysage
 @media (max-width:992px) and (orientation:landscape) {
+    header {
+        .nav-link {
+            font-size: 1.5rem;
+        }
+    }
+
     .profile {
         .langue {
             font-size: 1.2rem;

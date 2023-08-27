@@ -11232,6 +11232,9 @@ body footer {
   width: 100vw; }
 
 @media (max-width: 992px) and (orientation: portrait) {
+  header .nav-link {
+    font-size: 1.5rem; }
+
   .profile .langue {
     font-size: 1.4rem; }
   .profile .langue {
@@ -11346,6 +11349,9 @@ body footer {
     width: 44px;
     height: 44px; } }
 @media (max-width: 992px) and (orientation: landscape) {
+  header .nav-link {
+    font-size: 1.5rem; }
+
   .profile .langue {
     font-size: 1.2rem; }
   .profile .message {
